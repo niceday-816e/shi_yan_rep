@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "ohos-module-entry": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main",
+        "RESOURCES_PATH": [
+          "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\build",
+    "BUNDLE_NAME": "com.huawei.alarmclock",
+    "VERSION_CODE": 1000000,
+    "VERSION_NAME": "1.0.0",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\build\\outputs\\default"
+    },
+    "MODULES": [
+      {
+        "name": "entry",
+        "srcPath": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock"
+      }
+    ],
+    "PROFILE_OPT": {
+      "app": {
+        "signingConfigs": [],
+        "products": [
+          {
+            "name": "default",
+            "compileSdkVersion": "6.0.2(22)",
+            "compatibleSdkVersion": "6.0.2(22)",
+            "runtimeOS": "HarmonyOS"
+          }
+        ],
+        "buildModeSet": [
+          {
+            "name": "debug"
+          },
+          {
+            "name": "release"
+          }
+        ]
+      },
+      "modules": [
+        {
+          "name": "entry",
+          "srcPath": "./entry",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CONFIG_PROPERTIES": {
+      "enableSignTask": true,
+      "skipNativeIncremental": false,
+      "hvigor.keepDependency": true
+    },
+    "OVERALL_PROJECT_PATHS": [
+      "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock"
+    ],
+    "BUILD_CACHE_DIR": ""
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "modelVersion": "6.0.2",
+  "license": "ISC",
+  "devDependencies": {
+    "@ohos/hypium": "1.0.16"
+  },
+  "name": "AlarmClockETS",
+  "description": "example description",
+  "repository": {},
+  "version": "1.0.0",
+  "dependencies": {}
+}
