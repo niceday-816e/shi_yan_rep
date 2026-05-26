@@ -16,7 +16,7 @@
 import reminderAgent from '@ohos.reminderAgentManager';
 import notification from '@ohos.notificationManager';
 import { CommonConstants } from '../common/constants/Constants';
-import { ReminderItemBean } from '../common/bean/AlarmItemBean';
+import AlarmItem from '../common/bean/AlarmItemBean';
 
 /**
  * Base on ohos reminder agent service
@@ -36,17 +36,23 @@ export default class ReminderService {
   /**
    * Adding and modifying alarm reminders
    *
-   * @param alarmItem ReminderItem
+   * @param alarmItem AlarmItem
    * @param callback callback
    * @return Promise<number> reminder id
    */
-  public addReminder(alarmItem: ReminderItemBean, callback?: (reminderId: number) => void): Promise<number> {
+  public addReminder(alarmItem: AlarmItem, callback?: (reminderId: number) => void): Promise<number> {
     let reminder: reminderAgent.ReminderRequestAlarm = this.initReminder(alarmItem);
+    console.info('ReminderService.addReminder: publishing reminder with daysOfWeek=' + JSON.stringify(reminder.daysOfWeek) +
+      ', hour=' + reminder.hour + ', minute=' + reminder.minute);
     return reminderAgent.publishReminder(reminder).then((reminderId: number) => {
+      console.info('ReminderService.addReminder: published successfully, id=' + reminderId);
       if (callback != null) {
         callback(reminderId);
       }
       return reminderId;
+    }).catch((err: Error) => {
+      console.error('ReminderService.addReminder: publish failed, error=' + JSON.stringify(err));
+      throw err;
     });
   }
 
@@ -59,12 +65,20 @@ export default class ReminderService {
     reminderAgent.cancelReminder(reminderId);
   }
 
-  private initReminder(item: ReminderItemBean): reminderAgent.ReminderRequestAlarm {
+  private initReminder(item: AlarmItem): reminderAgent.ReminderRequestAlarm {
+    // 优先使用 ringDates，如果 ringDates 为空则使用 repeatDays
+    let daysOfWeek: number[] = [];
+    if (item.ringDates && item.ringDates.length > 0) {
+      daysOfWeek = item.ringDates;
+    } else if (item.repeatDays && item.repeatDays.length > 0) {
+      daysOfWeek = item.repeatDays;
+    }
+    
     return {
       reminderType: item.remindType,
       hour: item.hour,
       minute: item.minute,
-      daysOfWeek: item.repeatDays,
+      daysOfWeek: daysOfWeek,
       title: item.name,
       ringDuration: item.duration * CommonConstants.DEFAULT_TOTAL_MINUTE,
       snoozeTimes: item.intervalTimes,
@@ -87,6 +101,6 @@ export default class ReminderService {
       expiredContent: 'this reminder has expired',
       snoozeContent: 'remind later',
       slotType: notification.SlotType.SERVICE_INFORMATION
-    }
+    };
   }
 }

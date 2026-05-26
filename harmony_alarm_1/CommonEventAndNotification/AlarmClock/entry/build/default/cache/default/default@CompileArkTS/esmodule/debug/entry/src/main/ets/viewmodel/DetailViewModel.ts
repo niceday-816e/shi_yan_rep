@@ -111,6 +111,8 @@ export default class DetailViewModel {
     public async setAlarmRemind(alarmItem: AlarmItem): Promise<void> {
         alarmItem.hour = this.getAlarmTime(CommonConstants.DEFAULT_SINGLE);
         alarmItem.minute = this.getAlarmTime(CommonConstants.DEFAULT_DATA_PICKER_HOUR_SELECTION);
+        console.info('DetailViewModel.setAlarmRemind: hour=' + alarmItem.hour + ', minute=' + alarmItem.minute +
+            ', ringDates=' + JSON.stringify(alarmItem.ringDates) + ', repeatDays=' + JSON.stringify(alarmItem.repeatDays));
         let index = await this.findAlarmWithId(alarmItem.id);
         if (index !== CommonConstants.DEFAULT_NUMBER_NEGATIVE) { // 已存在，删除原有提醒
             this.reminderService.deleteReminder(alarmItem.id);
@@ -130,6 +132,7 @@ export default class DetailViewModel {
             alarmItem.isOpen = true;
             this.alarms[index] = alarmItem;
             await globalThis.preference.set(ALARM_KEY, JSON.stringify(this.alarms));
+            console.info('DetailViewModel.setAlarmRemind: reminder published successfully, id=' + newId);
         }
         catch (err) {
             console.error('Failed to publish reminder: ' + JSON.stringify(err));

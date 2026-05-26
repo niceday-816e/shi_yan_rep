@@ -31,7 +31,6 @@ interface DetailParams {
 @Component
 struct DetailIndex {
   @Watch('onAlarmItemChange') @Provide(DetailConstant.DEFAULT_PROVIDER_KEY) alarmItem: AlarmItem = new AlarmItem();
-  @State repeatSettingArr: Array<AlarmSettingBean> = [];
   @State alarmSettingInfoArr: Array<AlarmSettingBean> = [];
   private isNow: boolean = true;
   private viewModel: DetailModel = DetailModel.getInstant();
@@ -57,11 +56,6 @@ struct DetailIndex {
   }
 
   initData(): void {
-    this.repeatSettingArr = [
-      new AlarmSettingBean(DetailConstant.DEFAULT_STRING_REPEAT,
-        this.alarmItem.isRepeat ? DetailConstant.DEFAULT_STRING_REPEAT
-                                : CommonConstants.DEFAULT_STRING_NO_REPEAT, AlarmSettingType.REPEAT)
-    ];
     this.alarmSettingInfoArr = [
       new AlarmSettingBean(DetailConstant.DEFAULT_STRING_RING_DATE,
         this.viewModel.getRingDateContent(this.alarmItem.ringDates), AlarmSettingType.RING_DATE),
@@ -94,9 +88,6 @@ struct DetailIndex {
 
       DatePickArea()
 
-      SettingItem({
-        settingInfo: $repeatSettingArr
-      })
       SettingItem({
         settingInfo: $alarmSettingInfoArr
       })

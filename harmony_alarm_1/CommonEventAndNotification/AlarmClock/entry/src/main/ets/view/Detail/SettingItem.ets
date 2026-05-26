@@ -19,16 +19,11 @@ import DimensionUtil from '../../common/utils/DimensionUtil';
 import IntervalDialog from './dialog/IntervalDialog';
 import DurationDialog from './dialog/DurationDialog';
 import RenameDialog from './dialog/RenameDialog';
-import RepeatDialog from './dialog/RepeatDialog';
 import RingDateDialog from './dialog/RingDateDialog';
 
 @Component
 export default struct SettingItem {
   @Link settingInfo: Array<AlarmSettingBean>;
-  repeatDialogController: CustomDialogController = new CustomDialogController({
-    builder: RepeatDialog(),
-    autoCancel: true
-  });
   reNameDialogController: CustomDialogController = new CustomDialogController({
     builder: RenameDialog(),
     autoCancel: true
@@ -48,9 +43,6 @@ export default struct SettingItem {
 
   private showSettingDialog(sType: AlarmSettingType): void {
     switch (sType) {
-      case AlarmSettingType.REPEAT:
-        this.repeatDialogController.open();
-        break;
       case AlarmSettingType.ALARM_NAME:
         this.reNameDialogController.open();
         break;
