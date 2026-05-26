@@ -8,7 +8,7 @@ interface BackContainer_Params {
     closer?: () => void;
 }
 import router from "@ohos:router";
-import { CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/CommonConstants";
+import { CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import DimensionUtil from "@bundle:com.huawei.alarmclock/entry/ets/common/utils/DimensionUtil";
 export default class BackContainer extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
@@ -55,32 +55,32 @@ export default class BackContainer extends ViewPU {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
             Row.padding({
-                left: DimensionUtil.getVp({ "id": 16777295, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }),
-                right: DimensionUtil.getVp({ "id": 16777295, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
+                left: DimensionUtil.getVp({ "id": 16777293, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }),
+                right: DimensionUtil.getVp({ "id": 16777293, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
             });
-            Row.height(DimensionUtil.getVp({ "id": 16777279, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Row.height(DimensionUtil.getVp({ "id": 16777277, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
             Row.width(CommonConstants.FULL_LENGTH);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Button.createWithChild();
-            Button.backgroundColor({ "id": 16777240, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-            Button.width(DimensionUtil.getVp({ "id": 16777293, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-            Button.height(DimensionUtil.getVp({ "id": 16777293, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Button.backgroundColor({ "id": 16777238, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+            Button.width(DimensionUtil.getVp({ "id": 16777291, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Button.height(DimensionUtil.getVp({ "id": 16777291, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
             Button.onClick(() => {
                 this.backFunc ? this.backFunc() : router.back();
             });
         }, Button);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create(this.backImgRes == null ? { "id": 16777304, "type": 20000, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" } : this.backImgRes);
+            Image.create(this.backImgRes == null ? { "id": 16777302, "type": 20000, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" } : this.backImgRes);
             Image.objectFit(ImageFit.Fill);
         }, Image);
         Button.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create(this.header);
-            Text.fontSize(DimensionUtil.getFp({ "id": 16777270, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-            Text.lineHeight(DimensionUtil.getVp({ "id": 16777296, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-            Text.margin({ left: DimensionUtil.getVp({ "id": 16777297, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }) });
-            Text.fontColor({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+            Text.fontSize(DimensionUtil.getFp({ "id": 16777268, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Text.lineHeight(DimensionUtil.getVp({ "id": 16777294, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Text.margin({ left: DimensionUtil.getVp({ "id": 16777295, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }) });
+            Text.fontColor({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
             Text.fontWeight(FontWeight.Bold);
         }, Text);
         Text.pop();

@@ -10,8 +10,7 @@
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.hdrCapability.d.ts"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
       ],
       "error": false
     },
@@ -26,23 +25,21 @@
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.rpc.d.ts"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\UIAbilityContext.d.ts",
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.AbilityLifecycleCallback.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
+        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.AbilityLifecycleCallback.d.ts"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets": {
-      "mtimeMs": 1779735345315.2283,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets": {
+      "mtimeMs": 1779785501769.4631,
       "children": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.data.preferences.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesListener.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
       ],
       "error": true,
       "errorCodes": [
@@ -53,7 +50,7 @@
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.bundle.bundleManager.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\UIAbilityContext.d.ts",
@@ -72,8 +69,7 @@
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\wantAgentInfo.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.wantAgent.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\triggerInfo.d.ts",
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\embedded_component.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
+        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\embedded_component.d.ts"
       ],
       "error": false
     },
@@ -89,7 +85,7 @@
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.bundle.bundleManager.d.ts"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\UIAbilityContext.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.StartOptions.d.ts",
@@ -98,17 +94,16 @@
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.ability.featureAbility.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\folder_stack.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\nav_destination.d.ts",
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\navigation.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
+        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\navigation.d.ts"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets": {
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets": {
       "mtimeMs": 1779733796630.326,
       "children": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.display.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts"
       ],
@@ -679,14 +674,10 @@
       ],
       "parent": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets"
       ],
       "error": false
     },
@@ -777,8 +768,7 @@
       ],
       "parent": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets"
       ],
       "error": false
     },
@@ -1563,138 +1553,116 @@
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\BaseContext.d.ts"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets": {
-      "mtimeMs": 1779732974576.8672,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets": {
+      "mtimeMs": 1779785120315.3633,
       "children": [],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesListener.ets": {
-      "mtimeMs": 1779732388783.2705,
-      "children": [],
-      "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets"
-      ],
-      "error": false
-    },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets": {
-      "mtimeMs": 1779732512499.9922,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets": {
+      "mtimeMs": 1779785072126.429,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\ReminderItemBean.ets"
+        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.reminderAgentManager.d.ts"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\MainConstant.ets": {
-      "mtimeMs": 1779732977099.4434,
-      "children": [],
-      "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets"
-      ],
-      "error": false
-    },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets": {
-      "mtimeMs": 1779734286864.4429,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets": {
+      "mtimeMs": 1779785198756.4678,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\MainConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets"
       ],
       "error": true,
       "errorCodes": [
         137
       ]
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets": {
-      "mtimeMs": 1779733186977.9453,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets": {
+      "mtimeMs": 1779785207041.4958,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\MainConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets": {
-      "mtimeMs": 1779733916338.4612,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets": {
+      "mtimeMs": 1779785135414.118,
       "children": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets"
       ],
       "error": true,
       "errorCodes": [
         28007
       ]
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets": {
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets": {
       "mtimeMs": 1779732687783.369,
       "children": [],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
       ],
       "error": true,
       "errorCodes": [
@@ -1702,34 +1670,22 @@
         28007
       ]
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets": {
-      "mtimeMs": 1779733114224.048,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets": {
+      "mtimeMs": 1779785173553.1357,
       "children": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\MainConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [],
       "error": true,
       "errorCodes": [
         28007
       ]
-    },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\ReminderItemBean.ets": {
-      "mtimeMs": 1779732505541.8113,
-      "children": [
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.reminderAgentManager.d.ts"
-      ],
-      "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets"
-      ],
-      "error": false
     },
     "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.reminderAgentManager.d.ts": {
       "mtimeMs": 1774582692000,
@@ -1739,10 +1695,8 @@
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\notification\\notificationSlot.d.ts"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\ReminderItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\ReminderItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets"
       ],
       "error": false
     },
@@ -1774,8 +1728,7 @@
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\notification\\notificationContent.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\notification\\notificationRequest.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\notification\\notificationSlot.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets"
       ],
       "error": false
     },
@@ -1936,17 +1889,17 @@
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets": {
-      "mtimeMs": 1779737276821.5447,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets": {
+      "mtimeMs": 1779785188143.2986,
       "children": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.reminderAgentManager.d.ts",
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.notificationManager.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\ReminderItemBean.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets"
       ],
       "error": true,
       "errorCodes": [
@@ -1955,140 +1908,97 @@
         28040
       ]
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets": {
-      "mtimeMs": 1779732535967.1328,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets": {
+      "mtimeMs": 1779784207844.045,
       "children": [],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets": {
-      "mtimeMs": 1779733915038.038,
-      "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets"
-      ],
-      "error": false
-    },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets": {
-      "mtimeMs": 1779733106219.1047,
-      "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\AlarmSettingType.ets"
-      ],
-      "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
-      ],
-      "error": false
-    },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\AlarmSettingType.ets": {
-      "mtimeMs": 1779732388594.1016,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets": {
+      "mtimeMs": 1779785089923.8198,
       "children": [],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets": {
-      "mtimeMs": 1779733314516.582,
-      "children": [],
-      "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
-      ],
-      "error": false
-    },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets": {
-      "mtimeMs": 1779734106813.7373,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets": {
+      "mtimeMs": 1779785198855.9812,
       "children": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
       ],
       "error": true,
       "errorCodes": [
         28007
       ]
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets": {
-      "mtimeMs": 1779737611831.8894,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets": {
+      "mtimeMs": 1779785198788.471,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
       ],
       "error": true,
       "errorCodes": [
         137
       ]
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets": {
-      "mtimeMs": 1779733917016.444,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets": {
+      "mtimeMs": 1779785219451.2576,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets": {
-      "mtimeMs": 1779733918603.6404,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets": {
+      "mtimeMs": 1779785508357.3845,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\AlarmSettingType.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets": {
-      "mtimeMs": 1779736636739.2761,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets": {
+      "mtimeMs": 1779785498624.4426,
       "children": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\AlarmSettingType.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [],
       "error": true,
@@ -2096,75 +2006,71 @@
         28007
       ]
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets": {
-      "mtimeMs": 1779733350177.6917,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets": {
+      "mtimeMs": 1779785219556.0605,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets": {
-      "mtimeMs": 1779733919120.9377,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets": {
+      "mtimeMs": 1779785219516.7703,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets": {
-      "mtimeMs": 1779735241094.1006,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets": {
+      "mtimeMs": 1779785219587.2412,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets": {
-      "mtimeMs": 1779734063909.7703,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets": {
+      "mtimeMs": 1779785219618.2397,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
       ],
       "error": false
     },
-    "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets": {
-      "mtimeMs": 1779733917442.1216,
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets": {
+      "mtimeMs": 1779785219487.7683,
       "children": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
       ],
       "parent": [
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\claude_vision\\codelabs\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
       ],
       "error": false
     },
@@ -2631,434 +2537,6 @@
       ],
       "parent": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets": {
-      "mtimeMs": 1779735345315.2283,
-      "children": [
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.data.preferences.d.ts",
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesListener.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
-      ],
-      "error": true,
-      "errorCodes": [
-        28040
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets": {
-      "mtimeMs": 1779733796630.326,
-      "children": [
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.display.d.ts",
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets",
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts"
-      ],
-      "parent": [],
-      "error": true,
-      "errorCodes": [
-        137,
-        28007,
-        28040
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets": {
-      "mtimeMs": 1779732974576.8672,
-      "children": [],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesListener.ets": {
-      "mtimeMs": 1779732388783.2705,
-      "children": [],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets": {
-      "mtimeMs": 1779732512499.9922,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\ReminderItemBean.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\MainConstant.ets": {
-      "mtimeMs": 1779732977099.4434,
-      "children": [],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets": {
-      "mtimeMs": 1779734286864.4429,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\MainConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets"
-      ],
-      "error": true,
-      "errorCodes": [
-        137
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets": {
-      "mtimeMs": 1779733186977.9453,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\MainConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets": {
-      "mtimeMs": 1779733916338.4612,
-      "children": [
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets"
-      ],
-      "error": true,
-      "errorCodes": [
-        28007
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets": {
-      "mtimeMs": 1779732687783.369,
-      "children": [],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
-      ],
-      "error": true,
-      "errorCodes": [
-        137,
-        28007
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets": {
-      "mtimeMs": 1779733114224.048,
-      "children": [
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\MainConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\ClockArea.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [],
-      "error": true,
-      "errorCodes": [
-        28007
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\ReminderItemBean.ets": {
-      "mtimeMs": 1779732505541.8113,
-      "children": [
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.reminderAgentManager.d.ts"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets": {
-      "mtimeMs": 1779737276821.5447,
-      "children": [
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.reminderAgentManager.d.ts",
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.notificationManager.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\ReminderItemBean.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets"
-      ],
-      "error": true,
-      "errorCodes": [
-        137,
-        28007,
-        28040
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets": {
-      "mtimeMs": 1779732535967.1328,
-      "children": [],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmListItem.ets": {
-      "mtimeMs": 1779733915038.038,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Main\\AlarmList.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets": {
-      "mtimeMs": 1779733106219.1047,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\AlarmSettingType.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\AlarmSettingType.ets": {
-      "mtimeMs": 1779732388594.1016,
-      "children": [],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets": {
-      "mtimeMs": 1779733314516.582,
-      "children": [],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets": {
-      "mtimeMs": 1779734106813.7373,
-      "children": [
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
-      ],
-      "error": true,
-      "errorCodes": [
-        28007
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets": {
-      "mtimeMs": 1779737611831.8894,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
-      ],
-      "error": true,
-      "errorCodes": [
-        137
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets": {
-      "mtimeMs": 1779733917016.444,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets": {
-      "mtimeMs": 1779733918603.6404,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\AlarmSettingType.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets": {
-      "mtimeMs": 1779736636739.2761,
-      "children": [
-        "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\AlarmSettingType.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\BackContainer.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\detail\\DatePickArea.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [],
-      "error": true,
-      "errorCodes": [
-        28007
-      ]
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets": {
-      "mtimeMs": 1779733350177.6917,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets": {
-      "mtimeMs": 1779733919120.9377,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets": {
-      "mtimeMs": 1779735241094.1006,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets": {
-      "mtimeMs": 1779734063909.7703,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\DetailConstant.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
-      ],
-      "error": false
-    },
-    "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets": {
-      "mtimeMs": 1779733917442.1216,
-      "children": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
-      ],
-      "parent": [
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
       ],
       "error": false
     }

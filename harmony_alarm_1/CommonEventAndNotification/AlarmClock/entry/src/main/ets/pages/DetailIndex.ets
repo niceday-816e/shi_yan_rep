@@ -14,11 +14,9 @@
  */
 
 import router from '@ohos.router';
-import { CommonConstants } from '../common/constants/CommonConstants';
+import { CommonConstants, DetailConstant } from '../common/constants/Constants';
 import AlarmItem from '../common/bean/AlarmItemBean';
-import AlarmSettingBean from '../common/bean/AlarmSettingBean';
-import { AlarmSettingType } from '../common/constants/AlarmSettingType';
-import { DetailConstant } from '../common/constants/DetailConstant';
+import AlarmSettingBean, { AlarmSettingType } from '../common/bean/AlarmSettingBean';
 import BackContainer from '../view/BackContainer';
 import DetailModel from '../viewmodel/DetailViewModel';
 import DatePickArea from '../view/detail/DatePickArea';

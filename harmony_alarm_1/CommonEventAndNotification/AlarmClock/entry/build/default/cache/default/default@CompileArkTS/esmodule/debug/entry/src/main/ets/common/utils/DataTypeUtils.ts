@@ -17,14 +17,6 @@
  */
 export default class DataTypeUtils {
     /**
-     * return value is number.
-     *
-     * @return boolean.
-     */
-    static isNumber(value: Object): boolean {
-        return typeof value === 'number' && isFinite(value as number);
-    }
-    /**
      * return obj is null.
      *
      * @return boolean.

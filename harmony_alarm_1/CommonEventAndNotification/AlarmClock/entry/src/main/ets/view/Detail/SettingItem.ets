@@ -13,9 +13,8 @@
  * limitations under the License.
  */
 
-import { CommonConstants } from '../../common/constants/CommonConstants';
-import { AlarmSettingType } from '../../common/constants/AlarmSettingType';
-import AlarmSettingBean from '../../common/bean/AlarmSettingBean';
+import { CommonConstants } from '../../common/constants/Constants';
+import AlarmSettingBean, { AlarmSettingType } from '../../common/bean/AlarmSettingBean';
 import DimensionUtil from '../../common/utils/DimensionUtil';
 import IntervalDialog from './dialog/IntervalDialog';
 import DurationDialog from './dialog/DurationDialog';

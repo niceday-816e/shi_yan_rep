@@ -9,7 +9,7 @@
 		"SELECT_BUILD_PRODUCT":"default",
 		"BUNDLE_NAME":"com.huawei.alarmclock",
 		"BUILD_PATH":{
-			"OUTPUT_PATH":"E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\build\\outputs\\default"
+			"OUTPUT_PATH":"E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\build\\outputs\\default"
 		},
 		"SELECT_BUILD_MODE":""
 	}

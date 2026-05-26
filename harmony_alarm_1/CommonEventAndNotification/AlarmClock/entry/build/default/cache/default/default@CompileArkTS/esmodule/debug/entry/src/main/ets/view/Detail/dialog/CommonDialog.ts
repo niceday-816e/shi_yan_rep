@@ -7,7 +7,7 @@ interface CommonDialog_Params {
     onConfirm?: () => void;
     closer?: () => void;
 }
-import { CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/CommonConstants";
+import { CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import DimensionUtil from "@bundle:com.huawei.alarmclock/entry/ets/common/utils/DimensionUtil";
 export default class CommonDialog extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
@@ -54,23 +54,23 @@ export default class CommonDialog extends ViewPU {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
             Column.width(CommonConstants.FULL_LENGTH);
-            Column.padding(DimensionUtil.getVp({ "id": 16777259, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Column.padding(DimensionUtil.getVp({ "id": 16777257, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
             Column.justifyContent(FlexAlign.Center);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create(this.title);
-            Text.fontSize(DimensionUtil.getFp({ "id": 16777260, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Text.fontSize(DimensionUtil.getFp({ "id": 16777258, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
             Text.width(CommonConstants.FULL_LENGTH);
-            Text.fontColor({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
             Text.margin({
-                bottom: DimensionUtil.getVp({ "id": 16777261, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
+                bottom: DimensionUtil.getVp({ "id": 16777259, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
             });
         }, Text);
         Text.pop();
         this.closer.bind(this)();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.margin({ top: DimensionUtil.getVp({ "id": 16777258, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }) });
+            Row.margin({ top: DimensionUtil.getVp({ "id": 16777256, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }) });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Button.createWithLabel({ "id": 16777221, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
@@ -113,9 +113,9 @@ export default class CommonDialog extends ViewPU {
     }
 }
 function __Button__actionBtnStyle(): void {
-    Button.fontSize(DimensionUtil.getFp({ "id": 16777256, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-    Button.height(DimensionUtil.getVp({ "id": 16777257, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+    Button.fontSize(DimensionUtil.getFp({ "id": 16777254, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+    Button.height(DimensionUtil.getVp({ "id": 16777255, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
     Button.layoutWeight(CommonConstants.DEFAULT_LAYOUT_WEIGHT);
-    Button.fontColor({ "id": 16777235, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-    Button.backgroundColor({ "id": 16777240, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+    Button.fontColor({ "id": 16777233, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+    Button.backgroundColor({ "id": 16777238, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
 }

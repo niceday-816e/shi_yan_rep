@@ -7,8 +7,7 @@ interface IntervalDialog_Params {
     intervalTimesSelect?: number;
     controller?: CustomDialogController;
 }
-import { CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/CommonConstants";
-import { DetailConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/DetailConstant";
+import { CommonConstants, DetailConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import type AlarmItem from '../../../common/bean/AlarmItemBean';
 import CommonDialog from "@bundle:com.huawei.alarmclock/entry/ets/view/Detail/dialog/CommonDialog";
 import DimensionUtil from "@bundle:com.huawei.alarmclock/entry/ets/common/utils/DimensionUtil";
@@ -91,41 +90,41 @@ export default class IntervalDialog extends ViewPU {
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             if (isInitialRender) {
                                 let componentCall = new CommonDialog(this, {
-                                    title: { "id": 16777230, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
+                                    title: { "id": 16777229, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
                                     controller: this.controller,
                                     onConfirm: () => {
                                         this.alarmItem.intervalMinute = Number(this.intervalMinuteSelect.toFixed(0));
                                         this.alarmItem.intervalTimes = Number(this.intervalTimesSelect.toFixed(0));
                                     },
                                     closer: () => {
-                                        this.IntervalItem.bind(this)({ "id": 16777231, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }, 0);
+                                        this.IntervalItem.bind(this)({ "id": 16777230, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }, 0);
                                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                                             Divider.create();
-                                            Divider.opacity({ "id": 16777271, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                            Divider.color({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                            Divider.opacity({ "id": 16777269, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                            Divider.color({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
                                             Divider.lineCap(LineCapStyle.Round);
                                         }, Divider);
-                                        this.IntervalItem.bind(this)({ "id": 16777232, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }, CommonConstants.DEFAULT_SINGLE);
+                                        this.IntervalItem.bind(this)({ "id": 16777231, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }, CommonConstants.DEFAULT_SINGLE);
                                     }
-                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/Detail/dialog/IntervalDialog.ets", line: 37, col: 9 });
+                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/Detail/dialog/IntervalDialog.ets", line: 36, col: 9 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
-                                        title: { "id": 16777230, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
+                                        title: { "id": 16777229, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
                                         controller: this.controller,
                                         onConfirm: () => {
                                             this.alarmItem.intervalMinute = Number(this.intervalMinuteSelect.toFixed(0));
                                             this.alarmItem.intervalTimes = Number(this.intervalTimesSelect.toFixed(0));
                                         },
                                         closer: () => {
-                                            this.IntervalItem.bind(this)({ "id": 16777231, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }, 0);
+                                            this.IntervalItem.bind(this)({ "id": 16777230, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }, 0);
                                             this.observeComponentCreation2((elmtId, isInitialRender) => {
                                                 Divider.create();
-                                                Divider.opacity({ "id": 16777271, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                                Divider.color({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                                Divider.opacity({ "id": 16777269, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                                Divider.color({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
                                                 Divider.lineCap(LineCapStyle.Round);
                                             }, Divider);
-                                            this.IntervalItem.bind(this)({ "id": 16777232, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }, CommonConstants.DEFAULT_SINGLE);
+                                            this.IntervalItem.bind(this)({ "id": 16777231, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }, CommonConstants.DEFAULT_SINGLE);
                                         }
                                     };
                                 };
@@ -149,11 +148,11 @@ export default class IntervalDialog extends ViewPU {
     IntervalItem(title: string | Resource, intervalType: number, parent = null) {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create(title);
-            Text.fontSize(DimensionUtil.getFp({ "id": 16777275, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Text.fontSize(DimensionUtil.getFp({ "id": 16777273, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
             Text.width(CommonConstants.FULL_LENGTH);
             Text.textAlign(TextAlign.Start);
             Text.margin({
-                top: DimensionUtil.getVp({ "id": 16777276, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
+                top: DimensionUtil.getVp({ "id": 16777274, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
             });
         }, Text);
         Text.pop();
@@ -187,7 +186,7 @@ export default class IntervalDialog extends ViewPU {
         }, Slider);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create((intervalType === 0 ? this.intervalMinuteSelect : this.intervalTimesSelect).toFixed(0));
-            Text.fontSize(DimensionUtil.getFp({ "id": 16777274, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Text.fontSize(DimensionUtil.getFp({ "id": 16777272, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
         }, Text);
         Text.pop();
         Row.pop();

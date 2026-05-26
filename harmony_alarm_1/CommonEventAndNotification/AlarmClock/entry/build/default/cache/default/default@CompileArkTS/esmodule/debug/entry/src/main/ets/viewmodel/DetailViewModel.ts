@@ -1,5 +1,5 @@
-import { DetailConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/DetailConstant";
-import { ALARM_KEY, CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/CommonConstants";
+import { DetailConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
+import { ALARM_KEY, CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import type AlarmItem from '../common/bean/AlarmItemBean';
 import ReminderService from "@bundle:com.huawei.alarmclock/entry/ets/model/ReminderService";
 import DataTypeUtils from "@bundle:com.huawei.alarmclock/entry/ets/common/utils/DataTypeUtils";

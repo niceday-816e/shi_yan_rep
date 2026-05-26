@@ -7,8 +7,7 @@ interface RepeatDialog_Params {
     selects?: number[];
     controller?: CustomDialogController;
 }
-import { CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/CommonConstants";
-import { DetailConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/DetailConstant";
+import { CommonConstants, DetailConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import type AlarmItem from '../../../common/bean/AlarmItemBean';
 import DetailModel from "@bundle:com.huawei.alarmclock/entry/ets/viewmodel/DetailViewModel";
 import CommonDialog from "@bundle:com.huawei.alarmclock/entry/ets/view/Detail/dialog/CommonDialog";
@@ -72,7 +71,7 @@ export default class RepeatDialog extends ViewPU {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
                     let componentCall = new CommonDialog(this, {
-                        title: { "id": 16777228, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
+                        title: { "id": 16777227, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
                         controller: this.controller,
                         onConfirm: () => {
                             this.selects.sort();
@@ -91,15 +90,15 @@ export default class RepeatDialog extends ViewPU {
                                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                                         Text.create(this.viewModel.transAlarmRepeatDayContent(item));
                                         Text.layoutWeight(CommonConstants.DEFAULT_LAYOUT_WEIGHT);
-                                        Text.fontColor({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                        Text.fontSize(DimensionUtil.getFp({ "id": 16777282, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                                        Text.fontColor({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                        Text.fontSize(DimensionUtil.getFp({ "id": 16777280, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
                                     }, Text);
                                     Text.pop();
                                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                                         Checkbox.create({ name: item.toString() });
                                         Checkbox.select(this.alarmItem.repeatDays.indexOf(item) !== CommonConstants.DEFAULT_NUMBER_NEGATIVE);
-                                        Checkbox.width(DimensionUtil.getVp({ "id": 16777281, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-                                        Checkbox.height(DimensionUtil.getVp({ "id": 16777281, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                                        Checkbox.width(DimensionUtil.getVp({ "id": 16777279, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                                        Checkbox.height(DimensionUtil.getVp({ "id": 16777279, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
                                         Checkbox.onChange((value: boolean) => {
                                             if (value) {
                                                 this.selects.push(item);
@@ -114,8 +113,8 @@ export default class RepeatDialog extends ViewPU {
                                     Row.pop();
                                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                                         Divider.create();
-                                        Divider.opacity({ "id": 16777271, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                        Divider.color({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                        Divider.opacity({ "id": 16777269, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                        Divider.color({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
                                         Divider.lineCap(LineCapStyle.Round);
                                     }, Divider);
                                 };
@@ -123,11 +122,11 @@ export default class RepeatDialog extends ViewPU {
                             }, ForEach);
                             ForEach.pop();
                         }
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/Detail/dialog/RepeatDialog.ets", line: 37, col: 7 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/Detail/dialog/RepeatDialog.ets", line: 36, col: 7 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
-                            title: { "id": 16777228, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
+                            title: { "id": 16777227, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
                             controller: this.controller,
                             onConfirm: () => {
                                 this.selects.sort();
@@ -146,15 +145,15 @@ export default class RepeatDialog extends ViewPU {
                                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                                             Text.create(this.viewModel.transAlarmRepeatDayContent(item));
                                             Text.layoutWeight(CommonConstants.DEFAULT_LAYOUT_WEIGHT);
-                                            Text.fontColor({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                            Text.fontSize(DimensionUtil.getFp({ "id": 16777282, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                                            Text.fontColor({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                            Text.fontSize(DimensionUtil.getFp({ "id": 16777280, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
                                         }, Text);
                                         Text.pop();
                                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                                             Checkbox.create({ name: item.toString() });
                                             Checkbox.select(this.alarmItem.repeatDays.indexOf(item) !== CommonConstants.DEFAULT_NUMBER_NEGATIVE);
-                                            Checkbox.width(DimensionUtil.getVp({ "id": 16777281, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-                                            Checkbox.height(DimensionUtil.getVp({ "id": 16777281, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                                            Checkbox.width(DimensionUtil.getVp({ "id": 16777279, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                                            Checkbox.height(DimensionUtil.getVp({ "id": 16777279, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
                                             Checkbox.onChange((value: boolean) => {
                                                 if (value) {
                                                     this.selects.push(item);
@@ -169,8 +168,8 @@ export default class RepeatDialog extends ViewPU {
                                         Row.pop();
                                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                                             Divider.create();
-                                            Divider.opacity({ "id": 16777271, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                            Divider.color({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                            Divider.opacity({ "id": 16777269, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                            Divider.color({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
                                             Divider.lineCap(LineCapStyle.Round);
                                         }, Divider);
                                     };

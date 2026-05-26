@@ -14,7 +14,7 @@
  */
 
 import router from '@ohos.router';
-import { CommonConstants } from '../common/constants/CommonConstants';
+import { CommonConstants } from '../common/constants/Constants';
 import DimensionUtil from '../common/utils/DimensionUtil';
 
 @Component

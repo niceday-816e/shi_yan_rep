@@ -13,12 +13,28 @@
  * limitations under the License.
  */
 
-import ReminderItem from './ReminderItemBean';
+import reminderAgent from '@ohos.reminderAgentManager';
+
+/**
+ * Reminder item base class.
+ */
+export class ReminderItemBean {
+  id: number = 0;
+  remindType: reminderAgent.ReminderType = reminderAgent.ReminderType.REMINDER_TYPE_ALARM;
+  name: string = '';
+  hour: number = 0;
+  minute: number = 0;
+  duration: number = 0;
+  intervalMinute: number = 0;
+  intervalTimes: number = 0;
+  repeatDays: Array<number> = [];
+  notificationId: number = 0;
+}
 
 /**
  * Alarm item description.
  */
-@Observed export default class AlarmItemBean extends ReminderItem {
+@Observed export default class AlarmItemBean extends ReminderItemBean {
   /**
    * Custom alarm name.
    */

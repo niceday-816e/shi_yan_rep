@@ -10,9 +10,8 @@ interface ClockArea_Params {
     settings?: RenderingContextSettings;
     renderContext?: CanvasRenderingContext2D;
 }
-import { CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/CommonConstants";
+import { CommonConstants, MainConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import MainModel from "@bundle:com.huawei.alarmclock/entry/ets/viewmodel/MainViewModel";
-import { MainConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/MainConstant";
 import DimensionUtil from "@bundle:com.huawei.alarmclock/entry/ets/common/utils/DimensionUtil";
 export default class ClockArea extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
@@ -77,7 +76,7 @@ export default class ClockArea extends ViewPU {
     private settings: RenderingContextSettings;
     private renderContext: CanvasRenderingContext2D;
     aboutToAppear(): void {
-        this.canvasSize = DimensionUtil.getVp({ "id": 16777254, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+        this.canvasSize = DimensionUtil.getVp({ "id": 16777252, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
         this.clockRadius = this.canvasSize / CommonConstants.DEFAULT_DOUBLE - CommonConstants.DEFAULT_DOUBLE;
     }
     aboutToDisappear(): void {
@@ -149,7 +148,7 @@ export default class ClockArea extends ViewPU {
             + MainConstant.DEFAULT_STRING_COLON
             + this.mainModel.fillZero(second);
         this.renderContext.save();
-        this.renderContext.font = DimensionUtil.getPx({ "id": 16777255, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
+        this.renderContext.font = DimensionUtil.getPx({ "id": 16777253, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
             + MainConstant.CLOCK_TIME_FONT_SIZE_UNIT;
         this.renderContext.beginPath();
         this.renderContext.textAlign = 'center';

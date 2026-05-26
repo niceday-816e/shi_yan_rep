@@ -14,9 +14,8 @@
  */
 
 import router from '@ohos.router';
-import { CommonConstants } from '../common/constants/CommonConstants';
+import { CommonConstants, MainConstant } from '../common/constants/Constants';
 import AlarmItem from '../common/bean/AlarmItemBean';
-import { MainConstant } from '../common/constants/MainConstant';
 import MainModel from '../viewmodel/MainViewModel';
 import ClockArea from './../view/Main/ClockArea';
 import AlarmList from './../view/Main/AlarmList';

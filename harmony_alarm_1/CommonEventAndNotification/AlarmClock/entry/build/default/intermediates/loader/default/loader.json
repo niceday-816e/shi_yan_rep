@@ -1,10 +1,10 @@
 {
   "modulePathMap": {
-    "entry": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry"
+    "entry": "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry"
   },
   "compileMode": "esmodule",
-  "projectRootPath": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock",
-  "nodeModulesPath": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "projectRootPath": "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock",
+  "nodeModulesPath": "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader_out\\default\\node_modules",
   "byteCodeHarInfo": {},
   "declarationEntry": [],
   "moduleName": "entry",
@@ -18,9 +18,9 @@
   "hspResourcesMap": {},
   "updateVersionInfo": {},
   "customizedHar": false,
-  "anBuildOutPut": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildOutPut": "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
   "anBuildMode": "type",
   "patchConfig": {
-    "changedFileList": "E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
+    "changedFileList": "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
   }
 }

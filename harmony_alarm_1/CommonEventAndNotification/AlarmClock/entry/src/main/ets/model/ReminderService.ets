@@ -15,8 +15,8 @@
 
 import reminderAgent from '@ohos.reminderAgentManager';
 import notification from '@ohos.notificationManager';
-import { CommonConstants } from '../common/constants/CommonConstants';
-import ReminderItem from '../common/bean/ReminderItemBean';
+import { CommonConstants } from '../common/constants/Constants';
+import { ReminderItemBean } from '../common/bean/AlarmItemBean';
 
 /**
  * Base on ohos reminder agent service
@@ -40,7 +40,7 @@ export default class ReminderService {
    * @param callback callback
    * @return Promise<number> reminder id
    */
-  public addReminder(alarmItem: ReminderItem, callback?: (reminderId: number) => void): Promise<number> {
+  public addReminder(alarmItem: ReminderItemBean, callback?: (reminderId: number) => void): Promise<number> {
     let reminder: reminderAgent.ReminderRequestAlarm = this.initReminder(alarmItem);
     return reminderAgent.publishReminder(reminder).then((reminderId: number) => {
       if (callback != null) {
@@ -59,7 +59,7 @@ export default class ReminderService {
     reminderAgent.cancelReminder(reminderId);
   }
 
-  private initReminder(item: ReminderItem): reminderAgent.ReminderRequestAlarm {
+  private initReminder(item: ReminderItemBean): reminderAgent.ReminderRequestAlarm {
     return {
       reminderType: item.remindType,
       hour: item.hour,

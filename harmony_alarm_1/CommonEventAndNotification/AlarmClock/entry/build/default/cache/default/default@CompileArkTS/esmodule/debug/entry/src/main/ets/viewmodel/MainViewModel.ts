@@ -1,6 +1,6 @@
-import { MainConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/MainConstant";
+import { MainConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import ReminderService from "@bundle:com.huawei.alarmclock/entry/ets/model/ReminderService";
-import { ALARM_KEY, CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/CommonConstants";
+import { ALARM_KEY, CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import type AlarmItem from '../common/bean/AlarmItemBean';
 import DataTypeUtils from "@bundle:com.huawei.alarmclock/entry/ets/common/utils/DataTypeUtils";
 /**
@@ -10,8 +10,6 @@ export default class MainViewModel {
     private static instant: MainViewModel;
     private reminderService: ReminderService;
     private alarms: Array<AlarmItem>;
-    private drawInterval: number = CommonConstants.DEFAULT_NUMBER_NEGATIVE;
-    private showClock: boolean = true;
     private constructor() {
         this.alarms = new Array();
         this.reminderService = new ReminderService();

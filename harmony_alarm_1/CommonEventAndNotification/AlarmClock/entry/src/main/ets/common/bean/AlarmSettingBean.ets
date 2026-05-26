@@ -13,7 +13,30 @@
  * limitations under the License.
  */
 
-import { AlarmSettingType } from '../constants/AlarmSettingType';
+/**
+ * Alarm setting type enum description.
+ */
+export enum AlarmSettingType {
+  /**
+   * Alarm setting type repeat.
+   */
+  REPEAT,
+
+  /**
+  * Alarm setting type name.
+  */
+  ALARM_NAME,
+
+  /**
+  * Alarm setting type ring duration.
+  */
+  RING_DURATION,
+
+  /**
+  * Alarm setting type interval.
+  */
+  INTERVAL
+}
 
 /**
  * Alarm setting bean information.

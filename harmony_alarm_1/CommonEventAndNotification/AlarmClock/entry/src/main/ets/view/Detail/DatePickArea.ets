@@ -13,8 +13,7 @@
  * limitations under the License.
  */
 
-import { DetailConstant, DayDataItem } from '../../common/constants/DetailConstant';
-import { CommonConstants } from '../../common/constants/CommonConstants';
+import { DetailConstant, DayDataItem, CommonConstants } from '../../common/constants/Constants';
 import DimensionUtil from '../../common/utils/DimensionUtil';
 
 @Component

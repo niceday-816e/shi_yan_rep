@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-import { DetailConstant } from '../common/constants/DetailConstant';
-import { ALARM_KEY, CommonConstants } from '../common/constants/CommonConstants';
+import { DetailConstant } from '../common/constants/Constants';
+import { ALARM_KEY, CommonConstants } from '../common/constants/Constants';
 import AlarmItem from '../common/bean/AlarmItemBean';
 import ReminderService from '../model/ReminderService';
 import DataTypeUtils from '../common/utils/DataTypeUtils';

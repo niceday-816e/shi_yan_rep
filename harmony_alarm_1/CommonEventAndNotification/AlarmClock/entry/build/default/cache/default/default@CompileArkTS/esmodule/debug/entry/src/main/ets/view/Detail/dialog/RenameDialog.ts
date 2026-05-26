@@ -6,8 +6,7 @@ interface RenameDialog_Params {
     name?: string;
     controller?: CustomDialogController;
 }
-import { CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/CommonConstants";
-import { DetailConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/DetailConstant";
+import { CommonConstants, DetailConstant } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import type AlarmItem from '../../../common/bean/AlarmItemBean';
 import CommonDialog from "@bundle:com.huawei.alarmclock/entry/ets/view/Detail/dialog/CommonDialog";
 import DimensionUtil from "@bundle:com.huawei.alarmclock/entry/ets/common/utils/DimensionUtil";
@@ -70,19 +69,19 @@ export default class RenameDialog extends ViewPU {
                             this.observeComponentCreation2((elmtId, isInitialRender) => {
                                 TextArea.create({ text: this.alarmItem.name });
                                 TextArea.width(CommonConstants.FULL_LENGTH);
-                                TextArea.margin({ bottom: DimensionUtil.getVp({ "id": 16777280, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }) });
+                                TextArea.margin({ bottom: DimensionUtil.getVp({ "id": 16777278, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }) });
                                 TextArea.onChange((value: string) => {
                                     this.name = value;
                                 });
                             }, TextArea);
                             this.observeComponentCreation2((elmtId, isInitialRender) => {
                                 Divider.create();
-                                Divider.opacity({ "id": 16777271, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                Divider.color({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                Divider.opacity({ "id": 16777269, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                Divider.color({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
                                 Divider.lineCap(LineCapStyle.Round);
                             }, Divider);
                         }
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/Detail/dialog/RenameDialog.ets", line: 30, col: 7 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/Detail/dialog/RenameDialog.ets", line: 29, col: 7 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -95,15 +94,15 @@ export default class RenameDialog extends ViewPU {
                                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                                     TextArea.create({ text: this.alarmItem.name });
                                     TextArea.width(CommonConstants.FULL_LENGTH);
-                                    TextArea.margin({ bottom: DimensionUtil.getVp({ "id": 16777280, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }) });
+                                    TextArea.margin({ bottom: DimensionUtil.getVp({ "id": 16777278, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }) });
                                     TextArea.onChange((value: string) => {
                                         this.name = value;
                                     });
                                 }, TextArea);
                                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                                     Divider.create();
-                                    Divider.opacity({ "id": 16777271, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                    Divider.color({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                    Divider.opacity({ "id": 16777269, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                                    Divider.color({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
                                     Divider.lineCap(LineCapStyle.Round);
                                 }, Divider);
                             }

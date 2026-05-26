@@ -13,8 +13,7 @@
  * limitations under the License.
  */
 
-import { CommonConstants } from '../../../common/constants/CommonConstants';
-import { DetailConstant } from '../../../common/constants/DetailConstant';
+import { CommonConstants, DetailConstant } from '../../../common/constants/Constants';
 import AlarmItem from '../../../common/bean/AlarmItemBean';
 import DetailModel from '../../../viewmodel/DetailViewModel';
 import CommonDialog from './CommonDialog';

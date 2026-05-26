@@ -13,9 +13,8 @@
  * limitations under the License.
  */
 
-import { CommonConstants } from '../../common/constants/CommonConstants';
+import { CommonConstants, MainConstant } from '../../common/constants/Constants';
 import MainModel from '../../viewmodel/MainViewModel';
-import { MainConstant } from '../../common/constants/MainConstant';
 import DimensionUtil from '../../common/utils/DimensionUtil';
 
 @Component

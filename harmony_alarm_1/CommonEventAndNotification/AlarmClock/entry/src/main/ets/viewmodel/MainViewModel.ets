@@ -13,9 +13,9 @@
  * limitations under the License.
  */
 
-import { MainConstant } from '../common/constants/MainConstant';
+import { MainConstant } from '../common/constants/Constants';
 import ReminderService from '../model/ReminderService';
-import { ALARM_KEY, CommonConstants } from '../common/constants/CommonConstants';
+import { ALARM_KEY, CommonConstants } from '../common/constants/Constants';
 import AlarmItem from '../common/bean/AlarmItemBean';
 import DataTypeUtils from '../common/utils/DataTypeUtils';
 
@@ -26,8 +26,6 @@ export default class MainViewModel {
   private static instant: MainViewModel;
   private reminderService: ReminderService;
   private alarms: Array<AlarmItem>;
-  private drawInterval: number = CommonConstants.DEFAULT_NUMBER_NEGATIVE;
-  private showClock: boolean = true;
 
   private constructor() {
     this.alarms = new Array();

@@ -14,10 +14,69 @@
  */
 
 import router from '@ohos.router';
-import { CommonConstants } from '../../common/constants/CommonConstants';
+import MainModel from './../../viewmodel/MainViewModel';
+import { CommonConstants } from '../../common/constants/Constants';
 import AlarmItem from '../../common/bean/AlarmItemBean';
-import AlarmListItem from '../Main/AlarmListItem';
 import DimensionUtil from '../../common/utils/DimensionUtil';
+
+interface MarginOptions {
+  left?: number;
+  top?: number;
+}
+
+@Extend(Text) function CommonTextAttr(fontSize: number, fontWeight: number, margin?: MarginOptions, opacity?: Resource) {
+  .fontColor($r('app.color.grey_divider'))
+  .fontSize(fontSize)
+  .fontWeight(fontWeight)
+  .margin(margin)
+  .opacity(opacity)
+}
+
+@Component
+struct AlarmListItem {
+  private mainModel: MainModel = MainModel.getInstant();
+  private alarmItem: AlarmItem = new AlarmItem();
+
+  build(): void {
+    Row() {
+      Column() {
+        Row() {
+          Text(this.mainModel.getNoonContent(this.alarmItem.hour))
+            .CommonTextAttr(DimensionUtil.getFp($r('app.float.alarms_item_noon_font_size')),
+              FontWeight.Regular)
+          Text(this.mainModel.getTaskTimeContent(this.alarmItem.hour, this.alarmItem.minute))
+            .CommonTextAttr(DimensionUtil.getFp($r('app.float.alarms_item_time_font_size')),
+              FontWeight.Regular,
+              { left: DimensionUtil.getVp($r('app.float.alarms_item_time_margin_left')) } as MarginOptions)
+        }
+
+        Text(this.mainModel.getDescContent(this.alarmItem))
+          .CommonTextAttr(DimensionUtil.getFp($r('app.float.alarms_item_dec_font_size')),
+            FontWeight.Normal,
+            { top: DimensionUtil.getVp($r('app.float.alarms_item_dec_margin_top')) } as MarginOptions,
+          $r('app.float.alarms_item_desc_text_opacity'))
+      }
+      .width(CommonConstants.FULL_LENGTH)
+      .alignItems(HorizontalAlign.Start)
+      .layoutWeight(CommonConstants.DEFAULT_LAYOUT_WEIGHT)
+
+      Toggle({ type: ToggleType.Switch, isOn: this.alarmItem.isOpen })
+        .onChange((isOn: boolean) => {
+          this.mainModel.openAlarm(this.alarmItem.id, isOn);
+        })
+        .width(DimensionUtil.getVp($r('app.float.alarms_item_toggle_width')))
+        .height(DimensionUtil.getVp($r('app.float.alarms_item_toggle_height')))
+    }
+    .padding({
+      left: DimensionUtil.getVp($r('app.float.alarm_list_content_distance')),
+      right: DimensionUtil.getVp($r('app.float.alarm_list_content_distance'))
+    })
+    .width(CommonConstants.FULL_LENGTH)
+    .height(DimensionUtil.getVp($r('app.float.alarms_item_height')))
+    .backgroundColor(Color.White)
+    .borderRadius(DimensionUtil.getVp($r('app.float.alarms_item_radius')))
+  }
+}
 
 @Component
 export default struct AlarmList {

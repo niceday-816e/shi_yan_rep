@@ -1,7 +1,17 @@
 import preferences from "@ohos:data.preferences";
 import type common from "@ohos:app.ability.common";
-import { PREFERENCE_ID } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/CommonConstants";
-import type PreferencesListener from './PreferencesListener';
+import { PREFERENCE_ID } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
+/**
+ * Preferences listener interface.
+ */
+interface PreferencesListener {
+    /**
+     * Preferences on data changed listener.
+     *
+     * @param key string
+     */
+    onDataChanged(key: string): void;
+}
 /**
  * Based on lightweight databases preferences handler.
  */
@@ -62,26 +72,6 @@ export default class PreferencesHandler {
             data = await this.preferences.get(key, (defValue ?? this.defaultValue) as preferences.ValueType);
         }
         return data as Object;
-    }
-    /**
-     * Clear data in PreferencesHandler.
-     */
-    public async clear(): Promise<void> {
-        if (this.preferences != null) {
-            await this.preferences.clear();
-        }
-    }
-    /**
-     * Get all data in PreferencesHandler.
-     *
-     * @return data
-     */
-    public async getAll(): Promise<Object> {
-        if (this.preferences != null) {
-            return this.preferences.getAll();
-        }
-        let emptyRecord: Record<string, preferences.ValueType> = {};
-        return emptyRecord;
     }
     /**
      * Add preferences listener in PreferencesHandler.

@@ -1,1 +1,1 @@
-{"basePath":"E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\.hvigor\\dependencyMap\\dependencyMap.json5","rootDependency":"./oh-package.json5","dependencyMap":{"entry":"./entry/oh-package.json5"},"modules":[{"name":"entry","srcPath":"..\\..\\..\\entry"}]}
+{"basePath":"E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\.hvigor\\dependencyMap\\dependencyMap.json5","rootDependency":"./oh-package.json5","dependencyMap":{"entry":"./entry/oh-package.json5"},"modules":[{"name":"entry","srcPath":"..\\..\\..\\entry"}]}
