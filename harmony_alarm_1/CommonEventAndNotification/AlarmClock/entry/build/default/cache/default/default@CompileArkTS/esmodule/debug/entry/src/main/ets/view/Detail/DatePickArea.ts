@@ -45,7 +45,8 @@ export default class DatePickArea extends ViewPU {
                     TextPicker.create({ range: item.data, selected: item.delSelect });
                     TextPicker.layoutWeight(CommonConstants.DEFAULT_LAYOUT_WEIGHT);
                     TextPicker.backgroundColor({ "id": 16777235, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                    TextPicker.onChange((value: string | string[], index: number | number[]) => {
+                    TextPicker.canLoop(false);
+                    TextPicker.onChange((_value: string | string[], index: number | number[]) => {
                         item.delSelect = index as number;
                     });
                 }, TextPicker);
