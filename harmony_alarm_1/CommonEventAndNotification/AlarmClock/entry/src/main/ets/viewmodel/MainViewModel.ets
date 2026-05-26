@@ -116,10 +116,15 @@ export default class MainViewModel {
    * @return content string
    */
   public getDescContent(alarmItem: AlarmItem): string{
+    let ringDates: Array<number> = alarmItem.ringDates || [];
     return (alarmItem.name + CommonConstants.DEFAULT_STRING_COMMA
     + (alarmItem.isRepeat
       ? this.getAlarmRepeatDayContent(alarmItem.repeatDays)
-      : CommonConstants.DEFAULT_STRING_NO_REPEAT));
+      : CommonConstants.DEFAULT_STRING_NO_REPEAT)
+    + CommonConstants.DEFAULT_STRING_COMMA
+    + (ringDates.length > 0
+      ? this.getAlarmRepeatDayContent(ringDates)
+      : '响铃日期:未选择'));
   }
 
   /**

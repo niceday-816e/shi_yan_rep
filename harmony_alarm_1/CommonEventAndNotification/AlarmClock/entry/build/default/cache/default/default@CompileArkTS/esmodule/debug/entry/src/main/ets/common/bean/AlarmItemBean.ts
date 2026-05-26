@@ -47,4 +47,8 @@ export default class AlarmItemBean extends ReminderItemBean {
      * Custom alarm notification id.
      */
     notificationId: number = 0;
+    /**
+     * Custom alarm ring dates (1=Mon..7=Sun).
+     */
+    ringDates: Array<number> = [];
 }

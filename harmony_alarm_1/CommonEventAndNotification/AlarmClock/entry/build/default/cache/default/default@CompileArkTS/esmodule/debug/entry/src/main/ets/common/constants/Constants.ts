@@ -193,6 +193,7 @@ interface DetailConstantType {
     DEFAULT_STRING_INTERVAL: string;
     DEFAULT_STRING_DURATION: string;
     DEFAULT_STRING_TIMES: string;
+    DEFAULT_STRING_RING_DATE: string;
 }
 /**
  * Detail page constant description.
@@ -251,6 +252,10 @@ export const DetailConstant: DetailConstantType = {
      * default string times.
      */
     DEFAULT_STRING_TIMES: '次',
+    /**
+     * default string ring date.
+     */
+    DEFAULT_STRING_RING_DATE: '响铃日期',
 };
 // ======================== Main constants ========================
 interface MainConstantType {

@@ -7,6 +7,7 @@ interface SettingItem_Params {
     reNameDialogController?: CustomDialogController;
     durationDialogController?: CustomDialogController;
     intervalDialogController?: CustomDialogController;
+    ringDateDialogController?: CustomDialogController;
 }
 import { CommonConstants } from "@bundle:com.huawei.alarmclock/entry/ets/common/constants/Constants";
 import { AlarmSettingType } from "@bundle:com.huawei.alarmclock/entry/ets/common/bean/AlarmSettingBean";
@@ -16,6 +17,7 @@ import IntervalDialog from "@bundle:com.huawei.alarmclock/entry/ets/view/Detail/
 import DurationDialog from "@bundle:com.huawei.alarmclock/entry/ets/view/Detail/dialog/DurationDialog";
 import RenameDialog from "@bundle:com.huawei.alarmclock/entry/ets/view/Detail/dialog/RenameDialog";
 import RepeatDialog from "@bundle:com.huawei.alarmclock/entry/ets/view/Detail/dialog/RepeatDialog";
+import RingDateDialog from "@bundle:com.huawei.alarmclock/entry/ets/view/Detail/dialog/RingDateDialog";
 export default class SettingItem extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
@@ -25,7 +27,7 @@ export default class SettingItem extends ViewPU {
         this.__settingInfo = new SynchedPropertyObjectTwoWayPU(params.settingInfo, this, "settingInfo");
         this.repeatDialogController = new CustomDialogController({
             builder: () => {
-                let jsDialog = new RepeatDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 28, col: 14 });
+                let jsDialog = new RepeatDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 29, col: 14 });
                 jsDialog.setController(this.repeatDialogController);
                 ViewPU.create(jsDialog);
                 let paramsLambda = () => {
@@ -37,7 +39,7 @@ export default class SettingItem extends ViewPU {
         }, this);
         this.reNameDialogController = new CustomDialogController({
             builder: () => {
-                let jsDialog = new RenameDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 32, col: 14 });
+                let jsDialog = new RenameDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 33, col: 14 });
                 jsDialog.setController(this.reNameDialogController);
                 ViewPU.create(jsDialog);
                 let paramsLambda = () => {
@@ -49,7 +51,7 @@ export default class SettingItem extends ViewPU {
         }, this);
         this.durationDialogController = new CustomDialogController({
             builder: () => {
-                let jsDialog = new DurationDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 36, col: 14 });
+                let jsDialog = new DurationDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 37, col: 14 });
                 jsDialog.setController(this.durationDialogController);
                 ViewPU.create(jsDialog);
                 let paramsLambda = () => {
@@ -61,8 +63,20 @@ export default class SettingItem extends ViewPU {
         }, this);
         this.intervalDialogController = new CustomDialogController({
             builder: () => {
-                let jsDialog = new IntervalDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 40, col: 14 });
+                let jsDialog = new IntervalDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 41, col: 14 });
                 jsDialog.setController(this.intervalDialogController);
+                ViewPU.create(jsDialog);
+                let paramsLambda = () => {
+                    return {};
+                };
+                jsDialog.paramsGenerator_ = paramsLambda;
+            },
+            autoCancel: true
+        }, this);
+        this.ringDateDialogController = new CustomDialogController({
+            builder: () => {
+                let jsDialog = new RingDateDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 45, col: 14 });
+                jsDialog.setController(this.ringDateDialogController);
                 ViewPU.create(jsDialog);
                 let paramsLambda = () => {
                     return {};
@@ -87,6 +101,9 @@ export default class SettingItem extends ViewPU {
         if (params.intervalDialogController !== undefined) {
             this.intervalDialogController = params.intervalDialogController;
         }
+        if (params.ringDateDialogController !== undefined) {
+            this.ringDateDialogController = params.ringDateDialogController;
+        }
     }
     updateStateVars(params: SettingItem_Params) {
     }
@@ -109,6 +126,7 @@ export default class SettingItem extends ViewPU {
     private reNameDialogController: CustomDialogController;
     private durationDialogController: CustomDialogController;
     private intervalDialogController: CustomDialogController;
+    private ringDateDialogController: CustomDialogController;
     private showSettingDialog(sType: AlarmSettingType): void {
         switch (sType) {
             case AlarmSettingType.REPEAT:
@@ -122,6 +140,9 @@ export default class SettingItem extends ViewPU {
                 break;
             case AlarmSettingType.INTERVAL:
                 this.intervalDialogController.open();
+                break;
+            case AlarmSettingType.RING_DATE:
+                this.ringDateDialogController.open();
                 break;
             default:
                 break;

@@ -20,6 +20,7 @@ import IntervalDialog from './dialog/IntervalDialog';
 import DurationDialog from './dialog/DurationDialog';
 import RenameDialog from './dialog/RenameDialog';
 import RepeatDialog from './dialog/RepeatDialog';
+import RingDateDialog from './dialog/RingDateDialog';
 
 @Component
 export default struct SettingItem {
@@ -40,6 +41,10 @@ export default struct SettingItem {
     builder: IntervalDialog(),
     autoCancel: true
   });
+  ringDateDialogController: CustomDialogController = new CustomDialogController({
+    builder: RingDateDialog(),
+    autoCancel: true
+  });
 
   private showSettingDialog(sType: AlarmSettingType): void {
     switch (sType) {
@@ -54,6 +59,9 @@ export default struct SettingItem {
         break;
       case AlarmSettingType.INTERVAL:
         this.intervalDialogController.open();
+        break;
+      case AlarmSettingType.RING_DATE:
+        this.ringDateDialogController.open();
         break;
       default:
         break

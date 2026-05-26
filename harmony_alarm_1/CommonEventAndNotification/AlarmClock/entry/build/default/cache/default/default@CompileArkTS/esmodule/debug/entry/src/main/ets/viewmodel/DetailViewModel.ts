@@ -15,6 +15,22 @@ export default class DetailViewModel {
         this.alarms = new Array();
     }
     /**
+     * Get ring date content string.
+     *
+     * @param ringDates Array<number>
+     * @return content string
+     */
+    public getRingDateContent(ringDates: Array<number>): string {
+        if (!ringDates || ringDates.length === 0) {
+            return '未选择';
+        }
+        let content = '';
+        for (let i = 0; i < ringDates.length; i++) {
+            content += this.transAlarmRepeatDayContent(ringDates[i]) + CommonConstants.DEFAULT_STRING_SPACE;
+        }
+        return content.trim();
+    }
+    /**
      * Get DetailViewModel instance.
      *
      * @return instance

@@ -45,6 +45,10 @@ struct DetailIndex {
     } else {
       this.viewModel.setAlarmDefaultTime();
     }
+    // 兼容旧数据：确保ringDates有默认值
+    if (!this.alarmItem.ringDates) {
+      this.alarmItem.ringDates = [];
+    }
     this.initData();
   }
 
@@ -59,6 +63,8 @@ struct DetailIndex {
                                 : CommonConstants.DEFAULT_STRING_NO_REPEAT, AlarmSettingType.REPEAT)
     ];
     this.alarmSettingInfoArr = [
+      new AlarmSettingBean(DetailConstant.DEFAULT_STRING_RING_DATE,
+        this.viewModel.getRingDateContent(this.alarmItem.ringDates), AlarmSettingType.RING_DATE),
       new AlarmSettingBean(DetailConstant.DEFAULT_STRING_ALARM_NAME, this.alarmItem.name, AlarmSettingType.ALARM_NAME),
       new AlarmSettingBean(DetailConstant.DEFAULT_STRING_DURATION,
         this.alarmItem.duration + DetailConstant.DEFAULT_STRING_MINUTE, AlarmSettingType.RING_DURATION),

@@ -31,7 +31,11 @@ export enum AlarmSettingType {
     /**
     * Alarm setting type interval.
     */
-    INTERVAL = 3
+    INTERVAL = 3,
+    /**
+    * Alarm setting type ring date.
+    */
+    RING_DATE = 4
 }
 /**
  * Alarm setting bean information.

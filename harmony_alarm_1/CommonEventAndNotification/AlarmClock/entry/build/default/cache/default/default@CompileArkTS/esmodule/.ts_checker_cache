@@ -1558,7 +1558,7 @@
       "error": false
     },
     "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets": {
-      "mtimeMs": 1779785120315.3633,
+      "mtimeMs": 1779788865976.9429,
       "children": [],
       "parent": [
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\MainIndex.ets",
@@ -1576,12 +1576,13 @@
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\database\\PreferencesHandler.ets",
-        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RingDateDialog.ets"
       ],
       "error": false
     },
     "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets": {
-      "mtimeMs": 1779785072126.429,
+      "mtimeMs": 1779788859149.1858,
       "children": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.reminderAgentManager.d.ts"
       ],
@@ -1595,12 +1596,13 @@
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RingDateDialog.ets"
       ],
       "error": false
     },
     "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets": {
-      "mtimeMs": 1779785198756.4678,
+      "mtimeMs": 1779789088556.3662,
       "children": [
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\model\\ReminderService.ets",
@@ -1662,7 +1664,8 @@
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RingDateDialog.ets"
       ],
       "error": true,
       "errorCodes": [
@@ -1914,12 +1917,13 @@
       "parent": [
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\MainViewModel.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
-        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RingDateDialog.ets"
       ],
       "error": false
     },
     "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets": {
-      "mtimeMs": 1779785089923.8198,
+      "mtimeMs": 1779788859223.705,
       "children": [],
       "parent": [
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
@@ -1943,7 +1947,7 @@
       ]
     },
     "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets": {
-      "mtimeMs": 1779785198788.471,
+      "mtimeMs": 1779789107506.299,
       "children": [
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
@@ -1953,7 +1957,8 @@
       ],
       "parent": [
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets",
-        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RingDateDialog.ets"
       ],
       "error": true,
       "errorCodes": [
@@ -1972,7 +1977,7 @@
       "error": false
     },
     "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets": {
-      "mtimeMs": 1779785508357.3845,
+      "mtimeMs": 1779788885200.5725,
       "children": [
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmSettingBean.ets",
@@ -1980,7 +1985,8 @@
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RingDateDialog.ets"
       ],
       "parent": [
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets"
@@ -1988,7 +1994,7 @@
       "error": false
     },
     "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\pages\\DetailIndex.ets": {
-      "mtimeMs": 1779785498624.4426,
+      "mtimeMs": 1779789117021.9443,
       "children": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
@@ -2070,7 +2076,8 @@
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\IntervalDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\DurationDialog.ets",
         "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RenameDialog.ets",
-        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets"
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RepeatDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RingDateDialog.ets"
       ],
       "error": false
     },
@@ -2537,6 +2544,21 @@
       ],
       "parent": [
         "E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts"
+      ],
+      "error": false
+    },
+    "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\RingDateDialog.ets": {
+      "mtimeMs": 1779789101042.954,
+      "children": [
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\constants\\Constants.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\bean\\AlarmItemBean.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\viewmodel\\DetailViewModel.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\dialog\\CommonDialog.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DataTypeUtils.ets",
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\common\\utils\\DimensionUtil.ets"
+      ],
+      "parent": [
+        "E:\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets\\view\\Detail\\SettingItem.ets"
       ],
       "error": false
     }

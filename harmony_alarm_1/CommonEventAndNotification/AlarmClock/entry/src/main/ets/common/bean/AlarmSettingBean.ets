@@ -35,7 +35,12 @@ export enum AlarmSettingType {
   /**
   * Alarm setting type interval.
   */
-  INTERVAL
+  INTERVAL,
+
+  /**
+  * Alarm setting type ring date.
+  */
+  RING_DATE
 }
 
 /**

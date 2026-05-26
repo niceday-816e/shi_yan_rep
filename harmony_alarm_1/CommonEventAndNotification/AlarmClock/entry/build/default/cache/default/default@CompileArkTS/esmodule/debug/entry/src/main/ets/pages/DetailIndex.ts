@@ -101,6 +101,10 @@ class DetailIndex extends ViewPU {
         else {
             this.viewModel.setAlarmDefaultTime();
         }
+        // 兼容旧数据：确保ringDates有默认值
+        if (!this.alarmItem.ringDates) {
+            this.alarmItem.ringDates = [];
+        }
         this.initData();
     }
     onAlarmItemChange(): void {
@@ -112,6 +116,7 @@ class DetailIndex extends ViewPU {
                 : CommonConstants.DEFAULT_STRING_NO_REPEAT, AlarmSettingType.REPEAT)
         ];
         this.alarmSettingInfoArr = [
+            new AlarmSettingBean(DetailConstant.DEFAULT_STRING_RING_DATE, this.viewModel.getRingDateContent(this.alarmItem.ringDates), AlarmSettingType.RING_DATE),
             new AlarmSettingBean(DetailConstant.DEFAULT_STRING_ALARM_NAME, this.alarmItem.name, AlarmSettingType.ALARM_NAME),
             new AlarmSettingBean(DetailConstant.DEFAULT_STRING_DURATION, this.alarmItem.duration + DetailConstant.DEFAULT_STRING_MINUTE, AlarmSettingType.RING_DURATION),
             new AlarmSettingBean(DetailConstant.DEFAULT_STRING_INTERVAL, this.alarmItem.intervalMinute
@@ -149,7 +154,7 @@ class DetailIndex extends ViewPU {
                             }, Image);
                             Button.pop();
                         }
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 73, col: 7 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 79, col: 7 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -184,7 +189,7 @@ class DetailIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new DatePickArea(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 89, col: 7 });
+                    let componentCall = new DatePickArea(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 95, col: 7 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {};
@@ -201,7 +206,7 @@ class DetailIndex extends ViewPU {
                 if (isInitialRender) {
                     let componentCall = new SettingItem(this, {
                         settingInfo: this.__repeatSettingArr
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 91, col: 7 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 97, col: 7 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -220,7 +225,7 @@ class DetailIndex extends ViewPU {
                 if (isInitialRender) {
                     let componentCall = new SettingItem(this, {
                         settingInfo: this.__alarmSettingInfoArr
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 94, col: 7 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 100, col: 7 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
