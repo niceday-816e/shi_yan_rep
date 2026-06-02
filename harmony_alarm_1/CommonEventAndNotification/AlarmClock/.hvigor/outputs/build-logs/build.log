@@ -4090,3 +4090,1334 @@ Require stack:
 [2026-06-02T17:47:55.749] [DEBUG] debug-file - session manager: send message to worker process.
 [2026-06-02T17:47:55.750] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
 [2026-06-02T17:47:55.750] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-06-02T18:52:36.557] [DEBUG] debug-file - env: nodejsVersion=v18.20.1
+[2026-06-02T18:52:36.628] [DEBUG] debug-file - env: daemon=true
+[2026-06-02T18:52:36.557] [DEBUG] debug-file - env: hvigor-config.json5 content = { modelVersion: '6.0.2', dependencies: {} }
+[2026-06-02T18:52:37.162] [DEBUG] debug-file - java daemon tryConnect success
+[2026-06-02T18:52:37.179] [DEBUG] debug-file - session manager: set active socket. socketId=ye-sr2zkkukSh7jeAAAB
+[2026-06-02T18:52:37.679] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-06-02T18:52:37.680] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2026-06-02T18:52:37.681] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
+[2026-06-02T18:52:37.681] [DEBUG] debug-file - Create  resident worker with id: 0.
+[2026-06-02T18:52:37.683] [DEBUG] debug-file - Create  resident worker with id: 1.
+[2026-06-02T18:52:37.685] [DEBUG] debug-file - Workers' log level updated to INFO
+[2026-06-02T18:52:37.691] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}
+[2026-06-02T18:52:37.693] [DEBUG] debug-file - Cache service initialization finished in 3 ms 
+[2026-06-02T18:52:37.695] [DEBUG] debug-file - hvigorfile, resolving E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigorfile.ts
+[2026-06-02T18:52:38.971] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2026-06-02T18:52:38.971] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2026-06-02T18:52:38.971] [DEBUG] debug-file - Starting plugin build process
+[2026-06-02T18:52:38.971] [DEBUG] debug-file - App plugin prepare start...
+[2026-06-02T18:52:38.971] [DEBUG] debug-file - App plugin prepare end...
+[2026-06-02T18:52:38.971] [DEBUG] debug-file - App plugin creating...
+[2026-06-02T18:52:39.073] [DEBUG] debug-file - App plugin register hook start...
+[2026-06-02T18:52:39.073] [DEBUG] debug-file - App plugin register hook end...
+[2026-06-02T18:52:39.073] [DEBUG] debug-file - Plugin build process completed
+[2026-06-02T18:52:39.074] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2026-06-02T18:52:39.074] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2026-06-02T18:52:39.074] [DEBUG] debug-file - Product 'default' build option initialized
+[2026-06-02T18:52:39.074] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2026-06-02T18:52:39.075] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2026-06-02T18:52:39.076] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2026-06-02T18:52:39.077] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native,previewer
+[2026-06-02T18:52:39.079] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2026-06-02T18:52:39.080] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2026-06-02T18:52:39.099] [DEBUG] debug-file - Sdk init in 24 ms 
+[2026-06-02T18:52:39.103] [DEBUG] debug-file - Project task initialization takes 3 ms 
+[2026-06-02T18:52:39.103] [DEBUG] debug-file - hvigorfile, resolve finished E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigorfile.ts
+[2026-06-02T18:52:39.103] [DEBUG] debug-file - hvigorfile, resolving E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\hvigorfile.ts
+[2026-06-02T18:52:39.106] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2026-06-02T18:52:39.107] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2026-06-02T18:52:39.107] [DEBUG] debug-file - Starting plugin build process
+[2026-06-02T18:52:39.107] [DEBUG] debug-file - Hap plugin creating...
+[2026-06-02T18:52:39.107] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\hooks\cangjie-register.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\strategy\stage-init-strategy.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\builder\abstract-plugin-builder.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\builder\app-plugin-builder.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\factory\plugin-factory.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\index.js
+- E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigorfile.ts
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\internal\lifecycle\configuration.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\boot\index.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\cluster\worker-process-lifecycle.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\process\daemon-process-boot-script.js
+[2026-06-02T18:52:39.115] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-06-02T18:52:39.115] [DEBUG] debug-file - Target 'default' config initialized
+[2026-06-02T18:52:39.115] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-06-02T18:52:39.115] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-06-02T18:52:39.116] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2026-06-02T18:52:39.116] [DEBUG] debug-file - Target 'default' config initialized
+[2026-06-02T18:52:39.116] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-06-02T18:52:39.116] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-06-02T18:52:39.116] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-06-02T18:52:39.116] [DEBUG] debug-file - Target 'default' config initialized
+[2026-06-02T18:52:39.116] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-06-02T18:52:39.116] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-06-02T18:52:39.116] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-06-02T18:52:39.119] [DEBUG] debug-file - Module entry task initialization takes 3 ms 
+[2026-06-02T18:52:39.119] [DEBUG] debug-file - Hap plugin register hook start...
+[2026-06-02T18:52:39.119] [DEBUG] debug-file - Hap plugin register hook end...
+[2026-06-02T18:52:39.119] [DEBUG] debug-file - Plugin build process completed
+[2026-06-02T18:52:39.119] [DEBUG] debug-file - hvigorfile, resolve finished E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\hvigorfile.ts
+[2026-06-02T18:52:39.133] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 15 ms 
+[2026-06-02T18:52:39.134] [DEBUG] debug-file - project has submodules:entry
+[2026-06-02T18:52:39.135] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2026-06-02T18:52:39.138] [DEBUG] debug-file - load to the disk finished
+[2026-06-02T18:52:39.139] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-06-02T18:52:39.142] [DEBUG] debug-file - Module AlarmClock Collected Dependency: 
+[2026-06-02T18:52:39.142] [DEBUG] debug-file - Module AlarmClock's total dependency: 0
+[2026-06-02T18:52:39.143] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-06-02T18:52:39.144] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2026-06-02T18:52:39.144] [DEBUG] debug-file - Module entry's total dependency: 0
+[2026-06-02T18:52:39.148] [DEBUG] debug-file - Configuration phase cost:1 s 454 ms 
+[2026-06-02T18:52:39.149] [DEBUG] debug-file - Configuration task cost before running: 1 s 464 ms 
+[2026-06-02T18:52:39.149] [DEBUG] debug-file - Executing task :entry:init
+[2026-06-02T18:52:39.150] [DEBUG] debug-file - entry : init cost memory 0.01642608642578125
+[2026-06-02T18:52:39.150] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 464 ms 
+[2026-06-02T18:52:39.150] [INFO] debug-file - Finished :entry:init... after 1 ms 
+[2026-06-02T18:52:39.150] [DEBUG] debug-file - Executing task ::init
+[2026-06-02T18:52:39.150] [DEBUG] debug-file - AlarmClock : init cost memory 0.01378631591796875
+[2026-06-02T18:52:39.150] [DEBUG] debug-file - runTaskFromQueue task cost before running: 1 s 465 ms 
+[2026-06-02T18:52:39.150] [INFO] debug-file - Finished ::init... after 1 ms 
+[2026-06-02T18:52:39.161] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - Cleanup worker 0.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - Worker 0 has been cleaned up.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - Current idle worker size: 1.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - Current resident worker size: 2.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - Cleanup worker 1.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - Worker 1 has been cleaned up.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - Current idle worker size: 0.
+[2026-06-02T18:52:39.167] [DEBUG] debug-file - Current resident worker size: 2.
+[2026-06-02T18:52:39.168] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-06-02T18:52:39.170] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-06-02T18:52:39.170] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-06-02T18:52:39.171] [DEBUG] debug-file - worker[0] exits with exit code 1.
+[2026-06-02T18:52:39.171] [DEBUG] debug-file - worker[1] exits with exit code 1.
+[2026-06-02T18:52:46.194] [DEBUG] debug-file - session manager: set active socket. socketId=c0g2UZTJokPenM1DAAAD
+[2026-06-02T18:52:46.199] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-06-02T18:52:46.200] [DEBUG] debug-file - Workers' log level updated to INFO
+[2026-06-02T18:52:46.202] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}
+[2026-06-02T18:52:46.203] [DEBUG] debug-file - Cache service initialization finished in 2 ms 
+[2026-06-02T18:52:46.203] [DEBUG] debug-file - hvigorfile, resolving E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigorfile.ts
+[2026-06-02T18:52:46.206] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2026-06-02T18:52:46.206] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2026-06-02T18:52:46.207] [DEBUG] debug-file - Starting plugin build process
+[2026-06-02T18:52:46.207] [DEBUG] debug-file - App plugin prepare start...
+[2026-06-02T18:52:46.207] [DEBUG] debug-file - App plugin prepare end...
+[2026-06-02T18:52:46.207] [DEBUG] debug-file - App plugin creating...
+[2026-06-02T18:52:46.209] [DEBUG] debug-file - App plugin register hook start...
+[2026-06-02T18:52:46.209] [DEBUG] debug-file - App plugin register hook end...
+[2026-06-02T18:52:46.209] [DEBUG] debug-file - Plugin build process completed
+[2026-06-02T18:52:46.209] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2026-06-02T18:52:46.209] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2026-06-02T18:52:46.209] [DEBUG] debug-file - Product 'default' build option initialized
+[2026-06-02T18:52:46.210] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2026-06-02T18:52:46.210] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2026-06-02T18:52:46.210] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2026-06-02T18:52:46.212] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2026-06-02T18:52:46.226] [DEBUG] debug-file - Sdk init in 16 ms 
+[2026-06-02T18:52:46.228] [DEBUG] debug-file - Project task initialization takes 2 ms 
+[2026-06-02T18:52:46.228] [DEBUG] debug-file - hvigorfile, resolve finished E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigorfile.ts
+[2026-06-02T18:52:46.229] [DEBUG] debug-file - hvigorfile, resolving E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\hvigorfile.ts
+[2026-06-02T18:52:46.231] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2026-06-02T18:52:46.231] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2026-06-02T18:52:46.231] [DEBUG] debug-file - Starting plugin build process
+[2026-06-02T18:52:46.231] [DEBUG] debug-file - Hap plugin creating...
+[2026-06-02T18:52:46.232] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\hooks\cangjie-register.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\strategy\stage-init-strategy.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\builder\abstract-plugin-builder.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\builder\app-plugin-builder.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\factory\plugin-factory.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\index.js
+- E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigorfile.ts
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\internal\lifecycle\configuration.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\boot\index.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\cluster\worker-process-lifecycle.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\process\daemon-process-boot-script.js
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Target 'default' config initialized
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Target 'default' config initialized
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Target 'default' config initialized
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-06-02T18:52:46.233] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-06-02T18:52:46.234] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2026-06-02T18:52:46.234] [DEBUG] debug-file - Hap plugin register hook start...
+[2026-06-02T18:52:46.234] [DEBUG] debug-file - Hap plugin register hook end...
+[2026-06-02T18:52:46.234] [DEBUG] debug-file - Plugin build process completed
+[2026-06-02T18:52:46.234] [DEBUG] debug-file - hvigorfile, resolve finished E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\hvigorfile.ts
+[2026-06-02T18:52:46.249] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 15 ms 
+[2026-06-02T18:52:46.249] [DEBUG] debug-file - project has submodules:entry
+[2026-06-02T18:52:46.250] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2026-06-02T18:52:46.253] [DEBUG] debug-file - load to the disk finished
+[2026-06-02T18:52:46.253] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-06-02T18:52:46.255] [DEBUG] debug-file - Module AlarmClock Collected Dependency: 
+[2026-06-02T18:52:46.255] [DEBUG] debug-file - Module AlarmClock's total dependency: 0
+[2026-06-02T18:52:46.255] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-06-02T18:52:46.256] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2026-06-02T18:52:46.256] [DEBUG] debug-file - Module entry's total dependency: 0
+[2026-06-02T18:52:46.257] [DEBUG] debug-file - Configuration phase cost:54 ms 
+[2026-06-02T18:52:46.257] [DEBUG] debug-file - Configuration task cost before running: 57 ms 
+[2026-06-02T18:52:46.261] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2026-06-02T18:52:46.261] [WARN] debug-file - The project has not explicitly set the 'targetSdkVersion' version at build-profile.json5. It is recommended to configure it. Reference: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section45865492619
+[2026-06-02T18:52:46.262] [DEBUG] debug-file - Task 'entry:default@PreBuild' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.265] [DEBUG] debug-file - entry:default@PreBuild is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\app.json5' has been changed.
+[2026-06-02T18:52:46.265] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 2 ms .
+[2026-06-02T18:52:46.339] [DEBUG] debug-file - current product is not Atomic service.
+[2026-06-02T18:52:46.339] [DEBUG] debug-file - Use tool [win32: JAVA_HOME, CLASSPATH]
+ [
+  { JAVA_HOME: 'E:\\huawei_deveco-studio\\DevEco Studio\\jbr' },
+  { CLASSPATH: undefined }
+]
+[2026-06-02T18:52:46.339] [DEBUG] debug-file - Use tool [win32: NODE_HOME]
+ [
+  { NODE_HOME: 'E:\\huawei_deveco-studio\\DevEco Studio\\tools\\node' }
+]
+[2026-06-02T18:52:46.340] [DEBUG] debug-file - entry : default@PreBuild cost memory 7.608154296875
+[2026-06-02T18:52:46.340] [DEBUG] debug-file - runTaskFromQueue task cost before running: 140 ms 
+[2026-06-02T18:52:46.341] [INFO] debug-file - Finished :entry:default@PreBuild... after 80 ms 
+[2026-06-02T18:52:46.341] [DEBUG] debug-file - Executing task :entry:default@CreateModuleInfo
+[2026-06-02T18:52:46.342] [DEBUG] debug-file - Task 'entry:default@CreateModuleInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.342] [DEBUG] debug-file - entry : default@CreateModuleInfo cost memory 0.0428009033203125
+[2026-06-02T18:52:46.342] [DEBUG] debug-file - runTaskFromQueue task cost before running: 142 ms 
+[2026-06-02T18:52:46.342] [INFO] debug-file - Finished :entry:default@CreateModuleInfo... after 1 ms 
+[2026-06-02T18:52:46.343] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2026-06-02T18:52:46.343] [DEBUG] debug-file - Task 'entry:default@GenerateMetadata' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.343] [DEBUG] debug-file - entry:default@GenerateMetadata is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\module.json5' has been changed.
+[2026-06-02T18:52:46.343] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.344] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.08966827392578125
+[2026-06-02T18:52:46.344] [DEBUG] debug-file - runTaskFromQueue task cost before running: 144 ms 
+[2026-06-02T18:52:46.344] [INFO] debug-file - Finished :entry:default@GenerateMetadata... after 2 ms 
+[2026-06-02T18:52:46.345] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2026-06-02T18:52:46.345] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.014617919921875
+[2026-06-02T18:52:46.345] [DEBUG] debug-file - runTaskFromQueue task cost before running: 145 ms 
+[2026-06-02T18:52:46.345] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2026-06-02T18:52:46.346] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2026-06-02T18:52:46.346] [DEBUG] debug-file - Task 'entry:default@MergeProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.347] [DEBUG] debug-file - entry:default@MergeProfile is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\app.json5' has been changed.
+[2026-06-02T18:52:46.347] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.347] [DEBUG] debug-file - Change app api release type with 'Release'
+[2026-06-02T18:52:46.347] [DEBUG] debug-file - Change app compile API version with '6.0.2.130'
+[2026-06-02T18:52:46.347] [DEBUG] debug-file - Change app target API version with '60002022'
+[2026-06-02T18:52:46.347] [DEBUG] debug-file - Change app minimum API version with '60002022'
+[2026-06-02T18:52:46.347] [DEBUG] debug-file - Use cli appEnvironment
+[2026-06-02T18:52:46.350] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.485809326171875
+[2026-06-02T18:52:46.350] [DEBUG] debug-file - runTaskFromQueue task cost before running: 150 ms 
+[2026-06-02T18:52:46.350] [INFO] debug-file - Finished :entry:default@MergeProfile... after 4 ms 
+[2026-06-02T18:52:46.350] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2026-06-02T18:52:46.351] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.351] [DEBUG] debug-file - entry:default@CreateBuildProfile is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\app.json5' has been changed.
+[2026-06-02T18:52:46.351] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.352] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.09598541259765625
+[2026-06-02T18:52:46.352] [DEBUG] debug-file - runTaskFromQueue task cost before running: 152 ms 
+[2026-06-02T18:52:46.352] [INFO] debug-file - Finished :entry:default@CreateBuildProfile... after 2 ms 
+[2026-06-02T18:52:46.352] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2026-06-02T18:52:46.353] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.01476287841796875
+[2026-06-02T18:52:46.353] [DEBUG] debug-file - runTaskFromQueue task cost before running: 153 ms 
+[2026-06-02T18:52:46.353] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2026-06-02T18:52:46.353] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2026-06-02T18:52:46.358] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.358] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.2524566650390625
+[2026-06-02T18:52:46.358] [DEBUG] debug-file - runTaskFromQueue task cost before running: 158 ms 
+[2026-06-02T18:52:46.358] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 5 ms 
+[2026-06-02T18:52:46.360] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2026-06-02T18:52:46.360] [DEBUG] debug-file - entry:default@ProcessIntegratedHsp is not up-to-date, since the output file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build\cache\default\integrated_hsp\integratedHspCache.json' does not exist.
+[2026-06-02T18:52:46.360] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.360] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.05976104736328125
+[2026-06-02T18:52:46.361] [DEBUG] debug-file - runTaskFromQueue task cost before running: 161 ms 
+[2026-06-02T18:52:46.361] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 1 ms 
+[2026-06-02T18:52:46.361] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2026-06-02T18:52:46.361] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.015228271484375
+[2026-06-02T18:52:46.361] [DEBUG] debug-file - runTaskFromQueue task cost before running: 161 ms 
+[2026-06-02T18:52:46.361] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2026-06-02T18:52:46.363] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2026-06-02T18:52:46.364] [DEBUG] debug-file - entry:default@MakePackInfo is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\app.json5' has been changed.
+[2026-06-02T18:52:46.364] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.364] [DEBUG] debug-file - Module Pack Info:  {
+  summary: {
+    app: { bundleName: 'c***k', bundleType: 'app', version: [Object] },
+    modules: [ [Object] ]
+  },
+  packages: [
+    {
+      deviceType: [Array],
+      moduleType: 'entry',
+      deliveryWithInstall: true,
+      name: 'entry-default'
+    }
+  ]
+}
+[2026-06-02T18:52:46.365] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.13474273681640625
+[2026-06-02T18:52:46.365] [DEBUG] debug-file - runTaskFromQueue task cost before running: 165 ms 
+[2026-06-02T18:52:46.365] [INFO] debug-file - Finished :entry:default@MakePackInfo... after 3 ms 
+[2026-06-02T18:52:46.366] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2026-06-02T18:52:46.366] [DEBUG] debug-file - File: 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\syscap.json' from 'sysCapJsonPath' is not exists, just ignore.
+[2026-06-02T18:52:46.366] [DEBUG] debug-file - Task 'entry:default@SyscapTransform' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.373] [DEBUG] debug-file - entry:default@SyscapTransform is not up-to-date, since the output file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\syscap\default\rpcid.sc' does not exist.
+[2026-06-02T18:52:46.373] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform pre-execution cost: 7 ms .
+[2026-06-02T18:52:46.373] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.39080047607421875
+[2026-06-02T18:52:46.374] [DEBUG] debug-file - runTaskFromQueue task cost before running: 174 ms 
+[2026-06-02T18:52:46.374] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 8 ms 
+[2026-06-02T18:52:46.375] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2026-06-02T18:52:46.375] [DEBUG] debug-file - Task 'entry:default@ProcessProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.375] [DEBUG] debug-file - entry:default@ProcessProfile is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\merge_profile\default\module.json' has been changed.
+[2026-06-02T18:52:46.376] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.376] [DEBUG] debug-file - [
+  'E:\\huawei_deveco-studio\\DevEco Studio\\tools\\node\\node.exe',
+  'E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\bin\\ark\\ts2abc.js',
+  '--target-api-version',
+  '22'
+]
+[2026-06-02T18:52:46.505] [DEBUG] debug-file - 13.0.1.0
+[2026-06-02T18:52:46.506] [DEBUG] debug-file - No need to add fake ui ability because of not in preview process.
+[2026-06-02T18:52:46.506] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 2.0356826782226562
+[2026-06-02T18:52:46.506] [DEBUG] debug-file - runTaskFromQueue task cost before running: 306 ms 
+[2026-06-02T18:52:46.507] [INFO] debug-file - Finished :entry:default@ProcessProfile... after 132 ms 
+[2026-06-02T18:52:46.507] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2026-06-02T18:52:46.508] [DEBUG] debug-file - entry:default@ProcessRouterMap is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\oh-package.json5' has been changed.
+[2026-06-02T18:52:46.508] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.509] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.1104888916015625
+[2026-06-02T18:52:46.509] [DEBUG] debug-file - runTaskFromQueue task cost before running: 309 ms 
+[2026-06-02T18:52:46.509] [INFO] debug-file - Finished :entry:default@ProcessRouterMap... after 2 ms 
+[2026-06-02T18:52:46.510] [DEBUG] debug-file - Executing task :entry:default@ProcessShareConfig
+[2026-06-02T18:52:46.511] [DEBUG] debug-file - entry:default@ProcessShareConfig is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\oh-package.json5' has been changed.
+[2026-06-02T18:52:46.511] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.511] [DEBUG] debug-file - entry : default@ProcessShareConfig cost memory 0.09911346435546875
+[2026-06-02T18:52:46.511] [DEBUG] debug-file - runTaskFromQueue task cost before running: 311 ms 
+[2026-06-02T18:52:46.512] [INFO] debug-file - Finished :entry:default@ProcessShareConfig... after 2 ms 
+[2026-06-02T18:52:46.512] [DEBUG] debug-file - Executing task :entry:default@ProcessStartupConfig
+[2026-06-02T18:52:46.512] [DEBUG] debug-file - Task 'entry:default@ProcessStartupConfig' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.513] [DEBUG] debug-file - entry:default@ProcessStartupConfig is not up-to-date, since the output file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\startup\default\startup_config.json' does not exist.
+[2026-06-02T18:52:46.513] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.513] [DEBUG] debug-file - entry : default@ProcessStartupConfig cost memory 0.10022735595703125
+[2026-06-02T18:52:46.513] [DEBUG] debug-file - runTaskFromQueue task cost before running: 313 ms 
+[2026-06-02T18:52:46.513] [INFO] debug-file - Finished :entry:default@ProcessStartupConfig... after 1 ms 
+[2026-06-02T18:52:46.514] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2026-06-02T18:52:46.514] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.0220184326171875
+[2026-06-02T18:52:46.514] [DEBUG] debug-file - runTaskFromQueue task cost before running: 314 ms 
+[2026-06-02T18:52:46.516] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 1 ms 
+[2026-06-02T18:52:46.517] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2026-06-02T18:52:46.518] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2026-06-02T18:52:46.518] [DEBUG] debug-file - Task 'entry:default@ProcessResource' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.519] [DEBUG] debug-file - entry:default@ProcessResource is not up-to-date, since the output file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\resConfig.json' has been changed.
+[2026-06-02T18:52:46.519] [DEBUG] debug-file - Incremental task entry:default@ProcessResource pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.520] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.1768951416015625
+[2026-06-02T18:52:46.521] [DEBUG] debug-file - runTaskFromQueue task cost before running: 321 ms 
+[2026-06-02T18:52:46.521] [INFO] debug-file - Finished :entry:default@ProcessResource... after 4 ms 
+[2026-06-02T18:52:46.523] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2026-06-02T18:52:46.523] [DEBUG] debug-file - Task 'entry:default@GenerateLoaderJson' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.527] [DEBUG] debug-file - entry:default@GenerateLoaderJson is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\router_map\default\temp-router-map.json' has been changed.
+[2026-06-02T18:52:46.527] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 2 ms .
+[2026-06-02T18:52:46.529] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.8431549072265625
+[2026-06-02T18:52:46.529] [DEBUG] debug-file - runTaskFromQueue task cost before running: 329 ms 
+[2026-06-02T18:52:46.531] [INFO] debug-file - Finished :entry:default@GenerateLoaderJson... after 7 ms 
+[2026-06-02T18:52:46.531] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2026-06-02T18:52:46.532] [DEBUG] debug-file - entry:default@ProcessLibs is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build-profile.json5' has been changed.
+[2026-06-02T18:52:46.532] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.535] [DEBUG] debug-file - Worker dispatch failed, running processLibs on main thread.
+[2026-06-02T18:52:46.536] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 0.35518646240234375
+[2026-06-02T18:52:46.536] [DEBUG] debug-file - runTaskFromQueue task cost before running: 336 ms 
+[2026-06-02T18:52:46.536] [INFO] debug-file - Finished :entry:default@ProcessLibs... after 5 ms 
+[2026-06-02T18:52:46.537] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2026-06-02T18:52:46.537] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2026-06-02T18:52:46.539] [DEBUG] debug-file - entry:default@CompileResource is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\resources' has been changed.
+[2026-06-02T18:52:46.539] [DEBUG] debug-file - Incremental task entry:default@CompileResource pre-execution cost: 2 ms .
+[2026-06-02T18:52:46.541] [DEBUG] debug-file - Use tool [E:\huawei_deveco-studio\DevEco Studio\sdk\default\openharmony\toolchains\restool.exe]
+ [
+  'E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\restool.exe',
+  '-l',
+  'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\res\\default\\resConfig.json'
+]
+[2026-06-02T18:52:46.542] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 238993408,
+  heapTotal: 172404736,
+  heapUsed: 142124080,
+  external: 14115805,
+  arrayBuffers: 11083548
+} os memoryUsage :11.87697982788086
+[2026-06-02T18:52:46.588] [DEBUG] debug-file - Info: Pack: normal pack mode
+
+[2026-06-02T18:52:46.622] [DEBUG] debug-file - Info: hardware concurrency count is : 24
+Info: thread count is : 24
+
+[2026-06-02T18:52:46.622] [DEBUG] debug-file - Info: thread pool is started
+
+[2026-06-02T18:52:46.623] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-06-02T18:52:46.626] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-06-02T18:52:46.629] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-06-02T18:52:46.631] [DEBUG] debug-file - 06-02 18:52:46.631 36472  9932 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2026-06-02T18:52:46.632] [DEBUG] debug-file - 06-02 18:52:46.631 36472  9932 E C01400/ImageTranscoderUtils: ImageFilter IN E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\resources\base\media\app_icon.png
+
+[2026-06-02T18:52:46.632] [DEBUG] debug-file - 06-02 18:52:46.632 36472  9932 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\resources\base\media\app_icon.png
+
+[2026-06-02T18:52:46.633] [DEBUG] debug-file - 06-02 18:52:46.633 36472  9932 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+06-02 18:52:46.633 36472  9932 E C01400/ImageTranscoderUtils: ImageFilter IN E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\resources\base\media\icon.png
+
+[2026-06-02T18:52:46.633] [DEBUG] debug-file - 06-02 18:52:46.633 36472  9932 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+
+[2026-06-02T18:52:46.633] [DEBUG] debug-file - Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\resources\base\media\icon.png
+
+[2026-06-02T18:52:46.633] [DEBUG] debug-file - Warning: The width or height of the png file referenced by the icon exceeds the limit (41 pixels)
+at E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\resources\base\media\app_icon.png
+
+[2026-06-02T18:52:46.633] [DEBUG] debug-file - Warning: The width or height of the png file referenced by the icon exceeds the limit (41 pixels)
+at E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\resources\base\media\icon.png
+
+[2026-06-02T18:52:46.635] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2026-06-02T18:52:46.636] [DEBUG] debug-file - Info: thread pool is stopped
+
+[2026-06-02T18:52:46.698] [DEBUG] debug-file - entry : default@CompileResource cost memory -27.786582946777344
+[2026-06-02T18:52:46.698] [DEBUG] debug-file - runTaskFromQueue task cost before running: 498 ms 
+[2026-06-02T18:52:46.698] [INFO] debug-file - Finished :entry:default@CompileResource... after 161 ms 
+[2026-06-02T18:52:46.699] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2026-06-02T18:52:46.699] [DEBUG] debug-file - Task 'entry:default@DoNativeStrip' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.699] [DEBUG] debug-file - entry:default@DoNativeStrip is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\libs\default' has been changed.
+[2026-06-02T18:52:46.699] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.700] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.16478729248046875
+[2026-06-02T18:52:46.700] [DEBUG] debug-file - runTaskFromQueue task cost before running: 500 ms 
+[2026-06-02T18:52:46.701] [INFO] debug-file - Finished :entry:default@DoNativeStrip... after 2 ms 
+[2026-06-02T18:52:46.701] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2026-06-02T18:52:46.702] [DEBUG] debug-file - obfuscationOptions: undefined
+[2026-06-02T18:52:46.703] [DEBUG] debug-file - Task 'entry:default@CompileArkTS' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.705] [DEBUG] debug-file - entry:default@CompileArkTS is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader\default' has been changed.
+[2026-06-02T18:52:46.705] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS pre-execution cost: 2 ms .
+[2026-06-02T18:52:46.711] [DEBUG] debug-file - build config:
+[2026-06-02T18:52:46.711] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  isLocalTest: false,
+  buildMode: 'Debug',
+  hotReloadBuild: undefined,
+  watchMode: 'false',
+  aceProfilePath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\res\\default\\resources\\base\\profile',
+  etsLoaderPath: 'E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader',
+  modulePath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock',
+  compileSdkVersion: 22,
+  compatibleSdkVersion: 22,
+  originCompatibleSdkVersion: '6.0.2(22)',
+  compatibleSdkVersionStage: undefined,
+  bundleName: 'c***k',
+  etsLoaderVersion: '6.0.2.130',
+  etsLoaderReleaseType: 'Release',
+  aotCompileMode: 'type',
+  apPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: 'f9f1a010d2418596fe8c0410c510dfe9b5403e730b867cea91d069067050dc18',
+  externalApiPaths: [ 'E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\hms\\ets' ],
+  compilerTypes: [],
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  compilePluginPath: undefined,
+  buildGeneratedProfilePath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\generated\\profile\\default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 22,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  buildDir: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build',
+  deviceTypes: [ 'default' ],
+  pkgContextInfo: undefined,
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: { requestPermissions: [ [Object] ], definePermissions: undefined },
+  useGetCurrentBundleName: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  tsImportSendable: false,
+  resolveConflictMode: true,
+  depName2RootPath: {},
+  depName2DepInfo: {},
+  rootPathSet: [
+    'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock'
+  ],
+  useNativeResolver: true,
+  shouldEmitJs: true,
+  useTscResolve: false,
+  singleFileEmit: false,
+  userProjectConfig: {
+    autoLazyImport: false,
+    allowEmptyBundleName: false,
+    reExportCheckMode: 'noCheck',
+    executionMode: 'memory',
+    usePathPlaceholder: false,
+    writeRollupCache: true,
+    isExpandImportEnabled: false,
+    expandImportExclude: '',
+    lazyImportExclude: '',
+    lazyImportInclude: '',
+    ignoreCrossplatformCheck: false,
+    isHarDeduplicateEnabled: false,
+    skipOhModulesLint: false,
+    enableStrictCheckOHModule: false,
+    disableSendableCheckRules: [],
+    useDeclarationFileSignature: false,
+    customizedOptions: undefined,
+    integratedHsp: false,
+    isPreloadSoEnabled: false
+  },
+  executionMode: 'memory',
+  arkCompileCachePath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule',
+  autoLazyFilter: undefined,
+  isHarDeduplicateEnabled: false,
+  intermediateHarDuplicateDirPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\har_duplicate\\default',
+  autoLazyImport: false,
+  allowEmptyBundleName: false,
+  reExportCheckMode: 'noCheck',
+  usePathPlaceholder: false,
+  writeRollupCache: true,
+  isExpandImportEnabled: false,
+  expandImportExclude: '',
+  lazyImportExclude: '',
+  lazyImportInclude: '',
+  ignoreCrossplatformCheck: false,
+  skipOhModulesLint: false,
+  enableStrictCheckOHModule: false,
+  disableSendableCheckRules: [],
+  useDeclarationFileSignature: false,
+  customizedOptions: undefined,
+  integratedHsp: false,
+  isPreloadSoEnabled: false,
+  strictMode: undefined,
+  useNormalizedOHMUrl: false,
+  caseSensitiveCheck: false,
+  aceModuleJsonPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\res\\default\\ark_module.json',
+  appResource: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\res\\default\\ResourceTable.txt',
+  rawFileResource: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\res\\default\\resources\\rawfile',
+  resourceTableHash: '907ed7c0e9db7c33d5d71bb27b7a17a994da727977ae93c5104821a39c880949',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:22:6.0.2.130:Release',
+  aceModuleRoot: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main\\supervisual',
+  aceBuildJson: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader\\default\\loader.json',
+  cachePath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule\\debug',
+  aceModuleBuild: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader_out\\default\\ets',
+  supportChunks: true,
+  declaredFilesPath: undefined,
+  shouldCollectDirectImportees: false,
+  isByteCodeHarOptimize: false,
+  expandImportPath: undefined,
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\src\\main': {
+      moduleName: 'entry',
+      modulePkgPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry',
+      belongProjectPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock'
+    },
+    'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry': {
+      moduleName: 'entry',
+      modulePkgPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry',
+      belongProjectPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock'
+    },
+    'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock': {
+      moduleName: 'AlarmClock',
+      modulePkgPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock',
+      belongProjectPath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock'
+    }
+  },
+  pkgJsonFileHash: '91bb026e6a47d7df5c8058f9c1bb3e0353706f4144e0b4cb7a23ef6af8c188f7',
+  allModulePaths: [
+    'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry'
+  ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  byteCodeHarToDependencyKeys: undefined,
+  compileBlockPkg: [],
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: undefined,
+    mockConfigKey2ModuleInfo: {},
+    source2ModuleIdMap: {}
+  },
+  copyCodeResourceEnable: true,
+  copyCodeResourceExcludes: [],
+  copyCodeResourceIncludes: undefined,
+  uiTransformOptimization: false,
+  sdkPath: 'E:/huawei_deveco-studio/DevEco Studio/sdk',
+  needPreloadSoFileSet: {},
+  preloadSoFilePath: 'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\preload\\default\\preload.json',
+  useSourceHash: false,
+  localModuleParamMap: {},
+  otherPaths: {
+    'entry/*': [
+      '..\\*',
+      '..\\..\\..\\build\\default\\generated\\profile\\default\\*'
+    ]
+  },
+  collectImportersConfig: undefined
+}
+[2026-06-02T18:52:46.711] [DEBUG] debug-file - Compile arkts with external api path: E:\huawei_deveco-studio\DevEco Studio\sdk\default\hms\ets
+[2026-06-02T18:52:46.712] [DEBUG] debug-file - default@CompileArkTS work[0] is submitted.
+[2026-06-02T18:52:46.712] [DEBUG] debug-file - default@CompileArkTS work[0] is pushed to ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[23] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[22] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[21] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[20] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[17] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[16] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[15] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[14] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[13] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[12] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[11] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[10] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.713] [DEBUG] debug-file - Create  resident worker with id: 4.
+[2026-06-02T18:52:46.714] [DEBUG] debug-file - default@CompileArkTS work[0] has been dispatched to worker[4].
+[2026-06-02T18:52:46.714] [DEBUG] debug-file - default@CompileArkTS work[0] is dispatched.
+[2026-06-02T18:52:46.714] [DEBUG] debug-file - CopyResources startTime: 9977559526000
+[2026-06-02T18:52:46.714] [DEBUG] debug-file - default@CompileArkTS work[1] is submitted.
+[2026-06-02T18:52:46.714] [DEBUG] debug-file - default@CompileArkTS work[1] is pushed to ready queue.
+[2026-06-02T18:52:46.714] [DEBUG] debug-file - A work dispatched to worker[23] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.714] [DEBUG] debug-file - Create  resident worker with id: 22.
+[2026-06-02T18:52:46.714] [DEBUG] debug-file - default@CompileArkTS work[1] has been dispatched to worker[22].
+[2026-06-02T18:52:46.714] [DEBUG] debug-file - default@CompileArkTS work[1] is dispatched.
+[2026-06-02T18:52:46.715] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 1.6993942260742188
+[2026-06-02T18:52:46.715] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2026-06-02T18:52:46.716] [DEBUG] debug-file - Task 'entry:default@BuildJS' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.717] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.15813446044921875
+[2026-06-02T18:52:46.717] [DEBUG] debug-file - runTaskFromQueue task cost before running: 517 ms 
+[2026-06-02T18:52:46.717] [INFO] debug-file - Finished :entry:default@BuildJS... after 2 ms 
+[2026-06-02T18:52:46.718] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2026-06-02T18:52:46.718] [DEBUG] debug-file - Task 'entry:default@CacheNativeLibs' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:46.718] [DEBUG] debug-file - entry:default@CacheNativeLibs is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\stripped_native_libs\default' has been changed.
+[2026-06-02T18:52:46.718] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs pre-execution cost: 1 ms .
+[2026-06-02T18:52:46.719] [DEBUG] debug-file - default@CacheNativeLibs work[2] is submitted.
+[2026-06-02T18:52:46.719] [DEBUG] debug-file - default@CacheNativeLibs work[2] is pushed to ready queue.
+[2026-06-02T18:52:46.719] [DEBUG] debug-file - A work dispatched to worker[23] failed because unable to get work from ready queue.
+[2026-06-02T18:52:46.719] [DEBUG] debug-file - A work dispatched to worker[22] failed because of worker busy.
+[2026-06-02T18:52:46.719] [DEBUG] debug-file - Create  resident worker with id: 21.
+[2026-06-02T18:52:46.720] [DEBUG] debug-file - default@CacheNativeLibs work[2] has been dispatched to worker[21].
+[2026-06-02T18:52:46.720] [DEBUG] debug-file - default@CacheNativeLibs work[2] is dispatched.
+[2026-06-02T18:52:46.720] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.1949005126953125
+[2026-06-02T18:52:47.265] [DEBUG] debug-file - worker[22] has one work done.
+[2026-06-02T18:52:47.265] [DEBUG] debug-file - CopyResources is end, endTime: 9978110945400
+[2026-06-02T18:52:47.265] [DEBUG] debug-file - default@CompileArkTS work[1] done.
+[2026-06-02T18:52:47.265] [DEBUG] debug-file - A work dispatched to worker[22] failed because unable to get work from ready queue.
+[2026-06-02T18:52:47.310] [DEBUG] debug-file - worker[21] has one work done.
+[2026-06-02T18:52:47.311] [DEBUG] debug-file - default@CacheNativeLibs work[2] done.
+[2026-06-02T18:52:47.311] [DEBUG] debug-file - A work dispatched to worker[21] failed because unable to get work from ready queue.
+[2026-06-02T18:52:47.311] [INFO] debug-file - Finished :entry:default@CacheNativeLibs... after 5 ms 
+[2026-06-02T18:52:51.453] [WARN] debug-file - [33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/entryability/EntryAbility.ets:25:5
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/entryability/EntryAbility.ets:26:5
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/entryability/EntryAbility.ets:27:5
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/entryability/EntryAbility.ets:28:5
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/entryability/EntryAbility.ets:32:5
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/entryability/EntryAbility.ets:33:11
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/model/ReminderService.ets:100:18
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/model/ReminderService.ets:101:22
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/viewmodel/MainViewModel.ets:52:5
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/viewmodel/MainViewModel.ets:68:5
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/viewmodel/MainViewModel.ets:186:9
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/common/utils/DimensionUtil.ets:58:38
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/viewmodel/DetailViewModel.ets:140:11
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/viewmodel/DetailViewModel.ets:148:13
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/viewmodel/DetailViewModel.ets:166:5
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/viewmodel/DetailViewModel.ets:176:30
+ "globalThis" is not supported (arkts-no-globalthis)
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN: For details about ArkTS syntax errors, see FAQs[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/model/database/PreferencesHandler.ets:63:24
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/model/database/PreferencesHandler.ets:64:5
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/model/database/PreferencesHandler.ets:79:13
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/model/database/PreferencesHandler.ets:80:13
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/model/database/PreferencesHandler.ets:94:20
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/entryability/EntryAbility.ets:32:40
+ 'getDefaultDisplay' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/entryability/EntryAbility.ets:34:5
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/model/ReminderService.ets:29:18
+ 'requestEnableNotification' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/model/ReminderService.ets:70:5
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/common/utils/DimensionUtil.ets:33:15
+ 'getContext' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/common/utils/DimensionUtil.ets:83:12
+ 'px2vp' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/common/utils/DimensionUtil.ets:93:12
+ 'px2fp' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/Main/AlarmList.ets:91:18
+ 'pushUrl' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/AlarmPage.ets:65:16
+ 'pushUrl' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/TodoPage.ets:121:22
+ 'pushUrl' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/TodoPage.ets:148:16
+ 'pushUrl' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/MainIndex.ets:66:16
+ 'pushUrl' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/BackContainer.ets:39:52
+ 'back' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/DetailIndex.ets:39:39
+ 'getParams' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/DetailIndex.ets:85:18
+ 'back' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/DetailIndex.ets:110:18
+ 'back' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/TodoAddPage.ets:31:12
+ 'back' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/TodoAddPage.ets:41:14
+ 'back' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/TodoDetailPage.ets:27:25
+ 'getParams' has been deprecated.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/TodoDetailPage.ets:58:18
+ 'back' has been deprecated.
+[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/DetailIndex.ets:73:7
+ Property 'header' is private and can not be initialized through the component constructor.[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/pages/DetailIndex.ets:73:7
+ Property 'backImgRes' is private and can not be initialized through the component constructor.[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/Main/AlarmList.ets:89:11
+ Property 'alarmItem' is private and can not be initialized through the component constructor.[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/Detail/dialog/DurationDialog.ets:29:7
+ Property 'title' is private and can not be initialized through the component constructor.[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/Detail/dialog/RingDateDialog.ets:39:7
+ Property 'title' is private and can not be initialized through the component constructor.[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/Detail/dialog/RingDateDialog.ets:39:7
+ Property 'onConfirm' is private and can not be initialized through the component constructor.[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/Detail/dialog/IntervalDialog.ets:36:9
+ Property 'title' is private and can not be initialized through the component constructor.[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/Detail/dialog/IntervalDialog.ets:36:9
+ Property 'onConfirm' is private and can not be initialized through the component constructor.[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/Detail/dialog/RenameDialog.ets:29:7
+ Property 'title' is private and can not be initialized through the component constructor.[39m[39m
+[33mWARN: [33mArkTS:WARN File: E:/shi_yan/harmony_alarm_1/CommonEventAndNotification/AlarmClock/entry/src/main/ets/view/Detail/dialog/RenameDialog.ets:29:7
+ Property 'onConfirm' is private and can not be initialized through the component constructor.[39m[39m
+
+[2026-06-02T18:52:51.453] [DEBUG] debug-file - Ark compile task finished.finished time is 9982298899600
+[2026-06-02T18:52:51.454] [DEBUG] debug-file - worker[4] has one work done.
+[2026-06-02T18:52:51.455] [DEBUG] debug-file - default@CompileArkTS work[0] done.
+[2026-06-02T18:52:51.455] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2026-06-02T18:52:51.455] [INFO] debug-file - Finished :entry:default@CompileArkTS... after 3 s 502 ms 
+[2026-06-02T18:52:51.456] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2026-06-02T18:52:51.456] [DEBUG] debug-file - File: 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\preload\default\preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-06-02T18:52:51.456] [DEBUG] debug-file - Error occurs while handling @Input 'shouldDeduplicateHar': The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[2026-06-02T18:52:51.457] [DEBUG] debug-file - Task 'entry:default@GeneratePkgModuleJson' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:51.457] [DEBUG] debug-file - entry:default@GeneratePkgModuleJson is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\module.json' has been changed.
+[2026-06-02T18:52:51.457] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson pre-execution cost: 1 ms .
+[2026-06-02T18:52:51.458] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.19564056396484375
+[2026-06-02T18:52:51.458] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 258 ms 
+[2026-06-02T18:52:51.458] [INFO] debug-file - Finished :entry:default@GeneratePkgModuleJson... after 2 ms 
+[2026-06-02T18:52:51.458] [DEBUG] debug-file - Executing task :entry:default@ProcessCompiledResources
+[2026-06-02T18:52:51.458] [DEBUG] debug-file - File: 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\preload\default\preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-06-02T18:52:51.458] [DEBUG] debug-file - Task 'entry:default@ProcessCompiledResources' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:52:51.459] [DEBUG] debug-file - entry : default@ProcessCompiledResources cost memory 0.0617523193359375
+[2026-06-02T18:52:51.459] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 259 ms 
+[2026-06-02T18:52:51.459] [INFO] debug-file - Finished :entry:default@ProcessCompiledResources... after 1 ms 
+[2026-06-02T18:52:51.460] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2026-06-02T18:52:51.461] [DEBUG] debug-file - entry:default@PackageHap is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\stripped_native_libs\default' has been changed.
+[2026-06-02T18:52:51.461] [DEBUG] debug-file - Incremental task entry:default@PackageHap pre-execution cost: 1 ms .
+[2026-06-02T18:52:51.462] [DEBUG] debug-file - Use tool [E:\huawei_deveco-studio\DevEco Studio\sdk\default\openharmony\toolchains\lib\app_packing_tool.jar]
+ [
+  'java',
+  '-Dfile.encoding=GBK',
+  '-jar',
+  'E:\\huawei_deveco-studio\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\lib\\app_packing_tool.jar',
+  '--mode',
+  'hap',
+  '--force',
+  'true',
+  '--lib-path',
+  'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\stripped_native_libs\\default',
+  '--json-path',
+  'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\package\\default\\module.json',
+  '--resources-path',
+  'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\res\\default\\resources',
+  '--index-path',
+  'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\res\\default\\resources.index',
+  '--pack-info-path',
+  'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\outputs\\default\\pack.info',
+  '--out-path',
+  'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\outputs\\default\\entry-default-unsigned.hap',
+  '--ets-path',
+  'E:\\shi_yan\\harmony_alarm_1\\CommonEventAndNotification\\AlarmClock\\entry\\build\\default\\intermediates\\loader_out\\default\\ets'
+]
+[2026-06-02T18:52:51.482] [DEBUG] debug-file - java daemon socket received message:{"code":0,"message":"pack success"}
+[2026-06-02T18:52:51.485] [DEBUG] debug-file - entry : default@PackageHap cost memory 0.725341796875
+[2026-06-02T18:52:51.485] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 285 ms 
+[2026-06-02T18:52:51.485] [INFO] debug-file - Finished :entry:default@PackageHap... after 25 ms 
+[2026-06-02T18:52:51.486] [DEBUG] debug-file - Executing task :entry:default@PackingCheck
+[2026-06-02T18:52:51.490] [DEBUG] debug-file - entry : default@PackingCheck cost memory 0.4264984130859375
+[2026-06-02T18:52:51.490] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 290 ms 
+[2026-06-02T18:52:51.490] [INFO] debug-file - Finished :entry:default@PackingCheck... after 4 ms 
+[2026-06-02T18:52:51.490] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2026-06-02T18:52:51.491] [WARN] debug-file - No signingConfig found for product default
+[2026-06-02T18:52:51.491] [DEBUG] debug-file - entry:default@SignHap is not up-to-date, since the input file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\entry-default-unsigned.hap' has been changed.
+[2026-06-02T18:52:51.491] [DEBUG] debug-file - Incremental task entry:default@SignHap pre-execution cost: 1 ms .
+[2026-06-02T18:52:51.492] [DEBUG] debug-file - entry : default@SignHap cost memory 0.0887298583984375
+[2026-06-02T18:52:51.492] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 292 ms 
+[2026-06-02T18:52:51.492] [INFO] debug-file - Finished :entry:default@SignHap... after 2 ms 
+[2026-06-02T18:52:51.492] [DEBUG] debug-file - Executing task :entry:default@CollectDebugSymbol
+[2026-06-02T18:52:51.493] [DEBUG] debug-file - entry : default@CollectDebugSymbol cost memory 0.06748199462890625
+[2026-06-02T18:52:51.493] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 293 ms 
+[2026-06-02T18:52:51.493] [INFO] debug-file - Finished :entry:default@CollectDebugSymbol... after 1 ms 
+[2026-06-02T18:52:51.493] [DEBUG] debug-file - Executing task :entry:assembleHap
+[2026-06-02T18:52:51.493] [DEBUG] debug-file - entry : assembleHap cost memory 0.0128326416015625
+[2026-06-02T18:52:51.493] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 293 ms 
+[2026-06-02T18:52:51.493] [INFO] debug-file - Finished :entry:assembleHap... after 1 ms 
+[2026-06-02T18:52:51.503] [INFO] debug-file - BUILD SUCCESSFUL in 5 s 303 ms 
+[2026-06-02T18:52:51.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\app.json5 cache from map.
+[2026-06-02T18:52:51.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\module.json5 cache by regenerate.
+[2026-06-02T18:52:51.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build-profile.json5 cache by regenerate.
+[2026-06-02T18:52:51.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build-profile.json5 cache by regenerate.
+[2026-06-02T18:52:51.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\resources\base\profile\main_pages.json cache by regenerate.
+[2026-06-02T18:52:51.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigor\hvigor-config.json5 cache by regenerate.
+[2026-06-02T18:52:51.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\oh-package.json5 cache by regenerate.
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Update task entry:default@PreBuild input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\oh-package.json5 cache by regenerate.
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Incremental task entry:default@PreBuild post-execution cost:2 ms .
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\generated\profile\default\ModuleInfo.ts cache.
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:1 ms .
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Update task entry:default@GenerateMetadata input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\module.json5 cache from map.
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Update task entry:default@GenerateMetadata output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\hap_metadata\default\output_metadata.json cache.
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata post-execution cost:1 ms .
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\app.json5 cache from map.
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build-profile.json5 cache by regenerate.
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\module.json5 cache by regenerate.
+[2026-06-02T18:52:51.505] [DEBUG] debug-file - Update task entry:default@MergeProfile output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\merge_profile\default\module.json cache.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Incremental task entry:default@MergeProfile post-execution cost:1 ms .
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\app.json5 cache from map.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build-profile.json5 cache by regenerate.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\generated\profile\default\BuildProfile.ets cache.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile post-execution cost:1 ms .
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build\cache\default\integrated_hsp\integratedHspCache.json cache.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\app.json5 cache from map.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\module.json5 cache by regenerate.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build-profile.json5 cache by regenerate.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@MakePackInfo output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\pack.info cache.
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo post-execution cost:1 ms .
+[2026-06-02T18:52:51.506] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:E:\huawei_deveco-studio\DevEco Studio\sdk\default\openharmony\toolchains\syscap_tool.exe cache by regenerate.
+[2026-06-02T18:52:51.507] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:E:\huawei_deveco-studio\DevEco Studio\sdk\default\openharmony\ets\api\device-define cache by regenerate.
+[2026-06-02T18:52:51.507] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\syscap\default\rpcid.sc cache.
+[2026-06-02T18:52:51.507] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:1 ms .
+[2026-06-02T18:52:51.507] [DEBUG] debug-file - Update task entry:default@ProcessProfile input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\merge_profile\default\module.json cache from map.
+[2026-06-02T18:52:51.507] [DEBUG] debug-file - Update task entry:default@ProcessProfile output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\process_profile\default\module.json cache.
+[2026-06-02T18:52:51.507] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile post-execution cost:1 ms .
+[2026-06-02T18:52:51.507] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\oh-package.json5 cache from map.
+[2026-06-02T18:52:51.507] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\oh-package.json5 cache by regenerate.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\module.json5 cache by regenerate.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\router_map\default\temp-router-map.json cache.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\router_map\default\loader-router-map.json cache.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap post-execution cost:1 ms .
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessShareConfig input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\oh-package.json5 cache from map.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessShareConfig input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\oh-package.json5 cache by regenerate.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessShareConfig input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\module.json5 cache by regenerate.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessShareConfig output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\share_config\default\temp-share-config.json cache.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig post-execution cost:1 ms .
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\startup\default\startup_config.json cache.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:1 ms .
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessResource output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\resConfig.json cache.
+[2026-06-02T18:52:51.508] [DEBUG] debug-file - Update task entry:default@ProcessResource output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\opt-compression.json cache.
+[2026-06-02T18:52:51.509] [DEBUG] debug-file - Incremental task entry:default@ProcessResource post-execution cost:1 ms .
+[2026-06-02T18:52:51.509] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\router_map\default\temp-router-map.json cache from map.
+[2026-06-02T18:52:51.509] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader\default\loader.json cache.
+[2026-06-02T18:52:51.509] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson post-execution cost:1 ms .
+[2026-06-02T18:52:51.509] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build-profile.json5 cache from map.
+[2026-06-02T18:52:51.509] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build-profile.json5 cache by regenerate.
+[2026-06-02T18:52:51.509] [DEBUG] debug-file - Update task entry:default@ProcessLibs output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\libs\default cache.
+[2026-06-02T18:52:51.509] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs post-execution cost:1 ms .
+[2026-06-02T18:52:51.510] [DEBUG] debug-file - Update task entry:default@CompileResource input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\resources cache from map.
+[2026-06-02T18:52:51.510] [DEBUG] debug-file - Update task entry:default@CompileResource input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\AppScope\resources cache by regenerate.
+[2026-06-02T18:52:51.510] [DEBUG] debug-file - Update task entry:default@CompileResource input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\process_profile\default\module.json cache by regenerate.
+[2026-06-02T18:52:51.510] [DEBUG] debug-file - Update task entry:default@CompileResource input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\resConfig.json cache by regenerate.
+[2026-06-02T18:52:51.510] [DEBUG] debug-file - Update task entry:default@CompileResource output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default cache.
+[2026-06-02T18:52:51.512] [DEBUG] debug-file - Update task entry:default@CompileResource output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\generated\r\default\ResourceTable.h cache.
+[2026-06-02T18:52:51.512] [DEBUG] debug-file - Update task entry:default@CompileResource output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\generated\r\default cache.
+[2026-06-02T18:52:51.512] [DEBUG] debug-file - Incremental task entry:default@CompileResource post-execution cost:3 ms .
+[2026-06-02T18:52:51.512] [DEBUG] debug-file - Update task entry:default@DoNativeStrip input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\libs\default cache from map.
+[2026-06-02T18:52:51.512] [DEBUG] debug-file - Update task entry:default@DoNativeStrip output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\stripped_native_libs\default cache.
+[2026-06-02T18:52:51.512] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip post-execution cost:1 ms .
+[2026-06-02T18:52:51.513] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader\default cache from map.
+[2026-06-02T18:52:51.513] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2026-06-02T18:52:51.513] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\ark_module.json cache by regenerate.
+[2026-06-02T18:52:51.513] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2026-06-02T18:52:51.513] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets cache by regenerate.
+[2026-06-02T18:52:51.515] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2026-06-02T18:52:51.515] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader_out\default\ets cache.
+[2026-06-02T18:52:51.515] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:3 ms .
+[2026-06-02T18:52:51.516] [DEBUG] debug-file - Update task entry:default@BuildJS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader\default cache by regenerate.
+[2026-06-02T18:52:51.516] [DEBUG] debug-file - Update task entry:default@BuildJS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2026-06-02T18:52:51.516] [DEBUG] debug-file - Update task entry:default@BuildJS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\ark_module.json cache by regenerate.
+[2026-06-02T18:52:51.516] [DEBUG] debug-file - Update task entry:default@BuildJS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2026-06-02T18:52:51.516] [DEBUG] debug-file - Update task entry:default@BuildJS output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader_out\default\js cache.
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:2 ms .
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\stripped_native_libs\default cache from map.
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\libs\default cache by regenerate.
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\patch\default\base_native_libs.json cache.
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs post-execution cost:1 ms .
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\module.json cache from map.
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\package\default\module.json cache.
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson post-execution cost:1 ms .
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Incremental task entry:default@ProcessCompiledResources post-execution cost:1 ms .
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Update task entry:default@PackageHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\stripped_native_libs\default cache from map.
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Update task entry:default@PackageHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2026-06-02T18:52:51.517] [DEBUG] debug-file - Update task entry:default@PackageHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\resources cache by regenerate.
+[2026-06-02T18:52:51.518] [DEBUG] debug-file - Update task entry:default@PackageHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\resources.index cache by regenerate.
+[2026-06-02T18:52:51.518] [DEBUG] debug-file - Update task entry:default@PackageHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\pack.info cache by regenerate.
+[2026-06-02T18:52:51.518] [DEBUG] debug-file - Update task entry:default@PackageHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader_out\default\ets cache by regenerate.
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Update task entry:default@PackageHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader_out\default\ets\sourceMaps.map cache by regenerate.
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Update task entry:default@PackageHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Update task entry:default@PackageHap output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\entry-default-unsigned.hap cache.
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Update task entry:default@PackageHap output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\source_map\default\sourceMaps.map cache.
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Update task entry:default@PackageHap output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\mapping\sourceMaps.map cache.
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Incremental task entry:default@PackageHap post-execution cost:2 ms .
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Update task entry:default@SignHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\entry-default-unsigned.hap cache from map.
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Update task entry:default@SignHap output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\entry-default-signed.hap cache.
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:1 ms .
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader_out\default\ets\sourceMaps.map cache by regenerate.
+[2026-06-02T18:52:51.519] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\libs\default cache by regenerate.
+[2026-06-02T18:52:51.520] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\symbol cache.
+[2026-06-02T18:52:51.520] [DEBUG] debug-file - Incremental task entry:default@CollectDebugSymbol post-execution cost:1 ms .
+[2026-06-02T18:52:51.537] [DEBUG] debug-file - Cleanup worker 22.
+[2026-06-02T18:52:51.537] [DEBUG] debug-file - Worker 22 has been cleaned up.
+[2026-06-02T18:52:51.537] [DEBUG] debug-file - Current idle worker size: 2.
+[2026-06-02T18:52:51.537] [DEBUG] debug-file - Current resident worker size: 3.
+[2026-06-02T18:52:51.537] [DEBUG] debug-file - Cleanup worker 21.
+[2026-06-02T18:52:51.537] [DEBUG] debug-file - Worker 21 has been cleaned up.
+[2026-06-02T18:52:51.537] [DEBUG] debug-file - Current idle worker size: 1.
+[2026-06-02T18:52:51.537] [DEBUG] debug-file - Current resident worker size: 3.
+[2026-06-02T18:52:51.537] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-06-02T18:52:51.538] [DEBUG] debug-file - java daemon socket close code:1000 reason:close by user
+[2026-06-02T18:52:51.541] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-06-02T18:52:51.541] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-06-02T18:52:51.541] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-06-02T18:52:51.542] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-06-02T18:52:51.544] [DEBUG] debug-file - worker[22] exits with exit code 1.
+[2026-06-02T18:52:51.544] [DEBUG] debug-file - worker[21] exits with exit code 1.
+[2026-06-02T18:54:07.344] [DEBUG] debug-file - session manager: set active socket. socketId=0ByOIc0SXaZh40SVAAAF
+[2026-06-02T18:54:07.347] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-06-02T18:54:07.348] [DEBUG] debug-file - Workers' log level updated to INFO
+[2026-06-02T18:54:07.350] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}
+[2026-06-02T18:54:07.352] [DEBUG] debug-file - Cache service initialization finished in 3 ms 
+[2026-06-02T18:54:07.352] [DEBUG] debug-file - hvigorfile, resolving E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigorfile.ts
+[2026-06-02T18:54:07.357] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2026-06-02T18:54:07.357] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2026-06-02T18:54:07.357] [DEBUG] debug-file - Starting plugin build process
+[2026-06-02T18:54:07.358] [DEBUG] debug-file - App plugin prepare start...
+[2026-06-02T18:54:07.358] [DEBUG] debug-file - App plugin prepare end...
+[2026-06-02T18:54:07.358] [DEBUG] debug-file - App plugin creating...
+[2026-06-02T18:54:07.360] [DEBUG] debug-file - App plugin register hook start...
+[2026-06-02T18:54:07.361] [DEBUG] debug-file - App plugin register hook end...
+[2026-06-02T18:54:07.361] [DEBUG] debug-file - Plugin build process completed
+[2026-06-02T18:54:07.361] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2026-06-02T18:54:07.361] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2026-06-02T18:54:07.361] [DEBUG] debug-file - Product 'default' build option initialized
+[2026-06-02T18:54:07.361] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2026-06-02T18:54:07.361] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2026-06-02T18:54:07.362] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2026-06-02T18:54:07.363] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2026-06-02T18:54:07.380] [DEBUG] debug-file - Sdk init in 18 ms 
+[2026-06-02T18:54:07.382] [DEBUG] debug-file - Project task initialization takes 2 ms 
+[2026-06-02T18:54:07.382] [DEBUG] debug-file - hvigorfile, resolve finished E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigorfile.ts
+[2026-06-02T18:54:07.382] [DEBUG] debug-file - hvigorfile, resolving E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\hvigorfile.ts
+[2026-06-02T18:54:07.384] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2026-06-02T18:54:07.384] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2026-06-02T18:54:07.384] [DEBUG] debug-file - Starting plugin build process
+[2026-06-02T18:54:07.385] [DEBUG] debug-file - Hap plugin creating...
+[2026-06-02T18:54:07.385] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\hooks\cangjie-register.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\strategy\stage-init-strategy.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\builder\abstract-plugin-builder.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\builder\app-plugin-builder.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\factory\plugin-factory.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\index.js
+- E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\hvigorfile.ts
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\internal\lifecycle\configuration.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\boot\index.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\cluster\worker-process-lifecycle.js
+- E:\huawei_deveco-studio\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\process\daemon-process-boot-script.js
+[2026-06-02T18:54:07.388] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-06-02T18:54:07.388] [DEBUG] debug-file - Target 'default' config initialized
+[2026-06-02T18:54:07.388] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-06-02T18:54:07.388] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-06-02T18:54:07.388] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2026-06-02T18:54:07.389] [DEBUG] debug-file - Target 'default' config initialized
+[2026-06-02T18:54:07.389] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-06-02T18:54:07.389] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-06-02T18:54:07.389] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-06-02T18:54:07.389] [DEBUG] debug-file - Target 'default' config initialized
+[2026-06-02T18:54:07.389] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-06-02T18:54:07.389] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-06-02T18:54:07.389] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-06-02T18:54:07.390] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2026-06-02T18:54:07.390] [DEBUG] debug-file - Hap plugin register hook start...
+[2026-06-02T18:54:07.390] [DEBUG] debug-file - Hap plugin register hook end...
+[2026-06-02T18:54:07.390] [DEBUG] debug-file - Plugin build process completed
+[2026-06-02T18:54:07.390] [DEBUG] debug-file - hvigorfile, resolve finished E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\hvigorfile.ts
+[2026-06-02T18:54:07.402] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 12 ms 
+[2026-06-02T18:54:07.402] [DEBUG] debug-file - project has submodules:entry
+[2026-06-02T18:54:07.403] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2026-06-02T18:54:07.406] [DEBUG] debug-file - load to the disk finished
+[2026-06-02T18:54:07.406] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-06-02T18:54:07.413] [DEBUG] debug-file - Module AlarmClock Collected Dependency: 
+[2026-06-02T18:54:07.413] [DEBUG] debug-file - Module AlarmClock's total dependency: 0
+[2026-06-02T18:54:07.413] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-06-02T18:54:07.414] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2026-06-02T18:54:07.414] [DEBUG] debug-file - Module entry's total dependency: 0
+[2026-06-02T18:54:07.415] [DEBUG] debug-file - Configuration phase cost:64 ms 
+[2026-06-02T18:54:07.416] [DEBUG] debug-file - Configuration task cost before running: 68 ms 
+[2026-06-02T18:54:07.419] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2026-06-02T18:54:07.419] [WARN] debug-file - The project has not explicitly set the 'targetSdkVersion' version at build-profile.json5. It is recommended to configure it. Reference: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section45865492619
+[2026-06-02T18:54:07.419] [DEBUG] debug-file - Task 'entry:default@PreBuild' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.423] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 3 ms .
+[2026-06-02T18:54:07.423] [DEBUG] debug-file - entry : default@PreBuild cost memory 0.40997314453125
+[2026-06-02T18:54:07.424] [INFO] debug-file - UP-TO-DATE :entry:default@PreBuild...  
+[2026-06-02T18:54:07.424] [DEBUG] debug-file - Executing task :entry:default@CreateModuleInfo
+[2026-06-02T18:54:07.424] [DEBUG] debug-file - Task 'entry:default@CreateModuleInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.424] [DEBUG] debug-file - entry : default@CreateModuleInfo cost memory 0.04213714599609375
+[2026-06-02T18:54:07.424] [DEBUG] debug-file - runTaskFromQueue task cost before running: 77 ms 
+[2026-06-02T18:54:07.425] [INFO] debug-file - Finished :entry:default@CreateModuleInfo... after 1 ms 
+[2026-06-02T18:54:07.425] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2026-06-02T18:54:07.425] [DEBUG] debug-file - Task 'entry:default@GenerateMetadata' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.426] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.426] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.086212158203125
+[2026-06-02T18:54:07.426] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateMetadata...  
+[2026-06-02T18:54:07.426] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2026-06-02T18:54:07.426] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.01458740234375
+[2026-06-02T18:54:07.426] [DEBUG] debug-file - runTaskFromQueue task cost before running: 78 ms 
+[2026-06-02T18:54:07.426] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2026-06-02T18:54:07.427] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2026-06-02T18:54:07.427] [DEBUG] debug-file - Task 'entry:default@MergeProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.428] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.428] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.1322479248046875
+[2026-06-02T18:54:07.428] [INFO] debug-file - UP-TO-DATE :entry:default@MergeProfile...  
+[2026-06-02T18:54:07.428] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2026-06-02T18:54:07.428] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.429] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.429] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.09503173828125
+[2026-06-02T18:54:07.429] [INFO] debug-file - UP-TO-DATE :entry:default@CreateBuildProfile...  
+[2026-06-02T18:54:07.429] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2026-06-02T18:54:07.429] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.01482391357421875
+[2026-06-02T18:54:07.429] [DEBUG] debug-file - runTaskFromQueue task cost before running: 82 ms 
+[2026-06-02T18:54:07.429] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2026-06-02T18:54:07.430] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2026-06-02T18:54:07.432] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.432] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory -1.3339691162109375
+[2026-06-02T18:54:07.432] [DEBUG] debug-file - runTaskFromQueue task cost before running: 84 ms 
+[2026-06-02T18:54:07.432] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 3 ms 
+[2026-06-02T18:54:07.434] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2026-06-02T18:54:07.434] [DEBUG] debug-file - entry:default@ProcessIntegratedHsp is not up-to-date, since the output file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build\cache\default\integrated_hsp\integratedHspCache.json' does not exist.
+[2026-06-02T18:54:07.434] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.434] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.05902099609375
+[2026-06-02T18:54:07.434] [DEBUG] debug-file - runTaskFromQueue task cost before running: 86 ms 
+[2026-06-02T18:54:07.434] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 1 ms 
+[2026-06-02T18:54:07.435] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2026-06-02T18:54:07.435] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.0145263671875
+[2026-06-02T18:54:07.435] [DEBUG] debug-file - runTaskFromQueue task cost before running: 87 ms 
+[2026-06-02T18:54:07.435] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2026-06-02T18:54:07.435] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2026-06-02T18:54:07.436] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.436] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.111480712890625
+[2026-06-02T18:54:07.436] [INFO] debug-file - UP-TO-DATE :entry:default@MakePackInfo...  
+[2026-06-02T18:54:07.437] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2026-06-02T18:54:07.437] [DEBUG] debug-file - File: 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\syscap.json' from 'sysCapJsonPath' is not exists, just ignore.
+[2026-06-02T18:54:07.437] [DEBUG] debug-file - Task 'entry:default@SyscapTransform' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.438] [DEBUG] debug-file - entry:default@SyscapTransform is not up-to-date, since the output file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\syscap\default\rpcid.sc' does not exist.
+[2026-06-02T18:54:07.438] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.438] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.150146484375
+[2026-06-02T18:54:07.438] [DEBUG] debug-file - runTaskFromQueue task cost before running: 90 ms 
+[2026-06-02T18:54:07.438] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 2 ms 
+[2026-06-02T18:54:07.438] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2026-06-02T18:54:07.439] [DEBUG] debug-file - Task 'entry:default@ProcessProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.439] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.439] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.1360321044921875
+[2026-06-02T18:54:07.439] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessProfile...  
+[2026-06-02T18:54:07.440] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2026-06-02T18:54:07.441] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.441] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.13997650146484375
+[2026-06-02T18:54:07.441] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessRouterMap...  
+[2026-06-02T18:54:07.442] [DEBUG] debug-file - Executing task :entry:default@ProcessShareConfig
+[2026-06-02T18:54:07.443] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.443] [DEBUG] debug-file - entry : default@ProcessShareConfig cost memory -1.505462646484375
+[2026-06-02T18:54:07.443] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessShareConfig...  
+[2026-06-02T18:54:07.443] [DEBUG] debug-file - Executing task :entry:default@ProcessStartupConfig
+[2026-06-02T18:54:07.443] [DEBUG] debug-file - Task 'entry:default@ProcessStartupConfig' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.443] [DEBUG] debug-file - entry:default@ProcessStartupConfig is not up-to-date, since the output file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\startup\default\startup_config.json' does not exist.
+[2026-06-02T18:54:07.443] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.444] [DEBUG] debug-file - entry : default@ProcessStartupConfig cost memory 0.36516571044921875
+[2026-06-02T18:54:07.444] [DEBUG] debug-file - runTaskFromQueue task cost before running: 96 ms 
+[2026-06-02T18:54:07.444] [INFO] debug-file - Finished :entry:default@ProcessStartupConfig... after 1 ms 
+[2026-06-02T18:54:07.444] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2026-06-02T18:54:07.444] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.02197265625
+[2026-06-02T18:54:07.444] [DEBUG] debug-file - runTaskFromQueue task cost before running: 96 ms 
+[2026-06-02T18:54:07.444] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 1 ms 
+[2026-06-02T18:54:07.445] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2026-06-02T18:54:07.445] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2026-06-02T18:54:07.445] [DEBUG] debug-file - Task 'entry:default@ProcessResource' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.446] [DEBUG] debug-file - Incremental task entry:default@ProcessResource pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.446] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.1392364501953125
+[2026-06-02T18:54:07.447] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessResource...  
+[2026-06-02T18:54:07.447] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2026-06-02T18:54:07.447] [DEBUG] debug-file - Task 'entry:default@GenerateLoaderJson' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.450] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 2 ms .
+[2026-06-02T18:54:07.450] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.5071029663085938
+[2026-06-02T18:54:07.451] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateLoaderJson...  
+[2026-06-02T18:54:07.452] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2026-06-02T18:54:07.453] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.453] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 0.10852813720703125
+[2026-06-02T18:54:07.453] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessLibs...  
+[2026-06-02T18:54:07.454] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2026-06-02T18:54:07.454] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2026-06-02T18:54:07.458] [DEBUG] debug-file - Incremental task entry:default@CompileResource pre-execution cost: 4 ms .
+[2026-06-02T18:54:07.458] [DEBUG] debug-file - entry : default@CompileResource cost memory 0.746337890625
+[2026-06-02T18:54:07.459] [INFO] debug-file - UP-TO-DATE :entry:default@CompileResource...  
+[2026-06-02T18:54:07.459] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2026-06-02T18:54:07.459] [DEBUG] debug-file - Task 'entry:default@DoNativeStrip' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.460] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.460] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.08001708984375
+[2026-06-02T18:54:07.460] [INFO] debug-file - UP-TO-DATE :entry:default@DoNativeStrip...  
+[2026-06-02T18:54:07.460] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2026-06-02T18:54:07.460] [DEBUG] debug-file - obfuscationOptions: undefined
+[2026-06-02T18:54:07.461] [DEBUG] debug-file - Task 'entry:default@CompileArkTS' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.467] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS pre-execution cost: 6 ms .
+[2026-06-02T18:54:07.467] [DEBUG] debug-file - entry : default@CompileArkTS cost memory -0.8561935424804688
+[2026-06-02T18:54:07.467] [INFO] debug-file - UP-TO-DATE :entry:default@CompileArkTS...  
+[2026-06-02T18:54:07.468] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2026-06-02T18:54:07.468] [DEBUG] debug-file - Task 'entry:default@BuildJS' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.469] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.156951904296875
+[2026-06-02T18:54:07.469] [DEBUG] debug-file - runTaskFromQueue task cost before running: 121 ms 
+[2026-06-02T18:54:07.469] [INFO] debug-file - Finished :entry:default@BuildJS... after 2 ms 
+[2026-06-02T18:54:07.469] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2026-06-02T18:54:07.470] [DEBUG] debug-file - Task 'entry:default@CacheNativeLibs' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.470] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.470] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.095184326171875
+[2026-06-02T18:54:07.470] [INFO] debug-file - UP-TO-DATE :entry:default@CacheNativeLibs...  
+[2026-06-02T18:54:07.470] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2026-06-02T18:54:07.471] [DEBUG] debug-file - File: 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\preload\default\preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-06-02T18:54:07.471] [DEBUG] debug-file - Error occurs while handling @Input 'shouldDeduplicateHar': The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[2026-06-02T18:54:07.471] [DEBUG] debug-file - Task 'entry:default@GeneratePkgModuleJson' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.471] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.471] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.107177734375
+[2026-06-02T18:54:07.471] [INFO] debug-file - UP-TO-DATE :entry:default@GeneratePkgModuleJson...  
+[2026-06-02T18:54:07.471] [DEBUG] debug-file - Executing task :entry:default@ProcessCompiledResources
+[2026-06-02T18:54:07.471] [DEBUG] debug-file - File: 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\preload\default\preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-06-02T18:54:07.471] [DEBUG] debug-file - Task 'entry:default@ProcessCompiledResources' cost while wrapping incremental declarations: 1 ms 
+[2026-06-02T18:54:07.472] [DEBUG] debug-file - entry : default@ProcessCompiledResources cost memory 0.0614776611328125
+[2026-06-02T18:54:07.472] [DEBUG] debug-file - runTaskFromQueue task cost before running: 124 ms 
+[2026-06-02T18:54:07.472] [INFO] debug-file - Finished :entry:default@ProcessCompiledResources... after 1 ms 
+[2026-06-02T18:54:07.472] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2026-06-02T18:54:07.475] [DEBUG] debug-file - Incremental task entry:default@PackageHap pre-execution cost: 3 ms .
+[2026-06-02T18:54:07.475] [DEBUG] debug-file - entry : default@PackageHap cost memory -1.1191635131835938
+[2026-06-02T18:54:07.475] [INFO] debug-file - UP-TO-DATE :entry:default@PackageHap...  
+[2026-06-02T18:54:07.476] [DEBUG] debug-file - Executing task :entry:default@PackingCheck
+[2026-06-02T18:54:07.478] [DEBUG] debug-file - entry : default@PackingCheck cost memory 0.29642486572265625
+[2026-06-02T18:54:07.478] [DEBUG] debug-file - runTaskFromQueue task cost before running: 130 ms 
+[2026-06-02T18:54:07.478] [INFO] debug-file - Finished :entry:default@PackingCheck... after 3 ms 
+[2026-06-02T18:54:07.479] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2026-06-02T18:54:07.479] [WARN] debug-file - No signingConfig found for product default
+[2026-06-02T18:54:07.479] [DEBUG] debug-file - entry:default@SignHap is not up-to-date, since the output file 'E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\entry-default-signed.hap' does not exist.
+[2026-06-02T18:54:07.479] [DEBUG] debug-file - Incremental task entry:default@SignHap pre-execution cost: 1 ms .
+[2026-06-02T18:54:07.479] [DEBUG] debug-file - entry : default@SignHap cost memory 0.0911712646484375
+[2026-06-02T18:54:07.479] [DEBUG] debug-file - runTaskFromQueue task cost before running: 131 ms 
+[2026-06-02T18:54:07.480] [INFO] debug-file - Finished :entry:default@SignHap... after 1 ms 
+[2026-06-02T18:54:07.480] [DEBUG] debug-file - Executing task :entry:default@CollectDebugSymbol
+[2026-06-02T18:54:07.480] [DEBUG] debug-file - entry : default@CollectDebugSymbol cost memory 0.10135650634765625
+[2026-06-02T18:54:07.481] [DEBUG] debug-file - runTaskFromQueue task cost before running: 133 ms 
+[2026-06-02T18:54:07.481] [INFO] debug-file - Finished :entry:default@CollectDebugSymbol... after 1 ms 
+[2026-06-02T18:54:07.481] [DEBUG] debug-file - Executing task :entry:assembleHap
+[2026-06-02T18:54:07.481] [DEBUG] debug-file - entry : assembleHap cost memory 0.0126800537109375
+[2026-06-02T18:54:07.481] [DEBUG] debug-file - runTaskFromQueue task cost before running: 133 ms 
+[2026-06-02T18:54:07.481] [INFO] debug-file - Finished :entry:assembleHap... after 1 ms 
+[2026-06-02T18:54:07.490] [INFO] debug-file - BUILD SUCCESSFUL in 142 ms 
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@PreBuild is up-to-date.
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\generated\profile\default\ModuleInfo.ts cache.
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:1 ms .
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateMetadata is up-to-date.
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MergeProfile is up-to-date.
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CreateBuildProfile is up-to-date.
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache.
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\build\cache\default\integrated_hsp\integratedHspCache.json cache.
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MakePackInfo is up-to-date.
+[2026-06-02T18:54:07.490] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:E:\huawei_deveco-studio\DevEco Studio\sdk\default\openharmony\toolchains\syscap_tool.exe cache by regenerate.
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:E:\huawei_deveco-studio\DevEco Studio\sdk\default\openharmony\ets\api\device-define cache by regenerate.
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\syscap\default\rpcid.sc cache.
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:1 ms .
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessProfile is up-to-date.
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessShareConfig is up-to-date.
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\startup\default\startup_config.json cache.
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:1 ms .
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessResource is up-to-date.
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateLoaderJson is up-to-date.
+[2026-06-02T18:54:07.491] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessLibs is up-to-date.
+[2026-06-02T18:54:07.492] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CompileResource is up-to-date.
+[2026-06-02T18:54:07.492] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@DoNativeStrip is up-to-date.
+[2026-06-02T18:54:07.492] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CompileArkTS is up-to-date.
+[2026-06-02T18:54:07.492] [DEBUG] debug-file - Update task entry:default@BuildJS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader\default cache by regenerate.
+[2026-06-02T18:54:07.492] [DEBUG] debug-file - Update task entry:default@BuildJS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2026-06-02T18:54:07.492] [DEBUG] debug-file - Update task entry:default@BuildJS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\ark_module.json cache by regenerate.
+[2026-06-02T18:54:07.492] [DEBUG] debug-file - Update task entry:default@BuildJS input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Update task entry:default@BuildJS output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader_out\default\js cache.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:2 ms .
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CacheNativeLibs is up-to-date.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GeneratePkgModuleJson is up-to-date.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Incremental task entry:default@ProcessCompiledResources post-execution cost:1 ms .
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@PackageHap is up-to-date.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Update task entry:default@SignHap input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\entry-default-unsigned.hap cache by regenerate.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Update task entry:default@SignHap output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\entry-default-signed.hap cache.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:1 ms .
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\loader_out\default\ets\sourceMaps.map cache by regenerate.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\intermediates\libs\default cache by regenerate.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol output file:E:\shi_yan\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\build\default\outputs\default\symbol cache.
+[2026-06-02T18:54:07.493] [DEBUG] debug-file - Incremental task entry:default@CollectDebugSymbol post-execution cost:1 ms .
+[2026-06-02T18:54:07.509] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-06-02T18:54:07.513] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-06-02T18:54:07.514] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-06-02T18:54:07.513] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-06-02T18:54:07.514] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
