@@ -28,6 +28,11 @@ export default class ReminderService {
   public openNotificationPermission(): void {
     notification.requestEnableNotification().then(() => {
       console.info('Enable notification success');
+      notification.addSlot(notification.SlotType.SERVICE_INFORMATION).then(() => {
+        console.info('Add notification slot success');
+      }).catch((err: Error) => {
+        console.error('Add notification slot failed because ' + JSON.stringify(err));
+      });
     }).catch((err: Error) => {
       console.error('Enable notification failed because ' + JSON.stringify(err));
     });
@@ -66,19 +71,17 @@ export default class ReminderService {
   }
 
   private initReminder(item: AlarmItem): reminderAgent.ReminderRequestAlarm {
-    // 优先使用 ringDates，如果 ringDates 为空则使用 repeatDays
     let daysOfWeek: number[] = [];
     if (item.ringDates && item.ringDates.length > 0) {
       daysOfWeek = item.ringDates;
     } else if (item.repeatDays && item.repeatDays.length > 0) {
       daysOfWeek = item.repeatDays;
     }
-    
-    return {
+
+    let reminder: reminderAgent.ReminderRequestAlarm = {
       reminderType: item.remindType,
       hour: item.hour,
       minute: item.minute,
-      daysOfWeek: daysOfWeek,
       title: item.name,
       ringDuration: item.duration * CommonConstants.DEFAULT_TOTAL_MINUTE,
       snoozeTimes: item.intervalTimes,
@@ -102,5 +105,9 @@ export default class ReminderService {
       snoozeContent: 'remind later',
       slotType: notification.SlotType.SERVICE_INFORMATION
     };
+    if (daysOfWeek.length > 0) {
+      reminder.daysOfWeek = daysOfWeek;
+    }
+    return reminder;
   }
 }
