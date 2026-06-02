@@ -1,386 +1,0 @@
-Ôr@Ÿªassertions¤code´customTransformCache¬dependencies¢id¤meta±moduleSideEffects¬originalCode±originalSourcemap«resolvedIds®sourcemapChainµsyntheticNamedExportsµtransformDependencies®transformFiles¨cacheAstÔrAÚ5if (!("finalizeConstruction" in ViewPU.prototype)) {
-    Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
-}
-/*
- * Copyright (c) 2022 Huawei Device Co., Ltd.
- * Licensed under the Apache License,Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-import router from '@ohos.router';
-import { CommonConstants, DetailConstant } from '../common/constants/Constants';
-import AlarmItem from '../common/bean/AlarmItemBean';
-import AlarmSettingBean, { AlarmSettingType } from '../common/bean/AlarmSettingBean';
-import BackContainer from '../view/BackContainer';
-import DetailModel from '../viewmodel/DetailViewModel';
-import DatePickArea from '../view/detail/DatePickArea';
-import SettingItem from '../view/Detail/SettingItem';
-import DimensionUtil from '../common/utils/DimensionUtil';
-class DetailIndex extends ViewPU {
-    constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
-        super(parent, __localStorage, elmtId, extraInfo);
-        if (typeof paramsLambda === "function") {
-            this.paramsGenerator_ = paramsLambda;
-        }
-        this.__alarmItem = new ObservedPropertyObjectPU(new AlarmItem(), this, "alarmItem");
-        this.addProvidedVar(DetailConstant.DEFAULT_PROVIDER_KEY, this.__alarmItem, false);
-        this.addProvidedVar("alarmItem", this.__alarmItem, false);
-        this.__alarmSettingInfoArr = new ObservedPropertyObjectPU([], this, "alarmSettingInfoArr");
-        this.isNow = true;
-        this.viewModel = DetailModel.getInstant();
-        this.setInitiallyProvidedValue(params);
-        this.declareWatch("alarmItem", this.onAlarmItemChange);
-        this.finalizeConstruction();
-    }
-    setInitiallyProvidedValue(params) {
-        if (params.alarmItem !== undefined) {
-            this.alarmItem = params.alarmItem;
-        }
-        if (params.alarmSettingInfoArr !== undefined) {
-            this.alarmSettingInfoArr = params.alarmSettingInfoArr;
-        }
-        if (params.isNow !== undefined) {
-            this.isNow = params.isNow;
-        }
-        if (params.viewModel !== undefined) {
-            this.viewModel = params.viewModel;
-        }
-    }
-    updateStateVars(params) {
-    }
-    purgeVariableDependenciesOnElmtId(rmElmtId) {
-        this.__alarmItem.purgeDependencyOnElmtId(rmElmtId);
-        this.__alarmSettingInfoArr.purgeDependencyOnElmtId(rmElmtId);
-    }
-    aboutToBeDeleted() {
-        this.__alarmItem.aboutToBeDeleted();
-        this.__alarmSettingInfoArr.aboutToBeDeleted();
-        SubscriberManager.Get().delete(this.id__());
-        this.aboutToBeDeletedInternal();
-    }
-    get alarmItem() {
-        return this.__alarmItem.get();
-    }
-    set alarmItem(newValue) {
-        this.__alarmItem.set(newValue);
-    }
-    get alarmSettingInfoArr() {
-        return this.__alarmSettingInfoArr.get();
-    }
-    set alarmSettingInfoArr(newValue) {
-        this.__alarmSettingInfoArr.set(newValue);
-    }
-    aboutToAppear() {
-        let params = router.getParams();
-        if (params != null && params.alarmItem != null) {
-            this.isNow = false;
-            this.alarmItem = params.alarmItem;
-            this.viewModel.setAlarmDefaultTime(this.alarmItem);
-        }
-        else {
-            this.viewModel.setAlarmDefaultTime();
-        }
-        // å…¼å®¹æ—§æ•°æ®ï¼šç¡®ä¿ringDatesæœ‰é»˜è®¤å€¼
-        if (!this.alarmItem.ringDates) {
-            this.alarmItem.ringDates = [];
-        }
-        this.initData();
-    }
-    onAlarmItemChange() {
-        this.initData();
-    }
-    initData() {
-        this.alarmSettingInfoArr = [
-            new AlarmSettingBean(DetailConstant.DEFAULT_STRING_RING_DATE, this.viewModel.getRingDateContent(this.alarmItem.ringDates), AlarmSettingType.RING_DATE),
-            new AlarmSettingBean(DetailConstant.DEFAULT_STRING_ALARM_NAME, this.alarmItem.name, AlarmSettingType.ALARM_NAME),
-            new AlarmSettingBean(DetailConstant.DEFAULT_STRING_DURATION, this.alarmItem.duration + DetailConstant.DEFAULT_STRING_MINUTE, AlarmSettingType.RING_DURATION),
-            new AlarmSettingBean(DetailConstant.DEFAULT_STRING_INTERVAL, this.alarmItem.intervalMinute
-                + DetailConstant.DEFAULT_STRING_MINUTE + CommonConstants.DEFAULT_STRING_COMMA
-                + this.alarmItem.intervalTimes + DetailConstant.DEFAULT_STRING_TIMES, AlarmSettingType.INTERVAL)
-        ];
-    }
-    initialRender() {
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Column.create();
-            Column.backgroundColor({ "id": 16777235, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-            Column.width(CommonConstants.FULL_LENGTH);
-            Column.height(CommonConstants.FULL_LENGTH);
-        }, Column);
-        {
-            this.observeComponentCreation2((elmtId, isInitialRender) => {
-                if (isInitialRender) {
-                    let componentCall = new BackContainer(this, {
-                        header: this.isNow ? { "id": 16777225, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" } : { "id": 16777232, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
-                        backImgRes: { "id": 16777297, "type": 20000, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
-                        closer: () => {
-                            this.observeComponentCreation2((elmtId, isInitialRender) => {
-                                Button.createWithChild();
-                                Button.backgroundColor({ "id": 16777238, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                Button.width(DimensionUtil.getVp({ "id": 16777291, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-                                Button.height(DimensionUtil.getVp({ "id": 16777291, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-                                Button.onClick(async () => {
-                                    await this.viewModel.setAlarmRemind(ObservedObject.GetRawObject(this.alarmItem));
-                                    router.back();
-                                });
-                            }, Button);
-                            this.observeComponentCreation2((elmtId, isInitialRender) => {
-                                Image.create({ "id": 16777299, "type": 20000, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                Image.objectFit(ImageFit.Fill);
-                            }, Image);
-                            Button.pop();
-                        }
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 73, col: 7 });
-                    ViewPU.create(componentCall);
-                    let paramsLambda = () => {
-                        return {
-                            header: this.isNow ? { "id": 16777225, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" } : { "id": 16777232, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
-                            backImgRes: { "id": 16777297, "type": 20000, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" },
-                            closer: () => {
-                                this.observeComponentCreation2((elmtId, isInitialRender) => {
-                                    Button.createWithChild();
-                                    Button.backgroundColor({ "id": 16777238, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                    Button.width(DimensionUtil.getVp({ "id": 16777291, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-                                    Button.height(DimensionUtil.getVp({ "id": 16777291, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-                                    Button.onClick(async () => {
-                                        await this.viewModel.setAlarmRemind(ObservedObject.GetRawObject(this.alarmItem));
-                                        router.back();
-                                    });
-                                }, Button);
-                                this.observeComponentCreation2((elmtId, isInitialRender) => {
-                                    Image.create({ "id": 16777299, "type": 20000, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-                                    Image.objectFit(ImageFit.Fill);
-                                }, Image);
-                                Button.pop();
-                            }
-                        };
-                    };
-                    componentCall.paramsGenerator_ = paramsLambda;
-                }
-                else {
-                    this.updateStateVarsOfChildByElmtId(elmtId, {});
-                }
-            }, { name: "BackContainer" });
-        }
-        {
-            this.observeComponentCreation2((elmtId, isInitialRender) => {
-                if (isInitialRender) {
-                    let componentCall = new DatePickArea(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 89, col: 7 });
-                    ViewPU.create(componentCall);
-                    let paramsLambda = () => {
-                        return {};
-                    };
-                    componentCall.paramsGenerator_ = paramsLambda;
-                }
-                else {
-                    this.updateStateVarsOfChildByElmtId(elmtId, {});
-                }
-            }, { name: "DatePickArea" });
-        }
-        {
-            this.observeComponentCreation2((elmtId, isInitialRender) => {
-                if (isInitialRender) {
-                    let componentCall = new SettingItem(this, {
-                        settingInfo: this.__alarmSettingInfoArr
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/DetailIndex.ets", line: 91, col: 7 });
-                    ViewPU.create(componentCall);
-                    let paramsLambda = () => {
-                        return {
-                            settingInfo: this.alarmSettingInfoArr
-                        };
-                    };
-                    componentCall.paramsGenerator_ = paramsLambda;
-                }
-                else {
-                    this.updateStateVarsOfChildByElmtId(elmtId, {});
-                }
-            }, { name: "SettingItem" });
-        }
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Blank.create();
-        }, Blank);
-        Blank.pop();
-        this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Button.createWithLabel({ "id": 16777223, "type": 10003, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-            Button.visibility(this.isNow ? Visibility.None : Visibility.Visible);
-            Button.width(DimensionUtil.getVp({ "id": 16777267, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-            Button.height(DimensionUtil.getVp({ "id": 16777264, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-            Button.fontSize(DimensionUtil.getFp({ "id": 16777263, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-            Button.fontColor({ "id": 16777237, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-            Button.backgroundColor({ "id": 16777236, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
-            Button.borderRadius(DimensionUtil.getVp({ "id": 16777266, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
-            Button.margin({
-                bottom: DimensionUtil.getVp({ "id": 16777265, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
-            });
-            Button.onClick(async () => {
-                await this.viewModel.removeAlarmRemind(this.alarmItem.id);
-                router.back();
-            });
-        }, Button);
-        Button.pop();
-        Column.pop();
-    }
-    rerender() {
-        this.updateDirtyElements();
-    }
-    static getEntryName() {
-        return "DetailIndex";
-    }
-}
-registerNamedRoute(() => new DetailIndex(undefined, {}), "", { bundleName: "com.huawei.alarmclock", moduleName: "entry", pagePath: "pages/DetailIndex", pageFullPath: "entry/src/main/ets/pages/DetailIndex", integratedHsp: "false", moduleType: "followWithHap" });
-//# sourceMappingURL=DetailIndex.js.mapÂ™Ùf hvigor_ignore_E:_huawei_deveco-studio_DevEco Studio_sdk_default_openharmony_ets_api_@ohos.router.d.tsÙƒD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\constants\Constants.etsÙ‚D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\bean\AlarmItemBean.etsÙ…D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\bean\AlarmSettingBean.etsÙ{D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\BackContainer.etsÙ‚D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\viewmodel\DetailViewModel.etsÙD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\DatePickArea.etsÙ€D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\SettingItem.etsÙƒD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\utils\DimensionUtil.etsÙzD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\pages\DetailIndex.etsÔrB›ªmoduleName±isLocalDependency¯isNodeEntryFile§pkgPath±belongProjectPath§pkgNameªpkgVersion±dependencyPkgInfo°belongModulePath§checker¬shouldEmitJs¥entryÃÂÙWD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entryÙQD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock¥entry¥1.0.0Ô  ÙWD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entryÔrCÜ ®¬getNodeCount²getIdentifierCount®getSymbolCount¬getTypeCountµgetInstantiationCountµgetRelationCacheSizes±isUndefinedSymbol±isArgumentsSymbol¯isUnknownSymbol¯getMergedSymbol®getDiagnostics´getGlobalDiagnostics´getRecursionIdentity¶getUnmatchedProperties¹getTypeOfSymbolAtLocation¯getTypeOfSymbolÙ(getSymbolsOfParameterPropertyDeclaration·getDeclaredTypeOfSymbol³getPropertiesOfType±getPropertyOfTypeÙ"getPrivateIdentifierPropertyOfType·getTypeOfPropertyOfType²getIndexInfoOfType³getIndexInfosOfTypeºgetIndexInfosOfIndexSymbol³getSignaturesOfType²getIndexTypeOfType¬getIndexType¬getBaseTypes¸getBaseTypeOfLiteralType®getWidenedType³getTypeFromTypeNode°getParameterTypeÙ$getParameterIdentifierNameAtPosition¸getPromisedTypeOfPromise®getAwaitedType¸getReturnTypeOfSignature®isNullableType¯getNullableType²getNonNullableType²getNonOptionalType°getTypeArguments®typeToTypeNodeÙ$indexInfoToIndexSignatureDeclaration¿signatureToSignatureDeclaration²symbolToEntityName²symbolToExpression¬symbolToNodeÙ!symbolToTypeParameterDeclarations¼symbolToParameterDeclarationºtypeParameterToDeclaration±getSymbolsInScope³getSymbolAtLocation·getIndexInfosAtLocationÙ!getShorthandAssignmentValueSymbolÙ#getExportSpecifierLocalTargetSymbol·getExportSymbolOfSymbol±getTypeAtLocationºgetTypeAtLocationForLinterÙ tryGetTypeAtLocationWithoutCheckºgetTypeOfAssignmentPatternÙ*getPropertySymbolOfDestructuringAssignment±signatureToString¬typeToString®symbolToStringµtypePredicateToString®writeSignature©writeType«writeSymbol²writeTypePredicate¼getAugmentedPropertiesOfType®getRootSymbols²getSymbolOfExpando±getContextualTypeÙ(getContextualTypeForObjectLiteralElementÙ#getContextualTypeForArgumentAtIndexÙ getContextualTypeForJsxAttribute²isContextSensitiveÙ!getTypeOfPropertyOfContextualTypeµgetFullyQualifiedNameÙ#tryGetResolvedSignatureWithoutCheck´getResolvedSignatureÙ/getResolvedSignatureForStringLiteralCompletionsÙ$getResolvedSignatureForSignatureHelpµgetExpandedParameters¹hasEffectiveRestParameterºcontainsArgumentsReference°getConstantValueµisValidPropertyAccessÙ#isValidPropertyAccessForCompletions»getSignatureFromDeclarationºisImplementationOfOverload¹getImmediateAliasedSymbol°getAliasedSymbol¯getEmitResolver²getExportsOfModule¿getExportsAndPropertiesOfModuleÙ forEachExportAndPropertyOfModule¯getSymbolWalker±getAmbientModules¹getJsxIntrinsicTagNamesAt³isOptionalParameter»tryGetMemberInModuleExportsÙ(tryGetMemberInModuleExportsAndProperties´tryFindAmbientModuleÙ(tryFindAmbientModuleWithoutAugmentations¯getApparentType¬getUnionType²isTypeAssignableTo³createAnonymousType¯createSignature¬createSymbol¯createIndexInfoªgetAnyType­getStringType­getNumberType±createPromiseType¯createArrayType¹getElementTypeOfArrayType®getBooleanType¬getFalseType«getTrueType«getVoidType°getUndefinedType«getNullType¯getESSymbolType¬getNeverType¯getOptionalType®getPromiseType²getPromiseLikeType´getAsyncIterableType²isSymbolAccessible«isArrayType«isTupleType¯isArrayLikeTypeÙ#isTypeInvalidDueToUnionDiscriminantºgetExactOptionalProperties¿getAllPossiblePropertiesOfTypesÙ(getSuggestedSymbolForNonexistentPropertyÙ#getSuggestionForNonexistentPropertyÙ,getSuggestedSymbolForNonexistentJSXAttributeÙ&getSuggestedSymbolForNonexistentSymbolÙ!getSuggestionForNonexistentSymbolÙ&getSuggestedSymbolForNonexistentModuleÙ!getSuggestionForNonexistentExportÙ+getSuggestedSymbolForNonexistentClassMember·getBaseConstraintOfType»getDefaultFromTypeParameter«resolveName¯getJsxNamespaceµgetJsxFragmentFactory¸getAccessibleSymbolChain»getTypePredicateOfSignature¹resolveExternalModuleName»resolveExternalModuleSymbol°tryGetThisTypeAt¹getTypeArgumentConstraint¸getSuggestionDiagnostics¸runWithCancellationTokenÙ3getLocalTypeParametersOfClassOrInterfaceOrTypeAlias´isDeclarationVisible´isPropertyAccessible»getTypeOnlyAliasDeclaration¿getMemberOverrideModifierStatusÙ!isTypeParameterPossiblyReferenced²getConstEnumRelate´clearConstEnumRelateµdeleteConstEnumRelateÙ$getTypeArgumentsForResolvedSignatureµgetCheckedSourceFilesÙ"collectHaveTsNoCheckFilesForLinter·clearQualifiedNameCache®isStaticRecord²isStaticSourceFileÔ  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  ÃÃÚ¤/*
- * Copyright (c) 2022 Huawei Device Co., Ltd.
- * Licensed under the Apache License,Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-import router from '@ohos.router';
-import { CommonConstants, DetailConstant } from '../common/constants/Constants';
-import AlarmItem from '../common/bean/AlarmItemBean';
-import AlarmSettingBean, { AlarmSettingType } from '../common/bean/AlarmSettingBean';
-import BackContainer from '../view/BackContainer';
-import DetailModel from '../viewmodel/DetailViewModel';
-import DatePickArea from '../view/detail/DatePickArea';
-import SettingItem from '../view/Detail/SettingItem';
-import DimensionUtil from '../common/utils/DimensionUtil';
-
-interface DetailParams {
-  alarmItem: AlarmItem;
-}
-
-@Entry
-@Component
-struct DetailIndex {
-  @Watch('onAlarmItemChange') @Provide(DetailConstant.DEFAULT_PROVIDER_KEY) alarmItem: AlarmItem = new AlarmItem();
-  @State alarmSettingInfoArr: Array<AlarmSettingBean> = [];
-  private isNow: boolean = true;
-  private viewModel: DetailModel = DetailModel.getInstant();
-
-  aboutToAppear(): void {
-    let params: DetailParams = router.getParams() as DetailParams;
-    if (params != null && params.alarmItem != null) {
-      this.isNow = false;
-      this.alarmItem = params.alarmItem;
-      this.viewModel.setAlarmDefaultTime(this.alarmItem);
-    } else {
-      this.viewModel.setAlarmDefaultTime();
-    }
-    // å…¼å®¹æ—§æ•°æ®ï¼šç¡®ä¿ringDatesæœ‰é»˜è®¤å€¼
-    if (!this.alarmItem.ringDates) {
-      this.alarmItem.ringDates = [];
-    }
-    this.initData();
-  }
-
-  onAlarmItemChange(): void {
-    this.initData();
-  }
-
-  initData(): void {
-    this.alarmSettingInfoArr = [
-      new AlarmSettingBean(DetailConstant.DEFAULT_STRING_RING_DATE,
-        this.viewModel.getRingDateContent(this.alarmItem.ringDates), AlarmSettingType.RING_DATE),
-      new AlarmSettingBean(DetailConstant.DEFAULT_STRING_ALARM_NAME, this.alarmItem.name, AlarmSettingType.ALARM_NAME),
-      new AlarmSettingBean(DetailConstant.DEFAULT_STRING_DURATION,
-        this.alarmItem.duration + DetailConstant.DEFAULT_STRING_MINUTE, AlarmSettingType.RING_DURATION),
-      new AlarmSettingBean(DetailConstant.DEFAULT_STRING_INTERVAL, this.alarmItem.intervalMinute
-      + DetailConstant.DEFAULT_STRING_MINUTE + CommonConstants.DEFAULT_STRING_COMMA
-      + this.alarmItem.intervalTimes + DetailConstant.DEFAULT_STRING_TIMES, AlarmSettingType.INTERVAL)
-    ]
-  }
-
-  build(): void {
-    Column() {
-      BackContainer({
-        header: this.isNow ? $r('app.string.new_alarm') : $r('app.string.update_alarm'),
-        backImgRes: $r('app.media.ic_cancel'),
-      }) {
-        Button() {
-          Image($r('app.media.ic_confirm')).objectFit(ImageFit.Fill)
-        }
-        .backgroundColor($r('app.color.trans_parent'))
-        .width(DimensionUtil.getVp($r('app.float.title_button_size')))
-        .height(DimensionUtil.getVp($r('app.float.title_button_size')))
-        .onClick(async () => {
-          await this.viewModel.setAlarmRemind(this.alarmItem);
-          router.back();
-        })
-      }
-
-      DatePickArea()
-
-      SettingItem({
-        settingInfo: $alarmSettingInfoArr
-      })
-
-      Blank()
-
-      Button($r('app.string.delete'))
-        .visibility(this.isNow ? Visibility.None : Visibility.Visible)
-        .width(DimensionUtil.getVp($r('app.float.delete_button_width')))
-        .height(DimensionUtil.getVp($r('app.float.delete_button_height')))
-        .fontSize(DimensionUtil.getFp($r('app.float.delete_button_font_size')))
-        .fontColor($r('app.color.red_light'))
-        .backgroundColor($r('app.color.grey_with_opacity'))
-        .borderRadius(DimensionUtil.getVp($r('app.float.delete_button_radius')))
-        .margin({
-          bottom: DimensionUtil.getVp($r('app.float.delete_button_margin_bottom'))
-        })
-        .onClick(async () => {
-          await this.viewModel.removeAlarmRemind(this.alarmItem.id);
-          router.back();
-        })
-    }
-    .backgroundColor($r('app.color.grey_light'))
-    .width(CommonConstants.FULL_LENGTH)
-    .height(CommonConstants.FULL_LENGTH)
-  }
-}
-ÀÔrD™¬@ohos.router½../common/constants/Constants¼../common/bean/AlarmItemBean¿../common/bean/AlarmSettingBean¼../viewmodel/DetailViewModel½../common/utils/DimensionUtilµ../view/BackContainer»../view/detail/DatePickAreaº../view/Detail/SettingItemÔrE—ªassertions¨external¢id¤meta±moduleSideEffectsªresolvedByµsyntheticNamedExportsAÃÙf hvigor_ignore_E:_huawei_deveco-studio_DevEco Studio_sdk_default_openharmony_ets_api_@ohos.router.d.tsAÃªoh-resolveÂEAÂÙƒD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\constants\Constants.etsAÃªoh-resolveÂEAÂÙ‚D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\bean\AlarmItemBean.etsAÃªoh-resolveÂEAÂÙ…D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\bean\AlarmSettingBean.etsAÃªoh-resolveÂEAÂÙ‚D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\viewmodel\DetailViewModel.etsAÃªoh-resolveÂEAÂÙƒD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\utils\DimensionUtil.etsAÃªoh-resolveÂEAÂÙ{D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\BackContainer.etsAÃªoh-resolveÂEAÂÙD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\DatePickArea.etsAÃªoh-resolveÂEAÂÙ€D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\SettingItem.etsAÃªoh-resolveÂ“ÔrF–§version¤fileªsourceRoot§sources¥names¨mappings®DetailIndex.js ‘¯DetailIndex.etsÜ å‘”    ‘” –”   ” ” ” ”! !”" "š”   ” ”	 	” ” ”( (”* *”0 0”ÌO ÌO”ÌP ÌP–”   ” ” ” ”4 4”5 5š”   ” ” ” ” ”+ +”- -”3 3”ÌT ÌT”ÌU ÌU–”   ” ” ” ”1 1”2 2–”   ” ” ” ”6 6”7 7–”   ” ” ” ”6 6”7 7–”   ” ” ” ”4 4”5 5–”   ” ” ” ”9 9”: :’” ” ‘”  ””8  Ìc”<  Ìg”ÌE  Ìp”ÌG  Ìr””  '”*  5”+  6”?  ÌJ’”ÌB !8”ÌD !:’” "” "•” ##”$ #.”% #/”/ #9”1 #;‘” ’”  ÌL”  ÌU’”  ÌL”  ÌU’” !	” !’” !	” !’” %” %™” &” &” &” &” &%” &&”% &/”' &ÌA”( &ÌBœ” '” '” '” '” '” '”$ ' ”% '!”. '*”2 '.”6 '2”8 '4—” (” (
-” (” (” (” (” (™” )” )
-” )” )” )”# )”$ )”- )'”. )(œ” *” *
-” *” *” *”. *(”/ *)”3 *-”4 *.”= *7”> *8”? *9‘”	 +‘” +˜” ,” ,
-” ,” ,” ,”. ,(”0 ,*”1 ,+‘”	 -’” .”  .™” /” /” /	” /” /” /” /”% /!”' /#™” 0” 0
-” 0” 0” 0”$ 0”' 0!”) 0#”* 0$‘”	 1–” 2” 2” 2	” 2” 2” 2’” 3” 3’” 5” 5–” 6” 6” 6	” 6” 6” 6’” 7” 7’” 9” 9
-•” :” :” :	”  :”# :Ü ” ;” ;
-”  ;”! ;”/ ;)”0 ;*”ÌH ;ÌB”ÌJ <”ÌN <”ÌO <”ÌX <”ÌY <”Ìk <)”Ìl <*”Ìp <.”Ìq </”Ìz <8”Ì{ <9”Ì„ <ÌB”Ì… <ÌC”Ì‡ <ÌE”Ì— <ÌU”Ì˜ <ÌV”Ì¡ <Ì_”Ì¢ <Ì`Ü ” =” =
-”  =”! =”/ =)”0 =*”ÌI =ÌC”ÌK =ÌE”ÌO =ÌI”ÌP =ÌJ”ÌY =ÌS”ÌZ =ÌT”Ì^ =ÌX”Ì` =ÌZ”Ìp =Ìj”Ìq =Ìk”Ì{ =Ìu”Ì| =ÌvÜ ” >” >
-”  >”! >”/ >)”0 >*”ÌG >ÌA”ÌI ?”ÌM ?”ÌN ?”ÌW ?”ÌX ?”Ì` ?”Ìc ?"”Ìq ?0”Ìr ?1”Ì‡ ?ÌF”Ì‰ ?ÌH”Ì™ ?ÌX”Ìš ?ÌY”Ì§ ?Ìf”Ì¨ ?Ìg” Ì@” Ì@
-”  Ì@”! Ì@”/ Ì@)”0 Ì@*”ÌG Ì@ÌA”ÌI Ì@ÌC”ÌM Ì@ÌG”ÌN Ì@ÌH”ÌW Ì@ÌQ”ÌX Ì@ÌR”Ìf Ì@Ì`˜” ÌA”  ÌA”! ÌA”6 ÌA,”9 ÌA/”ÌH ÌA>”ÌI ÌA?”Ì] ÌAÌSŸ” ÌB” ÌB” ÌB”  ÌB”! ÌB”. ÌB$”1 ÌB'”? ÌB5”Ì@ ÌB6”ÌT ÌBÌJ”ÌV ÌBÌL”Ìf ÌBÌ\”Ìg ÌBÌ]”Ìo ÌBÌe”Ìp ÌBÌf’”	 ÌC”
- ÌC’” ÌD” ÌD‘” ÌF’” ÌG” ÌG
-”” ÌG” ÌG
-” Ìp”" Ìp˜” ÌG” ÌG
-” Ìq” Ìq
-” Ìq”( Ìq”) Ìq”4 Ìq&˜” ÌG” ÌG
-” Ìr” Ìr” Ìr”) Ìr”* Ìr”5 Ìr'’”, ÌH”9 ÌH›” ÌI” ÌI”  ÌI”$ ÌI”% ÌI”* ÌI”+ ÌI”, ÌI”Ì™ ÌI8”Ìš ÌI9”Í ÌIÌW“” ÌJ”" ÌJ”Ì ÌJ-’”  ÌL”& ÌL””  ÌL”& ÌL”' ÌO	”6 ÌO™”  ÌL”& ÌL”' ÌP	”, ÌP”- ÌP”: ÌP”; ÌP”Ì@ ÌP"”Ì­ ÌPÌE™”  ÌL”& ÌL”' ÌQ	”- ÌQ”. ÌQ”; ÌQ”< ÌQ”ÌA ÌQ#”Ì® ÌQÌF˜”  ÌL”& ÌL”' ÌR	”. ÌR”/ ÌR”4 ÌR”8 ÌR”: ÌR”$ ÌS
-”* ÌS”. ÌS”/ ÌS”8 ÌS”9 ÌS”ÌG ÌS-”Ìd ÌS.”Ìh ÌS2”Ìi ÌS3”Ìr ÌS<”Ìt ÌS=”Ìu ÌS>–”$ ÌT
-”* ÌT”+ ÌT”/ ÌT”1 ÌT”2 ÌT’”  ÌU”! ÌU	’”  ÌM
-”% ÌM˜”  ÌM
-”% ÌM”& ÌM,”/ ÌM5”0 ÌM6”8 ÌM>”9 ÌM?”= ÌMÌC’” ÌL”" ÌL›” ÌI”" ÌI”$ ÌI”( ÌI”) ÌI”. ÌI”/ ÌI”0 ÌI”Ì ÌI8”Ì ÌI9”Í
- ÌIÌW’” ÌJ”& ÌJ’”$ ÌL”* ÌL””$ ÌL”* ÌL”+ ÌO	”: ÌO™”$ ÌL”* ÌL”+ ÌP	”0 ÌP”1 ÌP”> ÌP”? ÌP”ÌD ÌP"”Ì± ÌPÌE™”$ ÌL”* ÌL”+ ÌQ	”1 ÌQ”2 ÌQ”? ÌQ”Ì@ ÌQ”ÌE ÌQ#”Ì² ÌQÌF˜”$ ÌL”* ÌL”+ ÌR	”2 ÌR”3 ÌR”8 ÌR”< ÌR”> ÌR”( ÌS
-”. ÌS”2 ÌS”3 ÌS”< ÌS”= ÌS”ÌK ÌS-”Ìh ÌS.”Ìl ÌS2”Ìm ÌS3”Ìv ÌS<”Ìx ÌS=”Ìy ÌS>–”( ÌT
-”. ÌT”/ ÌT”3 ÌT”5 ÌT”6 ÌT’”$ ÌU”% ÌU	’”$ ÌM
-”) ÌM˜”$ ÌM
-”) ÌM”* ÌM,”3 ÌM5”4 ÌM6”< ÌM>”= ÌM?”ÌA ÌMÌC’”  ÌL”& ÌL’”, ÌX”8 ÌX“”, ÌZ”7 ÌZ”> ÌZ“” Ì[”# Ì[”? Ì[)‘” Ì\’” Ì[”' Ì[’” Ì^” Ì^’” Ì^” Ì^’” Ì`” Ì`Ü ” Ì`” Ì`” Ìa	” Ìa” Ìa”" Ìa”# Ìa”( Ìa”) Ìa”* Ìa ”+ Ìa!”5 Ìa+”6 Ìa,”: Ìa0”; Ìa1”< Ìa2”= Ìa3”ÌG Ìa=”ÌH Ìa>”ÌO ÌaÌE™” Ì`” Ì`” Ìb	” Ìb” Ìb”& Ìb”' Ìb”, Ìb"”Ì™ ÌbÌG™” Ì`” Ì`” Ìc	” Ìc” Ìc”' Ìc”( Ìc”- Ìc#”Ìš ÌcÌI™” Ì`” Ì`” Ìd	” Ìd” Ìd”) Ìd”* Ìd ”/ Ìd%”Ìœ ÌdÌN”” Ì`” Ì`” Ìe	” Ìe”” Ì`” Ì`” Ìf	”" Ìf™” Ì`” Ì`” Ìg	” Ìg”  Ìg”- Ìg#”. Ìg$”3 Ìg)”Ì  ÌgÌO•” Ì`” Ì`” Ìh	” Ìh” Ìh—” Ìi
-” Ìi” Ìi”% Ìi”& Ìi ”+ Ìi%”Ì˜ ÌiÌR‘” Ìj	˜” Ì`” Ì`” Ìk	” Ìk” Ìk”  Ìk”$ Ìk”& ÌkŸ” Ìl
-” Ìl” Ìl” Ìl”$ Ìl”% Ìl”6 Ìl0”7 Ìl1”; Ìl5”< Ìl6”ÌE Ìl?”ÌF ÌlÌ@”ÌH ÌlÌB”ÌI ÌlÌC”ÌJ ÌlÌD–” Ìm
-” Ìm” Ìm” Ìm” Ìm” Ìm’” Ìn” Ìn	’” Ì`” Ì`’” ÌG” ÌG
-‘” ÌsÔrG–§version¤file§sources®sourcesContent¥names¨mappingsÀ‘À‘ÀÜ î‘”    ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”  	 ‘”  
- ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”    ‘”  ! ‘”  " ‘”  # ‘”  $ ‘”  % ‘”  & ‘”  ' ‘”  ( ‘”  ) ‘”  * ‘”  + ‘”  , ‘”  - ‘”  . ‘”  / ‘”  0 ‘”  1 ‘”  2 ‘”  3 ‘”  4 ‘”  5 ‘”  6 ‘”  7 ‘”  8 ‘”  9 ‘”  : ‘”  ; ‘”  < ‘”  = ‘”  > ‘”  ? ‘”  Ì@ ‘”  ÌA ‘”  ÌB ‘”  ÌC ‘”  ÌD ‘”  ÌE ‘”  ÌF ‘”  ÌG ‘”  ÌH ‘”  ÌI ‘”  ÌJ ‘”  ÌK ‘”  ÌL ‘”  ÌM ‘”  ÌN ‘”  ÌO ‘”  ÌP ‘”  ÌQ ‘”  ÌR ‘”  ÌS ‘”  ÌT ‘”  ÌU ‘”  ÌV ‘”  ÌW ‘”  ÌX ‘”  ÌY ‘”  ÌZ ‘”  Ì[ ‘”  Ì\ ‘”  Ì] ‘”  Ì^ ‘”  Ì_ ‘”  Ì` ‘”  Ìa ‘”  Ìb ‘”  Ìc ‘”  Ìd ‘”  Ìe ‘”  Ìf ‘”  Ìg ‘”  Ìh ‘”  Ìi ‘”  Ìj ‘”  Ìk ‘”  Ìl ‘”  Ìm ‘”  Ìn ‘”  Ìo ‘”  Ìp ‘”  Ìq ‘”  Ìr ‘”  Ìs ‘”  Ìt ‘”  Ìu ‘”  Ìv ‘”  Ìw ‘”  Ìx ‘”  Ìy ‘”  Ìz ‘”  Ì{ ‘”  Ì| ‘”  Ì} ‘”  Ì~ ‘”  Ì ‘”  Ì€ ‘”  Ì ‘”  Ì‚ ‘”  Ìƒ ‘”  Ì„ ‘”  Ì… ‘”  Ì† ‘”  Ì‡ ‘”  Ìˆ ‘”  Ì‰ ‘”  ÌŠ ‘”  Ì‹ ‘”  ÌŒ ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì‘ ‘”  Ì’ ‘”  Ì“ ‘”  Ì” ‘”  Ì• ‘”  Ì– ‘”  Ì— ‘”  Ì˜ ‘”  Ì™ ‘”  Ìš ‘”  Ì› ‘”  Ìœ ‘”  Ì ‘”  Ì ‘”  ÌŸ ‘”  Ì  ‘”  Ì¡ ‘”  Ì¢ ‘”  Ì£ ‘”  Ì¤ ‘”  Ì¥ ‘”  Ì¦ ‘”  Ì§ ‘”  Ì¨ ‘”  Ì© ‘”  Ìª ‘”  Ì« ‘”  Ì¬ ‘”  Ì­ ‘”  Ì® ‘”  Ì¯ ‘”  Ì° ‘”  Ì± ‘”  Ì² ‘”  Ì³ ‘”  Ì´ ‘”  Ìµ ‘”  Ì¶ ‘”  Ì· ‘”  Ì¸ ‘”  Ì¹ ‘”  Ìº ‘”  Ì» ‘”  Ì¼ ‘”  Ì½ ‘”  Ì¾ ‘”  Ì¿ ‘”  ÌÀ ‘”  ÌÁ ‘”  ÌÂ ‘”  ÌÃ ‘”  ÌÄ ‘”  ÌÅ ‘”  ÌÆ ‘”  ÌÇ ‘”  ÌÈ ‘”  ÌÉ ‘”  ÌÊ ‘”  ÌË ‘”  ÌÌ ‘”  ÌÍ ‘”  ÌÎ ‘”  ÌÏ ‘”  ÌĞ ‘”  ÌÑ ‘”  ÌÒ ‘”  ÌÓ ‘”  ÌÔ ‘”  ÌÕ ‘”  ÌÖ ‘”  Ì× ‘”  ÌØ ‘”  ÌÙ ‘”  ÌÚ ‘”  ÌÛ ‘”  ÌÜ ‘”  Ìİ ‘”  ÌŞ ‘”  Ìß ‘”  Ìà ‘”  Ìá ‘”  Ìâ ‘”  Ìã ‘”  Ìä ‘”  Ìå ‘”  Ìæ ‘”  Ìç ‘”  Ìè ‘”  Ìé ‘”  Ìê ‘”  Ìë ‘”  Ìì ‘”  Ìí ÔrH’§missing¦pluginÃ¦genAbcÂÔ  ÔrI”²dynamicImportCache¹exportAllDeclarationCache»exportNamedDeclarationCache«importCache™ÔrJ•¤type¥start£endªspecifiers¦source±ImportDeclarationÍéÍ‘ÔrK”¤type¥start£end¥local¶ImportDefaultSpecifierÍğÍöÔrL”¤type¥start£end¤nameªIdentifierÍğÍö¦routerÔrM•¤type¥start£end¥value£raw§LiteralÍüÍ
-¬@ohos.router®'@ohos.router'J±ImportDeclarationÍÍ]’ÔrN•¤type¥start£end¨imported¥local¯ImportSpecifierÍÍ%LªIdentifierÍÍ%¯CommonConstantsLªIdentifierÍÍ%¯CommonConstantsN¯ImportSpecifierÍ'Í5LªIdentifierÍ'Í5®DetailConstantLªIdentifierÍ'Í5®DetailConstantM§LiteralÍ=Í\½../common/constants/Constants¿'../common/constants/Constants'J±ImportDeclarationÍ_Í”‘K¶ImportDefaultSpecifierÍfÍoLªIdentifierÍfÍo©AlarmItemM§LiteralÍuÍ“¼../common/bean/AlarmItemBean¾'../common/bean/AlarmItemBean'J±ImportDeclarationÍ–Íë’K¶ImportDefaultSpecifierÍÍ­LªIdentifierÍÍ­°AlarmSettingBeanN¯ImportSpecifierÍ±ÍÁLªIdentifierÍ±ÍÁ°AlarmSettingTypeLªIdentifierÍ±ÍÁ°AlarmSettingTypeM§LiteralÍÉÍê¿../common/bean/AlarmSettingBeanÙ!'../common/bean/AlarmSettingBean'J±ImportDeclarationÍíÍ‘K¶ImportDefaultSpecifierÍôÍLªIdentifierÍôÍ­BackContainerM§LiteralÍÍµ../view/BackContainer·'../view/BackContainer'J±ImportDeclarationÍ!ÍX‘K¶ImportDefaultSpecifierÍ(Í3LªIdentifierÍ(Í3«DetailModelM§LiteralÍ9ÍW¼../viewmodel/DetailViewModel¾'../viewmodel/DetailViewModel'J±ImportDeclarationÍZÍ‘‘K¶ImportDefaultSpecifierÍaÍmLªIdentifierÍaÍm¬DatePickAreaM§LiteralÍsÍ»../view/detail/DatePickArea½'../view/detail/DatePickArea'J±ImportDeclarationÍ“ÍÈ‘K¶ImportDefaultSpecifierÍšÍ¥LªIdentifierÍšÍ¥«SettingItemM§LiteralÍ«ÍÇº../view/Detail/SettingItem¼'../view/Detail/SettingItem'J±ImportDeclarationÍÊÍ‘K¶ImportDefaultSpecifierÍÑÍŞLªIdentifierÍÑÍŞ­DimensionUtilM§LiteralÍäÍ½../common/utils/DimensionUtil¿'../common/utils/DimensionUtil'
