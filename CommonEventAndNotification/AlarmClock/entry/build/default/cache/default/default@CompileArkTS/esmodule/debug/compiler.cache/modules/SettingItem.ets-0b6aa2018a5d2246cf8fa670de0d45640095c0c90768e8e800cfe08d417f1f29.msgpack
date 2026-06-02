@@ -1,0 +1,346 @@
+Ôr@Ÿªassertions¤code´customTransformCache¬dependencies¢id¤meta±moduleSideEffects¬originalCode±originalSourcemap«resolvedIds®sourcemapChainµsyntheticNamedExportsµtransformDependencies®transformFiles¨cacheAstÔrAÚ,:if (!("finalizeConstruction" in ViewPU.prototype)) {
+    Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
+}
+/*
+ * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Licensed under the Apache License,Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+import { CommonConstants } from '../../common/constants/Constants';
+import { AlarmSettingType } from '../../common/bean/AlarmSettingBean';
+import DimensionUtil from '../../common/utils/DimensionUtil';
+import IntervalDialog from './dialog/IntervalDialog';
+import DurationDialog from './dialog/DurationDialog';
+import RenameDialog from './dialog/RenameDialog';
+import RingDateDialog from './dialog/RingDateDialog';
+export default class SettingItem extends ViewPU {
+    constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
+        super(parent, __localStorage, elmtId, extraInfo);
+        if (typeof paramsLambda === "function") {
+            this.paramsGenerator_ = paramsLambda;
+        }
+        this.__settingInfo = new SynchedPropertyObjectTwoWayPU(params.settingInfo, this, "settingInfo");
+        this.reNameDialogController = new CustomDialogController({
+            builder: () => {
+                let jsDialog = new RenameDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 28, col: 14 });
+                jsDialog.setController(this.reNameDialogController);
+                ViewPU.create(jsDialog);
+                let paramsLambda = () => {
+                    return {};
+                };
+                jsDialog.paramsGenerator_ = paramsLambda;
+            },
+            autoCancel: true
+        }, this);
+        this.durationDialogController = new CustomDialogController({
+            builder: () => {
+                let jsDialog = new DurationDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 32, col: 14 });
+                jsDialog.setController(this.durationDialogController);
+                ViewPU.create(jsDialog);
+                let paramsLambda = () => {
+                    return {};
+                };
+                jsDialog.paramsGenerator_ = paramsLambda;
+            },
+            autoCancel: true
+        }, this);
+        this.intervalDialogController = new CustomDialogController({
+            builder: () => {
+                let jsDialog = new IntervalDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 36, col: 14 });
+                jsDialog.setController(this.intervalDialogController);
+                ViewPU.create(jsDialog);
+                let paramsLambda = () => {
+                    return {};
+                };
+                jsDialog.paramsGenerator_ = paramsLambda;
+            },
+            autoCancel: true
+        }, this);
+        this.ringDateDialogController = new CustomDialogController({
+            builder: () => {
+                let jsDialog = new RingDateDialog(this, {}, undefined, -1, () => { }, { page: "entry/src/main/ets/view/Detail/SettingItem.ets", line: 40, col: 14 });
+                jsDialog.setController(this.ringDateDialogController);
+                ViewPU.create(jsDialog);
+                let paramsLambda = () => {
+                    return {};
+                };
+                jsDialog.paramsGenerator_ = paramsLambda;
+            },
+            autoCancel: true
+        }, this);
+        this.setInitiallyProvidedValue(params);
+        this.finalizeConstruction();
+    }
+    setInitiallyProvidedValue(params) {
+        if (params.reNameDialogController !== undefined) {
+            this.reNameDialogController = params.reNameDialogController;
+        }
+        if (params.durationDialogController !== undefined) {
+            this.durationDialogController = params.durationDialogController;
+        }
+        if (params.intervalDialogController !== undefined) {
+            this.intervalDialogController = params.intervalDialogController;
+        }
+        if (params.ringDateDialogController !== undefined) {
+            this.ringDateDialogController = params.ringDateDialogController;
+        }
+    }
+    updateStateVars(params) {
+    }
+    purgeVariableDependenciesOnElmtId(rmElmtId) {
+        this.__settingInfo.purgeDependencyOnElmtId(rmElmtId);
+    }
+    aboutToBeDeleted() {
+        this.__settingInfo.aboutToBeDeleted();
+        SubscriberManager.Get().delete(this.id__());
+        this.aboutToBeDeletedInternal();
+    }
+    get settingInfo() {
+        return this.__settingInfo.get();
+    }
+    set settingInfo(newValue) {
+        this.__settingInfo.set(newValue);
+    }
+    showSettingDialog(sType) {
+        switch (sType) {
+            case AlarmSettingType.ALARM_NAME:
+                this.reNameDialogController.open();
+                break;
+            case AlarmSettingType.RING_DURATION:
+                this.durationDialogController.open();
+                break;
+            case AlarmSettingType.INTERVAL:
+                this.intervalDialogController.open();
+                break;
+            case AlarmSettingType.RING_DATE:
+                this.ringDateDialogController.open();
+                break;
+            default:
+                break;
+        }
+    }
+    initialRender() {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.margin({
+                bottom: DimensionUtil.getVp({ "id": 16777289, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }),
+                left: DimensionUtil.getVp({ "id": 16777289, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }),
+                right: DimensionUtil.getVp({ "id": 16777289, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
+            });
+            Column.borderRadius(DimensionUtil.getVp({ "id": 16777281, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+            Column.backgroundColor(Color.White);
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            ForEach.create();
+            const forEachItemGenFunction = (_item, index) => {
+                const item = _item;
+                this.observeComponentCreation2((elmtId, isInitialRender) => {
+                    Divider.create();
+                    Divider.visibility(index === 0 ? Visibility.Hidden : Visibility.Visible);
+                    Divider.opacity({ "id": 16777269, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                    Divider.color({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                    Divider.lineCap(LineCapStyle.Round);
+                    Divider.margin({
+                        left: DimensionUtil.getVp({ "id": 16777284, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }),
+                        right: DimensionUtil.getVp({ "id": 16777284, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
+                    });
+                }, Divider);
+                this.observeComponentCreation2((elmtId, isInitialRender) => {
+                    Row.create();
+                    Row.height(DimensionUtil.getVp({ "id": 16777285, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                    Row.alignItems(VerticalAlign.Center);
+                    Row.padding({
+                        left: DimensionUtil.getVp({ "id": 16777289, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }),
+                        right: DimensionUtil.getVp({ "id": 16777289, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
+                    });
+                    Row.onClick(() => {
+                        this.showSettingDialog(item.sType);
+                    });
+                }, Row);
+                this.observeComponentCreation2((elmtId, isInitialRender) => {
+                    Text.create(item.title);
+                    Text.fontSize(DimensionUtil.getFp({ "id": 16777290, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                    Text.fontWeight(FontWeight.Regular);
+                    Text.fontColor({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                    Text.layoutWeight(CommonConstants.DEFAULT_LAYOUT_WEIGHT);
+                }, Text);
+                Text.pop();
+                this.observeComponentCreation2((elmtId, isInitialRender) => {
+                    Text.create(item.content);
+                    Text.fontSize(DimensionUtil.getFp({ "id": 16777283, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                    Text.fontWeight(FontWeight.Normal);
+                    Text.fontColor({ "id": 16777234, "type": 10001, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                    Text.opacity({ "id": 16777282, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                }, Text);
+                Text.pop();
+                this.observeComponentCreation2((elmtId, isInitialRender) => {
+                    Image.create({ "id": 16777303, "type": 20000, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" });
+                    Image.width(DimensionUtil.getVp({ "id": 16777288, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                    Image.height(DimensionUtil.getVp({ "id": 16777286, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" }));
+                    Image.objectFit(ImageFit.Fill);
+                    Image.margin({
+                        left: DimensionUtil.getVp({ "id": 16777287, "type": 10002, params: [], "bundleName": "com.huawei.alarmclock", "moduleName": "entry" })
+                    });
+                }, Image);
+                Row.pop();
+            };
+            this.forEachUpdateFunction(elmtId, this.settingInfo, forEachItemGenFunction, (item, index) => JSON.stringify(item) + index, true, true);
+        }, ForEach);
+        ForEach.pop();
+        Column.pop();
+    }
+    rerender() {
+        this.updateDirtyElements();
+    }
+}
+//# sourceMappingURL=SettingItem.js.mapÂ—ÙƒD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\constants\Constants.etsÙ…D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\bean\AlarmSettingBean.etsÙƒD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\utils\DimensionUtil.etsÙŠD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\dialog\IntervalDialog.etsÙŠD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\dialog\DurationDialog.etsÙˆD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\dialog\RenameDialog.etsÙŠD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\dialog\RingDateDialog.etsÙ€D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\SettingItem.etsÔrBœªmoduleName±isLocalDependency¯isNodeEntryFile§pkgPath±belongProjectPath§pkgNameªpkgVersion±dependencyPkgInfo¯hostModulesInfo°belongModulePath§checker¬shouldEmitJs¥entryÃÂÙWD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entryÙQD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock¥entry¥1.0.0Ô  ‘ÔrC’²hostDependencyName®hostModuleNameº../view/Detail/SettingItem¥entryÙWD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entryÔrDÜ ®¬getNodeCount²getIdentifierCount®getSymbolCount¬getTypeCountµgetInstantiationCountµgetRelationCacheSizes±isUndefinedSymbol±isArgumentsSymbol¯isUnknownSymbol¯getMergedSymbol®getDiagnostics´getGlobalDiagnostics´getRecursionIdentity¶getUnmatchedProperties¹getTypeOfSymbolAtLocation¯getTypeOfSymbolÙ(getSymbolsOfParameterPropertyDeclaration·getDeclaredTypeOfSymbol³getPropertiesOfType±getPropertyOfTypeÙ"getPrivateIdentifierPropertyOfType·getTypeOfPropertyOfType²getIndexInfoOfType³getIndexInfosOfTypeºgetIndexInfosOfIndexSymbol³getSignaturesOfType²getIndexTypeOfType¬getIndexType¬getBaseTypes¸getBaseTypeOfLiteralType®getWidenedType³getTypeFromTypeNode°getParameterTypeÙ$getParameterIdentifierNameAtPosition¸getPromisedTypeOfPromise®getAwaitedType¸getReturnTypeOfSignature®isNullableType¯getNullableType²getNonNullableType²getNonOptionalType°getTypeArguments®typeToTypeNodeÙ$indexInfoToIndexSignatureDeclaration¿signatureToSignatureDeclaration²symbolToEntityName²symbolToExpression¬symbolToNodeÙ!symbolToTypeParameterDeclarations¼symbolToParameterDeclarationºtypeParameterToDeclaration±getSymbolsInScope³getSymbolAtLocation·getIndexInfosAtLocationÙ!getShorthandAssignmentValueSymbolÙ#getExportSpecifierLocalTargetSymbol·getExportSymbolOfSymbol±getTypeAtLocationºgetTypeAtLocationForLinterÙ tryGetTypeAtLocationWithoutCheckºgetTypeOfAssignmentPatternÙ*getPropertySymbolOfDestructuringAssignment±signatureToString¬typeToString®symbolToStringµtypePredicateToString®writeSignature©writeType«writeSymbol²writeTypePredicate¼getAugmentedPropertiesOfType®getRootSymbols²getSymbolOfExpando±getContextualTypeÙ(getContextualTypeForObjectLiteralElementÙ#getContextualTypeForArgumentAtIndexÙ getContextualTypeForJsxAttribute²isContextSensitiveÙ!getTypeOfPropertyOfContextualTypeµgetFullyQualifiedNameÙ#tryGetResolvedSignatureWithoutCheck´getResolvedSignatureÙ/getResolvedSignatureForStringLiteralCompletionsÙ$getResolvedSignatureForSignatureHelpµgetExpandedParameters¹hasEffectiveRestParameterºcontainsArgumentsReference°getConstantValueµisValidPropertyAccessÙ#isValidPropertyAccessForCompletions»getSignatureFromDeclarationºisImplementationOfOverload¹getImmediateAliasedSymbol°getAliasedSymbol¯getEmitResolver²getExportsOfModule¿getExportsAndPropertiesOfModuleÙ forEachExportAndPropertyOfModule¯getSymbolWalker±getAmbientModules¹getJsxIntrinsicTagNamesAt³isOptionalParameter»tryGetMemberInModuleExportsÙ(tryGetMemberInModuleExportsAndProperties´tryFindAmbientModuleÙ(tryFindAmbientModuleWithoutAugmentations¯getApparentType¬getUnionType²isTypeAssignableTo³createAnonymousType¯createSignature¬createSymbol¯createIndexInfoªgetAnyType­getStringType­getNumberType±createPromiseType¯createArrayType¹getElementTypeOfArrayType®getBooleanType¬getFalseType«getTrueType«getVoidType°getUndefinedType«getNullType¯getESSymbolType¬getNeverType¯getOptionalType®getPromiseType²getPromiseLikeType´getAsyncIterableType²isSymbolAccessible«isArrayType«isTupleType¯isArrayLikeTypeÙ#isTypeInvalidDueToUnionDiscriminantºgetExactOptionalProperties¿getAllPossiblePropertiesOfTypesÙ(getSuggestedSymbolForNonexistentPropertyÙ#getSuggestionForNonexistentPropertyÙ,getSuggestedSymbolForNonexistentJSXAttributeÙ&getSuggestedSymbolForNonexistentSymbolÙ!getSuggestionForNonexistentSymbolÙ&getSuggestedSymbolForNonexistentModuleÙ!getSuggestionForNonexistentExportÙ+getSuggestedSymbolForNonexistentClassMember·getBaseConstraintOfType»getDefaultFromTypeParameter«resolveName¯getJsxNamespaceµgetJsxFragmentFactory¸getAccessibleSymbolChain»getTypePredicateOfSignature¹resolveExternalModuleName»resolveExternalModuleSymbol°tryGetThisTypeAt¹getTypeArgumentConstraint¸getSuggestionDiagnostics¸runWithCancellationTokenÙ3getLocalTypeParametersOfClassOrInterfaceOrTypeAlias´isDeclarationVisible´isPropertyAccessible»getTypeOnlyAliasDeclaration¿getMemberOverrideModifierStatusÙ!isTypeParameterPossiblyReferenced²getConstEnumRelate´clearConstEnumRelateµdeleteConstEnumRelateÙ$getTypeArgumentsForResolvedSignatureµgetCheckedSourceFilesÙ"collectHaveTsNoCheckFilesForLinter·clearQualifiedNameCache®isStaticRecord²isStaticSourceFileÔ  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  Ô  ÃÃÚÓ/*
+ * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Licensed under the Apache License,Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import { CommonConstants } from '../../common/constants/Constants';
+import AlarmSettingBean, { AlarmSettingType } from '../../common/bean/AlarmSettingBean';
+import DimensionUtil from '../../common/utils/DimensionUtil';
+import IntervalDialog from './dialog/IntervalDialog';
+import DurationDialog from './dialog/DurationDialog';
+import RenameDialog from './dialog/RenameDialog';
+import RingDateDialog from './dialog/RingDateDialog';
+
+@Component
+export default struct SettingItem {
+  @Link settingInfo: Array<AlarmSettingBean>;
+  reNameDialogController: CustomDialogController = new CustomDialogController({
+    builder: RenameDialog(),
+    autoCancel: true
+  });
+  durationDialogController: CustomDialogController = new CustomDialogController({
+    builder: DurationDialog(),
+    autoCancel: true
+  });
+  intervalDialogController: CustomDialogController = new CustomDialogController({
+    builder: IntervalDialog(),
+    autoCancel: true
+  });
+  ringDateDialogController: CustomDialogController = new CustomDialogController({
+    builder: RingDateDialog(),
+    autoCancel: true
+  });
+
+  private showSettingDialog(sType: AlarmSettingType): void {
+    switch (sType) {
+      case AlarmSettingType.ALARM_NAME:
+        this.reNameDialogController.open();
+        break;
+      case AlarmSettingType.RING_DURATION:
+        this.durationDialogController.open();
+        break;
+      case AlarmSettingType.INTERVAL:
+        this.intervalDialogController.open();
+        break;
+      case AlarmSettingType.RING_DATE:
+        this.ringDateDialogController.open();
+        break;
+      default:
+        break
+    }
+  }
+
+  build(): void {
+    Column() {
+      ForEach(this.settingInfo, (item: AlarmSettingBean, index: number) => {
+        Divider()
+          .visibility(index === 0 ? Visibility.Hidden : Visibility.Visible)
+          .opacity($r('app.float.divider_opacity'))
+          .color($r('app.color.grey_divider'))
+          .lineCap(LineCapStyle.Round)
+          .margin({
+            left: DimensionUtil.getVp($r('app.float.setting_item_divider_margin_horizon')),
+            right: DimensionUtil.getVp($r('app.float.setting_item_divider_margin_horizon'))
+          })
+        Row() {
+          Text(item.title)
+            .fontSize(DimensionUtil.getFp($r('app.float.setting_item_name_font_size')))
+            .fontWeight(FontWeight.Regular)
+            .fontColor($r('app.color.grey_divider'))
+            .layoutWeight(CommonConstants.DEFAULT_LAYOUT_WEIGHT)
+          Text(item.content)
+            .fontSize(DimensionUtil.getFp($r('app.float.setting_item_content_font_size')))
+            .fontWeight(FontWeight.Normal)
+            .fontColor($r('app.color.grey_divider'))
+            .opacity($r('app.float.setting_item_content_font_opacity'))
+          Image($r('app.media.ic_right'))
+            .width(DimensionUtil.getVp($r('app.float.setting_item_image_width')))
+            .height(DimensionUtil.getVp($r('app.float.setting_item_image_height')))
+            .objectFit(ImageFit.Fill)
+            .margin({
+              left: DimensionUtil.getVp($r('app.float.setting_item_image_margin_horizon'))
+            })
+        }
+        .height(DimensionUtil.getVp($r('app.float.setting_item_height')))
+        .alignItems(VerticalAlign.Center)
+        .padding({
+          left: DimensionUtil.getVp($r('app.float.setting_item_interval')),
+          right: DimensionUtil.getVp($r('app.float.setting_item_interval'))
+        })
+        .onClick(() => {
+          this.showSettingDialog(item.sType);
+        })
+      }, (item: AlarmSettingBean, index: number) => JSON.stringify(item) + index)
+    }
+    .margin({
+      bottom: DimensionUtil.getVp($r('app.float.setting_item_interval')),
+      left: DimensionUtil.getVp($r('app.float.setting_item_interval')),
+      right: DimensionUtil.getVp($r('app.float.setting_item_interval'))
+    })
+    .borderRadius(DimensionUtil.getVp($r('app.float.setting_item_border_radius')))
+    .backgroundColor(Color.White)
+  }
+}ÀÔrE—Ù ../../common/constants/ConstantsÙ ../../common/utils/DimensionUtilÙ"../../common/bean/AlarmSettingBean·./dialog/DurationDialogµ./dialog/RenameDialog·./dialog/RingDateDialog·./dialog/IntervalDialogÔrF—ªassertions¨external¢id¤meta±moduleSideEffectsªresolvedByµsyntheticNamedExportsAÂÙƒD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\constants\Constants.etsAÃªoh-resolveÂFAÂÙƒD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\utils\DimensionUtil.etsAÃªoh-resolveÂFAÂÙ…D:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\common\bean\AlarmSettingBean.etsAÃªoh-resolveÂFAÂÙŠD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\dialog\DurationDialog.etsAÃªoh-resolveÂFAÂÙˆD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\dialog\RenameDialog.etsAÃªoh-resolveÂFAÂÙŠD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\dialog\RingDateDialog.etsAÃªoh-resolveÂFAÂÙŠD:\2026Spring-25307184-Lab1\harmony_alarm_1\CommonEventAndNotification\AlarmClock\entry\src\main\ets\view\Detail\dialog\IntervalDialog.etsAÃªoh-resolveÂ“ÔrG–§version¤fileªsourceRoot§sources¥names¨mappings®SettingItem.js ‘¯SettingItem.etsÜ È‘”    ‘” ˜”   ” ”	 	” ” ”   ”ÌB ÌB”ÌC ÌC˜”   ” ”	 ” +” -”! 3”ÌE ÌW”ÌF ÌX–”   ” ” ” ”< <”= =–”   ” ” ” ”4 4”5 5–”   ” ” ” ”4 4”5 5–”   ” ” ” ”0 0”1 1–”   ” ” ” ”4 4”5 5–”   ” ” ” ” ”  !‘”  ’”* 7”Ì@ ÌM’” ” ’”# ”/ ’”, ”ÌB ‘” ”” ” ” ” ’”, 9”ÌB ÌO’” ” ’”# ”1 ’”, ”ÌD ‘” ””  ”  ”  ”  ’”, "9”ÌB "ÌO’” #” #’”# #”1 #’”, "”ÌD "‘” #”” $” $” $” $’”, &9”ÌB &ÌO’” '” '’”# '”1 '’”, &”ÌD &‘” '”” (” (” (” (‘” 5’” ” ’” ” ”” +
+” +” +” +3”” ,” ,” ,” ,•” -” -”! -”" -”, -&˜” .” .” .”+ .#”, .$”0 .(”2 .*”3 .+’” /” /•” 0” 0”! 0”" 0”/ 0)˜” 1” 1” 1”- 1%”. 1&”2 1*”4 1,”5 1-’” 2” 2•” 3” 3”! 3”" 3”* 3$˜” 4” 4” 4”- 4%”. 4&”2 4*”4 4,”5 4-’” 5” 5•” 6” 6”! 6”" 6”+ 6%˜” 7” 7” 7”- 7%”. 7&”2 7*”4 7,”5 7-’” 8” 8‘” 9’” :” :‘”	 ;’” <” <‘” >’” ?” ?
+•” ?” ?
+” Ìh” Ìh” Ìh—” Ìi” Ìi” Ìi”% Ìi”& Ìi”+ Ìi!”Ì˜ ÌiÌH—” Ìj” Ìj
+” Ìj”# Ìj”$ Ìj”) Ìj”Ì– ÌjÌF—” Ìk” Ìk” Ìk”$ Ìk”% Ìk”* Ìk ”Ì— ÌkÌG‘” Ìl™” ?” ?
+” Ìm” Ìm”  Ìm”- Ìm”. Ìm ”3 Ìm%”Ì  ÌmÌQ˜” ?” ?
+” Ìn”" Ìn”# Ìn”( Ìn”) Ìn”. Ìn ’” Ì@” Ì@’”3 Ì@9”8 Ì@ÌF’” ÌA” ÌAÜ ” ÌA” ÌA” ÌB”& ÌB”' ÌB”, ÌB”1 ÌB ”2 ÌB!”3 ÌB"”4 ÌB#”5 ÌB$”? ÌB.”Ì@ ÌB/”ÌF ÌB5”ÌG ÌB6”ÌH ÌB7”ÌI ÌB8”ÌS ÌBÌB”ÌT ÌBÌC”Ì[ ÌBÌJ”” ÌA” ÌA” ÌC”# ÌC”” ÌA” ÌA” ÌD”! ÌD˜” ÌA” ÌA” ÌE”# ÌE”$ ÌE”0 ÌE”1 ÌE ”6 ÌE%•” ÌA” ÌA” ÌF”" ÌF”# ÌF—” ÌG” ÌG” ÌG”+ ÌG”, ÌG ”1 ÌG%”Ì ÌGÌZ—” ÌH” ÌH” ÌH”, ÌH ”- ÌH!”2 ÌH&”ÌŸ ÌHÌ[‘” ÌI’” ÌJ” ÌJ™” ÌJ” ÌJ” Ì]	” Ì]” Ì]”, Ì]”- Ì]”2 Ì]#”ÌŸ Ì]ÌH˜” ÌJ” ÌJ” Ì^	”" Ì^”# Ì^”0 Ì^!”1 Ì^"”7 Ì^(•” ÌJ” ÌJ” Ì_	” Ì_”  Ì_—” Ì`
+” Ì`” Ì`”+ Ì`”, Ì`”1 Ì`#”Ì Ì`ÌJ—” Ìa
+” Ìa” Ìa”, Ìa”- Ìa”2 Ìa$”ÌŸ ÌaÌK‘” Ìb	—” ÌJ” ÌJ” Ìc	” Ìc”  Ìc”# Ìc”% Ìcš” Ìd
+” Ìd” Ìd”. Ìd ”/ Ìd!”3 Ìd%”4 Ìd&”9 Ìd+”: Ìd,”; Ìd-’” Ìe” Ìe	–” ÌK
+” ÌK”  ÌK”$ ÌK”% ÌK”* ÌK™” ÌK
+” ÌK” ÌL”! ÌL”" ÌL”/ ÌL#”0 ÌL$”5 ÌL)”Ì¢ ÌLÌV˜” ÌK
+” ÌK” ÌM”# ÌM”$ ÌM”. ÌM"”/ ÌM#”6 ÌM*”” ÌK
+” ÌK” ÌN”" ÌN˜” ÌK
+” ÌK” ÌO”% ÌO”& ÌO”5 ÌO)”6 ÌO*”ÌK ÌO?’” ÌK
+” ÌK–” ÌP
+” ÌP”  ÌP”$ ÌP”% ÌP”, ÌP™” ÌP
+” ÌP” ÌQ”! ÌQ”" ÌQ”/ ÌQ#”0 ÌQ$”5 ÌQ)”Ì¢ ÌQÌY˜” ÌP
+” ÌP” ÌR”# ÌR”$ ÌR”. ÌR"”/ ÌR#”5 ÌR)”” ÌP
+” ÌP” ÌS”" ÌS”” ÌP
+” ÌP” ÌT”  ÌT’” ÌP
+” ÌP’” ÌU
+” ÌU™” ÌU
+” ÌU” ÌV” ÌV”  ÌV”- ÌV ”. ÌV!”3 ÌV&”Ì  ÌVÌP™” ÌU
+” ÌU” ÌW”  ÌW”! ÌW”. ÌW!”/ ÌW"”4 ÌW'”Ì¡ ÌWÌR˜” ÌU
+” ÌU” ÌX”# ÌX”$ ÌX”, ÌX”- ÌX ”1 ÌX$•” ÌU
+” ÌU” ÌY”  ÌY”! ÌY—” ÌZ” ÌZ” ÌZ”+ ÌZ!”, ÌZ"”1 ÌZ'”Ì ÌZÌZ‘” Ì[’” ÌJ” ÌJÜ ”/ Ì@”3 Ì@”4 Ì@”? Ì@”ÌY Ìf	”ÌZ Ìf
+”Ì^ Ìf ”Ì` Ìf"”Ìe Ìf/”Ìg Ìf1”Ìi Ìf3”Ìj Ìf4”Ìn Ìf8”Ìo Ìf9”Ìx ÌfÌB”Ìy ÌfÌC”Ì} ÌfÌG”Ì~ ÌfÌH”Ì ÌfÌK”Ì† ÌfÌP’” Ì@” Ì@’” ?” ?
+‘” ÌoÔrH–§version¤file§sources®sourcesContent¥names¨mappingsÀ‘À‘ÀÜ Í‘”    ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”  	 ‘”  
+ ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”    ‘”  ! ‘”  " ‘”  # ‘”  $ ‘”  % ‘”  & ‘”  ' ‘”  ( ‘”  ) ‘”  * ‘”  + ‘”  , ‘”  - ‘”  . ‘”  / ‘”  0 ‘”  1 ‘”  2 ‘”  3 ‘”  4 ‘”  5 ‘”  6 ‘”  7 ‘”  8 ‘”  9 ‘”  : ‘”  ; ‘”  < ‘”  = ‘”  > ‘”  ? ‘”  Ì@ ‘”  ÌA ‘”  ÌB ‘”  ÌC ‘”  ÌD ‘”  ÌE ‘”  ÌF ‘”  ÌG ‘”  ÌH ‘”  ÌI ‘”  ÌJ ‘”  ÌK ‘”  ÌL ‘”  ÌM ‘”  ÌN ‘”  ÌO ‘”  ÌP ‘”  ÌQ ‘”  ÌR ‘”  ÌS ‘”  ÌT ‘”  ÌU ‘”  ÌV ‘”  ÌW ‘”  ÌX ‘”  ÌY ‘”  ÌZ ‘”  Ì[ ‘”  Ì\ ‘”  Ì] ‘”  Ì^ ‘”  Ì_ ‘”  Ì` ‘”  Ìa ‘”  Ìb ‘”  Ìc ‘”  Ìd ‘”  Ìe ‘”  Ìf ‘”  Ìg ‘”  Ìh ‘”  Ìi ‘”  Ìj ‘”  Ìk ‘”  Ìl ‘”  Ìm ‘”  Ìn ‘”  Ìo ‘”  Ìp ‘”  Ìq ‘”  Ìr ‘”  Ìs ‘”  Ìt ‘”  Ìu ‘”  Ìv ‘”  Ìw ‘”  Ìx ‘”  Ìy ‘”  Ìz ‘”  Ì{ ‘”  Ì| ‘”  Ì} ‘”  Ì~ ‘”  Ì ‘”  Ì€ ‘”  Ì ‘”  Ì‚ ‘”  Ìƒ ‘”  Ì„ ‘”  Ì… ‘”  Ì† ‘”  Ì‡ ‘”  Ìˆ ‘”  Ì‰ ‘”  ÌŠ ‘”  Ì‹ ‘”  ÌŒ ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì‘ ‘”  Ì’ ‘”  Ì“ ‘”  Ì” ‘”  Ì• ‘”  Ì– ‘”  Ì— ‘”  Ì˜ ‘”  Ì™ ‘”  Ìš ‘”  Ì› ‘”  Ìœ ‘”  Ì ‘”  Ì ‘”  ÌŸ ‘”  Ì  ‘”  Ì¡ ‘”  Ì¢ ‘”  Ì£ ‘”  Ì¤ ‘”  Ì¥ ‘”  Ì¦ ‘”  Ì§ ‘”  Ì¨ ‘”  Ì© ‘”  Ìª ‘”  Ì« ‘”  Ì¬ ‘”  Ì­ ‘”  Ì® ‘”  Ì¯ ‘”  Ì° ‘”  Ì± ‘”  Ì² ‘”  Ì³ ‘”  Ì´ ‘”  Ìµ ‘”  Ì¶ ‘”  Ì· ‘”  Ì¸ ‘”  Ì¹ ‘”  Ìº ‘”  Ì» ‘”  Ì¼ ‘”  Ì½ ‘”  Ì¾ ‘”  Ì¿ ‘”  ÌÀ ‘”  ÌÁ ‘”  ÌÂ ‘”  ÌÃ ‘”  ÌÄ ‘”  ÌÅ ‘”  ÌÆ ‘”  ÌÇ ‘”  ÌÈ ‘”  ÌÉ ‘”  ÌÊ ‘”  ÌË ‘”  ÌÌ ÔrI’§missing¦pluginÃ¦genAbcÂÔ  ÔrJ”²dynamicImportCache¹exportAllDeclarationCache»exportNamedDeclarationCache«importCache—ÔrK•¤type¥start£endªspecifiers¦source±ImportDeclarationÍéÍ,‘ÔrL•¤type¥start£end¨imported¥local¯ImportSpecifierÍòÍÔrM”¤type¥start£end¤nameªIdentifierÍòÍ¯CommonConstantsMªIdentifierÍòÍ¯CommonConstantsÔrN•¤type¥start£end¥value£raw§LiteralÍ	Í+Ù ../../common/constants/ConstantsÙ"'../../common/constants/Constants'K±ImportDeclarationÍ.Ít‘L¯ImportSpecifierÍ7ÍGMªIdentifierÍ7ÍG°AlarmSettingTypeMªIdentifierÍ7ÍG°AlarmSettingTypeN§LiteralÍOÍsÙ"../../common/bean/AlarmSettingBeanÙ$'../../common/bean/AlarmSettingBean'K±ImportDeclarationÍvÍ³‘ÔrO”¤type¥start£end¥local¶ImportDefaultSpecifierÍ}ÍŠMªIdentifierÍ}ÍŠ­DimensionUtilN§LiteralÍÍ²Ù ../../common/utils/DimensionUtilÙ"'../../common/utils/DimensionUtil'K±ImportDeclarationÍµÍê‘O¶ImportDefaultSpecifierÍ¼ÍÊMªIdentifierÍ¼ÍÊ®IntervalDialogN§LiteralÍĞÍé·./dialog/IntervalDialog¹'./dialog/IntervalDialog'K±ImportDeclarationÍìÍ!‘O¶ImportDefaultSpecifierÍóÍMªIdentifierÍóÍ®DurationDialogN§LiteralÍÍ ·./dialog/DurationDialog¹'./dialog/DurationDialog'K±ImportDeclarationÍ#ÍT‘O¶ImportDefaultSpecifierÍ*Í6MªIdentifierÍ*Í6¬RenameDialogN§LiteralÍ<ÍSµ./dialog/RenameDialog·'./dialog/RenameDialog'K±ImportDeclarationÍVÍ‹‘O¶ImportDefaultSpecifierÍ]ÍkMªIdentifierÍ]Ík®RingDateDialogN§LiteralÍqÍŠ·./dialog/RingDateDialog¹'./dialog/RingDateDialog'
