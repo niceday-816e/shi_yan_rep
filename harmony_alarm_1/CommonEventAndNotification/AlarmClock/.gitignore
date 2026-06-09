@@ -1,0 +1,17 @@
+# Build outputs
+entry/build/
+
+# Dependencies
+oh_modules/
+
+# Hvigor
+.hvigor/
+
+# IDE
+.idea/
+
+# macOS
+.DS_Store
+
+# Node modules (if any)
+node_modules/
